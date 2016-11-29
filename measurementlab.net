@@ -1,15 +1,16 @@
+; cPanel (update_time):1357142342 first:11.34.0.9 Cpanel::ZoneFile::VERSION:1.3 hostname:host.stevenmansour.com latest:11.34.0.11
 $ORIGIN measurementlab.net.
 $TTL 120
 
-@    IN    SOA    ns-mlab.greenhost.net.  support.measurementlab.net.    (
-    2016030300 ;Serial Number
+@    IN    SOA    sns-pb.isc.org.  support.measurementlab.net.    (
+    2016111700 ;Serial Number
     1h  ;refresh
     900 ;retry
     1w  ;expire
     1h ) ;minimum)
 
-@        IN    NS    ns-mlab.greenhost.net.
 @        IN    NS    sns-pb.isc.org.
+@        IN    NS    ns-mlab.greenhost.net.
 @        IN    TXT   "v=spf1 include:_spf.google.com ip4:165.117.251.93 ~all"
 @        IN    TXT   "google-site-verification=lN4HHWmCV4gTtKslbFKZNrMNkYx4NhwsjSmmjsPr_Vg"
 @        IN    TXT   "google-site-verification=QzNQqgKdrElH34L_mzcEdeVoq1JP-WhiuMUB-Cm8oZg"
@@ -20,6 +21,7 @@ $TTL 120
 @        IN    MX    10    aspmx3.googlemail.com.
 
 @              IN    A        45.56.98.222
+speed          IN    CNAME    d2617zhi55z8n7.cloudfront.net.
 www            IN    CNAME    d3f2vqxgk3exj.cloudfront.net.
 www-staging    IN    CNAME    ghs.googlehosted.com.
 
@@ -55,6 +57,8 @@ groups       IN    CNAME    ghs.googlehosted.com.
 ns           IN    CNAME    ghs.googlehosted.com.
 test         IN    CNAME    ghs.googlehosted.com.
 mirror-test  IN    CNAME    c.storage.googleapis.com.
+viz          IN    CNAME    ghs.googlehosted.com.
+data-api     IN    CNAME    ghs.googlehosted.com.
 
 ;
 ; mlc services
@@ -65,7 +69,9 @@ ks           IN    PTR  9.9.0.0.0.0.0.0.0.0.0.0.0.0.0.0.e.f.f.f.f.f.1.f.1.0.6.a.
 
 eb           IN    A    45.56.98.222
 eb           IN    AAAA 2600:3c03::f03c:91ff:fe33:819
+eb           IN    TXT  "v=spf1 a -all"
 
+nagios-oam   IN    A    45.79.210.185
 mlc1d        IN    A    23.228.128.68
 mlc1         IN    A    23.228.128.73
 vpn-test     IN    A    23.228.128.74
@@ -79,7 +85,7 @@ mlc2d        IN    A    23.228.128.69
 mlc2         IN    A    23.228.128.86
 
 boot-test2   IN    A    23.228.128.87
-mirror       IN    A    23.228.128.88
+mirror       IN    A    104.196.171.114
 wiki         IN    A    165.117.251.86
 monitor      IN    A    23.228.128.89
 vpn          IN    A    23.228.128.90
@@ -92,3 +98,8 @@ ticket       IN    MX    10    ks.measurementlab.net.
 
 ; for compatibility with measurementlab.net web host
 localhost    IN    A    127.0.0.1
+
+;
+; ePoxy service (testing).
+;
+epoxy-test-1 IN    A    104.196.111.80

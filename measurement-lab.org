@@ -8,7 +8,7 @@ $ORIGIN measurement-lab.org.
 $TTL    300
 
 @       IN      SOA     sns-pb.isc.org. support.measurementlab.net. (
-        2016112301      ; Serial
+        2016112900      ; Serial
         3600     ; Refresh
         600       ; Retry
         604800      ; Expire

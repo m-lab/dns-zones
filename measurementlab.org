@@ -1,15 +1,16 @@
+; cPanel (update_time):1357142342 first:11.34.0.9 Cpanel::ZoneFile::VERSION:1.3 hostname:host.stevenmansour.com latest:11.34.0.11
 $ORIGIN measurementlab.org.
 $TTL 600
 
-@	IN	SOA	ns-mlab.greenhost.net.  support.measurementlab.net.	(
-	2015051100 ;Serial Number
+@	IN	SOA	ns.chambana.net.  support.measurementlab.net.	(
+	2016080300 ;Serial Number
 	1h  ;refresh
 	900 ;retry
 	1w  ;expire
 	1h ) ;minimum)
 
-@		IN      NS      ns-mlab.greenhost.net.
 @		IN      NS      sns-pb.isc.org.
+@		IN      NS      ns-mlab.greenhost.net.
 ;@		IN	A	72.249.86.184
 @		IN	A	64.9.225.88
 ;@        IN     A   216.239.32.21

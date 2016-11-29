@@ -1,15 +1,14 @@
-; cPanel (update_time):1357142342 first:11.34.0.9 Cpanel::ZoneFile::VERSION:1.3 hostname:host.stevenmansour.com latest:11.34.0.11
 $ORIGIN measurementlab.net.
 $TTL 120
 
-@    IN    SOA    ns.chambana.net.  support.measurementlab.net.    (
+@    IN    SOA    ns-mlab.greenhost.net.  support.measurementlab.net.    (
     2016030300 ;Serial Number
     1h  ;refresh
     900 ;retry
     1w  ;expire
     1h ) ;minimum)
 
-@        IN    NS    ns.chambana.net.
+@        IN    NS    ns-mlab.greenhost.net.
 @        IN    NS    sns-pb.isc.org.
 @        IN    TXT   "v=spf1 include:_spf.google.com ip4:165.117.251.93 ~all"
 @        IN    TXT   "google-site-verification=lN4HHWmCV4gTtKslbFKZNrMNkYx4NhwsjSmmjsPr_Vg"

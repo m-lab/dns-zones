@@ -5,7 +5,7 @@ There are three primary zones for M-Lab:
 
 Static
 * measurementlab.net: website and web services, monitoring and non-platform.
-* measurementlab.org: currently unsed for the most part.
+* measurementlab.org: currently unused for the most part.
 
 Dynamic
 * measurement-lab.org: all servers part of the M-Lab platform.

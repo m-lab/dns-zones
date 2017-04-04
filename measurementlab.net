@@ -91,6 +91,7 @@ wiki         IN    A    165.117.251.86
 monitor      IN    A    23.228.128.89
 vpn          IN    A    23.228.128.90
 dns          IN    A    104.196.50.66
+status-mlab-staging IN    A    35.185.76.159
 
 ks1d         IN    A    23.228.128.70
 ks           IN    TXT    "v=spf1 a -all"

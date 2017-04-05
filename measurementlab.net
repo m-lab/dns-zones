@@ -91,12 +91,15 @@ wiki         IN    A    165.117.251.86
 monitor      IN    A    23.228.128.89
 vpn          IN    A    23.228.128.90
 dns          IN    A    104.196.50.66
-status-mlab-staging IN    A    35.185.76.159
 
 ks1d         IN    A    23.228.128.70
 ks           IN    TXT    "v=spf1 a -all"
 ks._domainkey.ks    IN    TXT    "v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDqYy+nKUsFbI+7mw/eUandVL36luBfHTNdrH85QdKC7QpDV2syX+2Xe7TgnbJZA5NrveKeBzX47T0eM3agjBMDtEy8K4+SAyaMH69JxW9cJUC8tMUhvOCizWl2ySs+Kn3D63kyATXgSaZ2CK+cU4FbkxqEQpWz3tkpyAl1hextjwIDAQAB"
 ticket       IN    MX    10    ks.measurementlab.net.
+
+; allocated through GCP load balancer
+status-mlab-staging IN    A    35.185.76.159
+
 
 ; for compatibility with measurementlab.net web host
 localhost    IN    A    127.0.0.1

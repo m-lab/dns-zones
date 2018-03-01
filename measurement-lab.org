@@ -8,7 +8,7 @@ $ORIGIN measurement-lab.org.
 $TTL    300
 
 @       IN      SOA     sns-pb.isc.org. support.measurementlab.net. (
-        2018022100      ; Serial
+        2018030100      ; Serial
         3600     ; Refresh
         600       ; Retry
         604800      ; Expire
@@ -5012,6 +5012,14 @@ ndt.iupui.dfw01                   IN  AAAA	2001:550:2000::45
 ndt.iupui.mlab3.dfw01             IN  AAAA	2001:550:2000::45
 ndt.iupui.dfw01                   IN  AAAA	2001:550:2000::50
 ndt.iupui.mlab4.dfw01             IN  AAAA	2001:550:2000::50
+ndt.iupui.fln01                   IN  AAAA	2801:80:a88:4006::11
+ndt.iupui.mlab1.fln01             IN  AAAA	2801:80:a88:4006::11
+ndt.iupui.fln01                   IN  AAAA	2801:80:a88:4006::24
+ndt.iupui.mlab2.fln01             IN  AAAA	2801:80:a88:4006::24
+ndt.iupui.fln01                   IN  AAAA	2801:80:a88:4006::37
+ndt.iupui.mlab3.fln01             IN  AAAA	2801:80:a88:4006::37
+ndt.iupui.fln01                   IN  AAAA	2801:80:a88:4006::50
+ndt.iupui.mlab4.fln01             IN  AAAA	2801:80:a88:4006::50
 ndt.iupui.fra03                   IN  AAAA	2001:5001:200:30::75
 ndt.iupui.mlab1.fra03             IN  AAAA	2001:5001:200:30::75
 ndt.iupui.fra03                   IN  AAAA	2001:5001:200:30::88
@@ -5180,6 +5188,14 @@ ndt.iupuiv6.dfw01                 IN  AAAA	2001:550:2000::45
 ndt.iupui.mlab3v6.dfw01           IN  AAAA	2001:550:2000::45
 ndt.iupuiv6.dfw01                 IN  AAAA	2001:550:2000::50
 ndt.iupui.mlab4v6.dfw01           IN  AAAA	2001:550:2000::50
+ndt.iupuiv6.fln01                 IN  AAAA	2801:80:a88:4006::11
+ndt.iupui.mlab1v6.fln01           IN  AAAA	2801:80:a88:4006::11
+ndt.iupuiv6.fln01                 IN  AAAA	2801:80:a88:4006::24
+ndt.iupui.mlab2v6.fln01           IN  AAAA	2801:80:a88:4006::24
+ndt.iupuiv6.fln01                 IN  AAAA	2801:80:a88:4006::37
+ndt.iupui.mlab3v6.fln01           IN  AAAA	2801:80:a88:4006::37
+ndt.iupuiv6.fln01                 IN  AAAA	2801:80:a88:4006::50
+ndt.iupui.mlab4v6.fln01           IN  AAAA	2801:80:a88:4006::50
 ndt.iupuiv6.fra03                 IN  AAAA	2001:5001:200:30::75
 ndt.iupui.mlab1v6.fra03           IN  AAAA	2001:5001:200:30::75
 ndt.iupuiv6.fra03                 IN  AAAA	2001:5001:200:30::88
@@ -6359,6 +6375,10 @@ ndt-iupui-mlab1-dfw01             IN  AAAA	2001:550:2000::17
 ndt-iupui-mlab2-dfw01             IN  AAAA	2001:550:2000::32
 ndt-iupui-mlab3-dfw01             IN  AAAA	2001:550:2000::45
 ndt-iupui-mlab4-dfw01             IN  AAAA	2001:550:2000::50
+ndt-iupui-mlab1-fln01             IN  AAAA	2801:80:a88:4006::11
+ndt-iupui-mlab2-fln01             IN  AAAA	2801:80:a88:4006::24
+ndt-iupui-mlab3-fln01             IN  AAAA	2801:80:a88:4006::37
+ndt-iupui-mlab4-fln01             IN  AAAA	2801:80:a88:4006::50
 ndt-iupui-mlab1-fra03             IN  AAAA	2001:5001:200:30::75
 ndt-iupui-mlab2-fra03             IN  AAAA	2001:5001:200:30::88
 ndt-iupui-mlab3-fra03             IN  AAAA	2001:5001:200:30::101
@@ -6444,6 +6464,10 @@ ndt-iupui-mlab1v6-dfw01           IN  AAAA	2001:550:2000::17
 ndt-iupui-mlab2v6-dfw01           IN  AAAA	2001:550:2000::32
 ndt-iupui-mlab3v6-dfw01           IN  AAAA	2001:550:2000::45
 ndt-iupui-mlab4v6-dfw01           IN  AAAA	2001:550:2000::50
+ndt-iupui-mlab1v6-fln01           IN  AAAA	2801:80:a88:4006::11
+ndt-iupui-mlab2v6-fln01           IN  AAAA	2801:80:a88:4006::24
+ndt-iupui-mlab3v6-fln01           IN  AAAA	2801:80:a88:4006::37
+ndt-iupui-mlab4v6-fln01           IN  AAAA	2801:80:a88:4006::50
 ndt-iupui-mlab1v6-fra03           IN  AAAA	2001:5001:200:30::75
 ndt-iupui-mlab2v6-fra03           IN  AAAA	2001:5001:200:30::88
 ndt-iupui-mlab3v6-fra03           IN  AAAA	2001:5001:200:30::101

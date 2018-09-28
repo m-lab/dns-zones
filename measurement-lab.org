@@ -8,7 +8,7 @@ $ORIGIN measurement-lab.org.
 $TTL    300
 
 @       IN      SOA     sns-pb.isc.org. support.measurementlab.net. (
-        2018092100      ; Serial
+        2018092800      ; Serial
         3600     ; Refresh
         600       ; Retry
         604800      ; Expire
@@ -861,6 +861,7 @@ mlab4d.tnr01                      IN  A   	41.188.12.71
 mlab1d.tpe01                      IN  A   	163.22.28.4
 mlab2d.tpe01                      IN  A   	163.22.28.5
 mlab3d.tpe01                      IN  A   	163.22.28.6
+mlab4d.tpe01                      IN  A   	163.22.28.7
 mlab1d.trn01                      IN  A   	194.116.85.196
 mlab2d.trn01                      IN  A   	194.116.85.197
 mlab3d.trn01                      IN  A   	194.116.85.198
@@ -1391,6 +1392,7 @@ mlab4.tnr01                       IN  A   	41.188.12.112
 mlab1.tpe01                       IN  A   	163.22.28.9
 mlab2.tpe01                       IN  A   	163.22.28.22
 mlab3.tpe01                       IN  A   	163.22.28.35
+mlab4.tpe01                       IN  A   	163.22.28.48
 mlab1.trn01                       IN  A   	194.116.85.201
 mlab2.trn01                       IN  A   	194.116.85.214
 mlab3.trn01                       IN  A   	194.116.85.227
@@ -1921,6 +1923,7 @@ mlab4v4.tnr01                     IN  A   	41.188.12.112
 mlab1v4.tpe01                     IN  A   	163.22.28.9
 mlab2v4.tpe01                     IN  A   	163.22.28.22
 mlab3v4.tpe01                     IN  A   	163.22.28.35
+mlab4v4.tpe01                     IN  A   	163.22.28.48
 mlab1v4.trn01                     IN  A   	194.116.85.201
 mlab2v4.trn01                     IN  A   	194.116.85.214
 mlab3v4.trn01                     IN  A   	194.116.85.227
@@ -2435,6 +2438,7 @@ mlab4.tgd01                       IN  AAAA	2a00:fe80:0:104::48
 mlab1.tpe01                       IN  AAAA	2001:e10:6840:28::9
 mlab2.tpe01                       IN  AAAA	2001:e10:6840:28::22
 mlab3.tpe01                       IN  AAAA	2001:e10:6840:28::35
+mlab4.tpe01                       IN  AAAA	2001:e10:6840:28::48
 mlab1.trn01                       IN  AAAA	2001:7f8:23:307::201
 mlab2.trn01                       IN  AAAA	2001:7f8:23:307::214
 mlab3.trn01                       IN  AAAA	2001:7f8:23:307::227
@@ -2949,6 +2953,7 @@ mlab4v6.tgd01                     IN  AAAA	2a00:fe80:0:104::48
 mlab1v6.tpe01                     IN  AAAA	2001:e10:6840:28::9
 mlab2v6.tpe01                     IN  AAAA	2001:e10:6840:28::22
 mlab3v6.tpe01                     IN  AAAA	2001:e10:6840:28::35
+mlab4v6.tpe01                     IN  AAAA	2001:e10:6840:28::48
 mlab1v6.trn01                     IN  AAAA	2001:7f8:23:307::201
 mlab2v6.trn01                     IN  AAAA	2001:7f8:23:307::214
 mlab3v6.trn01                     IN  AAAA	2001:7f8:23:307::227
@@ -3951,6 +3956,8 @@ ndt.iupui.tpe01                   IN  A   	163.22.28.24
 ndt.iupui.mlab2.tpe01             IN  A   	163.22.28.24
 ndt.iupui.tpe01                   IN  A   	163.22.28.37
 ndt.iupui.mlab3.tpe01             IN  A   	163.22.28.37
+ndt.iupui.tpe01                   IN  A   	163.22.28.50
+ndt.iupui.mlab4.tpe01             IN  A   	163.22.28.50
 ndt.iupui.trn01                   IN  A   	194.116.85.203
 ndt.iupui.mlab1.trn01             IN  A   	194.116.85.203
 ndt.iupui.trn01                   IN  A   	194.116.85.216
@@ -5009,6 +5016,8 @@ ndt.iupuiv4.tpe01                 IN  A   	163.22.28.24
 ndt.iupui.mlab2v4.tpe01           IN  A   	163.22.28.24
 ndt.iupuiv4.tpe01                 IN  A   	163.22.28.37
 ndt.iupui.mlab3v4.tpe01           IN  A   	163.22.28.37
+ndt.iupuiv4.tpe01                 IN  A   	163.22.28.50
+ndt.iupui.mlab4v4.tpe01           IN  A   	163.22.28.50
 ndt.iupuiv4.trn01                 IN  A   	194.116.85.203
 ndt.iupui.mlab1v4.trn01           IN  A   	194.116.85.203
 ndt.iupuiv4.trn01                 IN  A   	194.116.85.216
@@ -6035,6 +6044,8 @@ ndt.iupui.tpe01                   IN  AAAA	2001:e10:6840:28::24
 ndt.iupui.mlab2.tpe01             IN  AAAA	2001:e10:6840:28::24
 ndt.iupui.tpe01                   IN  AAAA	2001:e10:6840:28::37
 ndt.iupui.mlab3.tpe01             IN  AAAA	2001:e10:6840:28::37
+ndt.iupui.tpe01                   IN  AAAA	2001:e10:6840:28::50
+ndt.iupui.mlab4.tpe01             IN  AAAA	2001:e10:6840:28::50
 ndt.iupui.trn01                   IN  AAAA	2001:7f8:23:307::203
 ndt.iupui.mlab1.trn01             IN  AAAA	2001:7f8:23:307::203
 ndt.iupui.trn01                   IN  AAAA	2001:7f8:23:307::216
@@ -7061,6 +7072,8 @@ ndt.iupuiv6.tpe01                 IN  AAAA	2001:e10:6840:28::24
 ndt.iupui.mlab2v6.tpe01           IN  AAAA	2001:e10:6840:28::24
 ndt.iupuiv6.tpe01                 IN  AAAA	2001:e10:6840:28::37
 ndt.iupui.mlab3v6.tpe01           IN  AAAA	2001:e10:6840:28::37
+ndt.iupuiv6.tpe01                 IN  AAAA	2001:e10:6840:28::50
+ndt.iupui.mlab4v6.tpe01           IN  AAAA	2001:e10:6840:28::50
 ndt.iupuiv6.trn01                 IN  AAAA	2001:7f8:23:307::203
 ndt.iupui.mlab1v6.trn01           IN  AAAA	2001:7f8:23:307::203
 ndt.iupuiv6.trn01                 IN  AAAA	2001:7f8:23:307::216
@@ -7647,6 +7660,7 @@ ndt-iupui-mlab4-tnr01             IN  A   	41.188.12.114
 ndt-iupui-mlab1-tpe01             IN  A   	163.22.28.11
 ndt-iupui-mlab2-tpe01             IN  A   	163.22.28.24
 ndt-iupui-mlab3-tpe01             IN  A   	163.22.28.37
+ndt-iupui-mlab4-tpe01             IN  A   	163.22.28.50
 ndt-iupui-mlab1-trn01             IN  A   	194.116.85.203
 ndt-iupui-mlab2-trn01             IN  A   	194.116.85.216
 ndt-iupui-mlab3-trn01             IN  A   	194.116.85.229
@@ -8177,6 +8191,7 @@ ndt-iupui-mlab4v4-tnr01           IN  A   	41.188.12.114
 ndt-iupui-mlab1v4-tpe01           IN  A   	163.22.28.11
 ndt-iupui-mlab2v4-tpe01           IN  A   	163.22.28.24
 ndt-iupui-mlab3v4-tpe01           IN  A   	163.22.28.37
+ndt-iupui-mlab4v4-tpe01           IN  A   	163.22.28.50
 ndt-iupui-mlab1v4-trn01           IN  A   	194.116.85.203
 ndt-iupui-mlab2v4-trn01           IN  A   	194.116.85.216
 ndt-iupui-mlab3v4-trn01           IN  A   	194.116.85.229
@@ -8691,6 +8706,7 @@ ndt-iupui-mlab4-tgd01             IN  AAAA	2a00:fe80:0:104::50
 ndt-iupui-mlab1-tpe01             IN  AAAA	2001:e10:6840:28::11
 ndt-iupui-mlab2-tpe01             IN  AAAA	2001:e10:6840:28::24
 ndt-iupui-mlab3-tpe01             IN  AAAA	2001:e10:6840:28::37
+ndt-iupui-mlab4-tpe01             IN  AAAA	2001:e10:6840:28::50
 ndt-iupui-mlab1-trn01             IN  AAAA	2001:7f8:23:307::203
 ndt-iupui-mlab2-trn01             IN  AAAA	2001:7f8:23:307::216
 ndt-iupui-mlab3-trn01             IN  AAAA	2001:7f8:23:307::229
@@ -9205,6 +9221,7 @@ ndt-iupui-mlab4v6-tgd01           IN  AAAA	2a00:fe80:0:104::50
 ndt-iupui-mlab1v6-tpe01           IN  AAAA	2001:e10:6840:28::11
 ndt-iupui-mlab2v6-tpe01           IN  AAAA	2001:e10:6840:28::24
 ndt-iupui-mlab3v6-tpe01           IN  AAAA	2001:e10:6840:28::37
+ndt-iupui-mlab4v6-tpe01           IN  AAAA	2001:e10:6840:28::50
 ndt-iupui-mlab1v6-trn01           IN  AAAA	2001:7f8:23:307::203
 ndt-iupui-mlab2v6-trn01           IN  AAAA	2001:7f8:23:307::216
 ndt-iupui-mlab3v6-trn01           IN  AAAA	2001:7f8:23:307::229
@@ -10207,6 +10224,8 @@ npad.iupui.tpe01                  IN  A   	163.22.28.25
 npad.iupui.mlab2.tpe01            IN  A   	163.22.28.25
 npad.iupui.tpe01                  IN  A   	163.22.28.38
 npad.iupui.mlab3.tpe01            IN  A   	163.22.28.38
+npad.iupui.tpe01                  IN  A   	163.22.28.51
+npad.iupui.mlab4.tpe01            IN  A   	163.22.28.51
 npad.iupui.trn01                  IN  A   	194.116.85.204
 npad.iupui.mlab1.trn01            IN  A   	194.116.85.204
 npad.iupui.trn01                  IN  A   	194.116.85.217
@@ -11265,6 +11284,8 @@ npad.iupuiv4.tpe01                IN  A   	163.22.28.25
 npad.iupui.mlab2v4.tpe01          IN  A   	163.22.28.25
 npad.iupuiv4.tpe01                IN  A   	163.22.28.38
 npad.iupui.mlab3v4.tpe01          IN  A   	163.22.28.38
+npad.iupuiv4.tpe01                IN  A   	163.22.28.51
+npad.iupui.mlab4v4.tpe01          IN  A   	163.22.28.51
 npad.iupuiv4.trn01                IN  A   	194.116.85.204
 npad.iupui.mlab1v4.trn01          IN  A   	194.116.85.204
 npad.iupuiv4.trn01                IN  A   	194.116.85.217
@@ -12291,6 +12312,8 @@ npad.iupui.tpe01                  IN  AAAA	2001:e10:6840:28::25
 npad.iupui.mlab2.tpe01            IN  AAAA	2001:e10:6840:28::25
 npad.iupui.tpe01                  IN  AAAA	2001:e10:6840:28::38
 npad.iupui.mlab3.tpe01            IN  AAAA	2001:e10:6840:28::38
+npad.iupui.tpe01                  IN  AAAA	2001:e10:6840:28::51
+npad.iupui.mlab4.tpe01            IN  AAAA	2001:e10:6840:28::51
 npad.iupui.trn01                  IN  AAAA	2001:7f8:23:307::204
 npad.iupui.mlab1.trn01            IN  AAAA	2001:7f8:23:307::204
 npad.iupui.trn01                  IN  AAAA	2001:7f8:23:307::217
@@ -13317,6 +13340,8 @@ npad.iupuiv6.tpe01                IN  AAAA	2001:e10:6840:28::25
 npad.iupui.mlab2v6.tpe01          IN  AAAA	2001:e10:6840:28::25
 npad.iupuiv6.tpe01                IN  AAAA	2001:e10:6840:28::38
 npad.iupui.mlab3v6.tpe01          IN  AAAA	2001:e10:6840:28::38
+npad.iupuiv6.tpe01                IN  AAAA	2001:e10:6840:28::51
+npad.iupui.mlab4v6.tpe01          IN  AAAA	2001:e10:6840:28::51
 npad.iupuiv6.trn01                IN  AAAA	2001:7f8:23:307::204
 npad.iupui.mlab1v6.trn01          IN  AAAA	2001:7f8:23:307::204
 npad.iupuiv6.trn01                IN  AAAA	2001:7f8:23:307::217
@@ -14375,6 +14400,8 @@ diff.mlab.tpe01                   IN  A   	163.22.28.27
 diff.mlab.mlab2.tpe01             IN  A   	163.22.28.27
 diff.mlab.tpe01                   IN  A   	163.22.28.40
 diff.mlab.mlab3.tpe01             IN  A   	163.22.28.40
+diff.mlab.tpe01                   IN  A   	163.22.28.53
+diff.mlab.mlab4.tpe01             IN  A   	163.22.28.53
 diff.mlab.trn01                   IN  A   	194.116.85.206
 diff.mlab.mlab1.trn01             IN  A   	194.116.85.206
 diff.mlab.trn01                   IN  A   	194.116.85.219
@@ -15433,6 +15460,8 @@ diff.mlabv4.tpe01                 IN  A   	163.22.28.27
 diff.mlab.mlab2v4.tpe01           IN  A   	163.22.28.27
 diff.mlabv4.tpe01                 IN  A   	163.22.28.40
 diff.mlab.mlab3v4.tpe01           IN  A   	163.22.28.40
+diff.mlabv4.tpe01                 IN  A   	163.22.28.53
+diff.mlab.mlab4v4.tpe01           IN  A   	163.22.28.53
 diff.mlabv4.trn01                 IN  A   	194.116.85.206
 diff.mlab.mlab1v4.trn01           IN  A   	194.116.85.206
 diff.mlabv4.trn01                 IN  A   	194.116.85.219
@@ -16459,6 +16488,8 @@ diff.mlab.tpe01                   IN  AAAA	2001:e10:6840:28::27
 diff.mlab.mlab2.tpe01             IN  AAAA	2001:e10:6840:28::27
 diff.mlab.tpe01                   IN  AAAA	2001:e10:6840:28::40
 diff.mlab.mlab3.tpe01             IN  AAAA	2001:e10:6840:28::40
+diff.mlab.tpe01                   IN  AAAA	2001:e10:6840:28::53
+diff.mlab.mlab4.tpe01             IN  AAAA	2001:e10:6840:28::53
 diff.mlab.trn01                   IN  AAAA	2001:7f8:23:307::206
 diff.mlab.mlab1.trn01             IN  AAAA	2001:7f8:23:307::206
 diff.mlab.trn01                   IN  AAAA	2001:7f8:23:307::219
@@ -17485,6 +17516,8 @@ diff.mlabv6.tpe01                 IN  AAAA	2001:e10:6840:28::27
 diff.mlab.mlab2v6.tpe01           IN  AAAA	2001:e10:6840:28::27
 diff.mlabv6.tpe01                 IN  AAAA	2001:e10:6840:28::40
 diff.mlab.mlab3v6.tpe01           IN  AAAA	2001:e10:6840:28::40
+diff.mlabv6.tpe01                 IN  AAAA	2001:e10:6840:28::53
+diff.mlab.mlab4v6.tpe01           IN  AAAA	2001:e10:6840:28::53
 diff.mlabv6.trn01                 IN  AAAA	2001:7f8:23:307::206
 diff.mlab.mlab1v6.trn01           IN  AAAA	2001:7f8:23:307::206
 diff.mlabv6.trn01                 IN  AAAA	2001:7f8:23:307::219
@@ -18543,6 +18576,8 @@ geoloc4.uw.tpe01                  IN  A   	163.22.28.28
 geoloc4.uw.mlab2.tpe01            IN  A   	163.22.28.28
 geoloc4.uw.tpe01                  IN  A   	163.22.28.41
 geoloc4.uw.mlab3.tpe01            IN  A   	163.22.28.41
+geoloc4.uw.tpe01                  IN  A   	163.22.28.54
+geoloc4.uw.mlab4.tpe01            IN  A   	163.22.28.54
 geoloc4.uw.trn01                  IN  A   	194.116.85.207
 geoloc4.uw.mlab1.trn01            IN  A   	194.116.85.207
 geoloc4.uw.trn01                  IN  A   	194.116.85.220
@@ -19601,6 +19636,8 @@ geoloc4.uwv4.tpe01                IN  A   	163.22.28.28
 geoloc4.uw.mlab2v4.tpe01          IN  A   	163.22.28.28
 geoloc4.uwv4.tpe01                IN  A   	163.22.28.41
 geoloc4.uw.mlab3v4.tpe01          IN  A   	163.22.28.41
+geoloc4.uwv4.tpe01                IN  A   	163.22.28.54
+geoloc4.uw.mlab4v4.tpe01          IN  A   	163.22.28.54
 geoloc4.uwv4.trn01                IN  A   	194.116.85.207
 geoloc4.uw.mlab1v4.trn01          IN  A   	194.116.85.207
 geoloc4.uwv4.trn01                IN  A   	194.116.85.220
@@ -20679,6 +20716,8 @@ ooni.mlab.tpe01                   IN  A   	163.22.28.29
 ooni.mlab.mlab2.tpe01             IN  A   	163.22.28.29
 ooni.mlab.tpe01                   IN  A   	163.22.28.42
 ooni.mlab.mlab3.tpe01             IN  A   	163.22.28.42
+ooni.mlab.tpe01                   IN  A   	163.22.28.55
+ooni.mlab.mlab4.tpe01             IN  A   	163.22.28.55
 ooni.mlab.trn01                   IN  A   	194.116.85.208
 ooni.mlab.mlab1.trn01             IN  A   	194.116.85.208
 ooni.mlab.trn01                   IN  A   	194.116.85.221
@@ -21737,6 +21776,8 @@ ooni.mlabv4.tpe01                 IN  A   	163.22.28.29
 ooni.mlab.mlab2v4.tpe01           IN  A   	163.22.28.29
 ooni.mlabv4.tpe01                 IN  A   	163.22.28.42
 ooni.mlab.mlab3v4.tpe01           IN  A   	163.22.28.42
+ooni.mlabv4.tpe01                 IN  A   	163.22.28.55
+ooni.mlab.mlab4v4.tpe01           IN  A   	163.22.28.55
 ooni.mlabv4.trn01                 IN  A   	194.116.85.208
 ooni.mlab.mlab1v4.trn01           IN  A   	194.116.85.208
 ooni.mlabv4.trn01                 IN  A   	194.116.85.221
@@ -22763,6 +22804,8 @@ ooni.mlab.tpe01                   IN  AAAA	2001:e10:6840:28::29
 ooni.mlab.mlab2.tpe01             IN  AAAA	2001:e10:6840:28::29
 ooni.mlab.tpe01                   IN  AAAA	2001:e10:6840:28::42
 ooni.mlab.mlab3.tpe01             IN  AAAA	2001:e10:6840:28::42
+ooni.mlab.tpe01                   IN  AAAA	2001:e10:6840:28::55
+ooni.mlab.mlab4.tpe01             IN  AAAA	2001:e10:6840:28::55
 ooni.mlab.trn01                   IN  AAAA	2001:7f8:23:307::208
 ooni.mlab.mlab1.trn01             IN  AAAA	2001:7f8:23:307::208
 ooni.mlab.trn01                   IN  AAAA	2001:7f8:23:307::221
@@ -23789,6 +23832,8 @@ ooni.mlabv6.tpe01                 IN  AAAA	2001:e10:6840:28::29
 ooni.mlab.mlab2v6.tpe01           IN  AAAA	2001:e10:6840:28::29
 ooni.mlabv6.tpe01                 IN  AAAA	2001:e10:6840:28::42
 ooni.mlab.mlab3v6.tpe01           IN  AAAA	2001:e10:6840:28::42
+ooni.mlabv6.tpe01                 IN  AAAA	2001:e10:6840:28::55
+ooni.mlab.mlab4v6.tpe01           IN  AAAA	2001:e10:6840:28::55
 ooni.mlabv6.trn01                 IN  AAAA	2001:7f8:23:307::208
 ooni.mlab.mlab1v6.trn01           IN  AAAA	2001:7f8:23:307::208
 ooni.mlabv6.trn01                 IN  AAAA	2001:7f8:23:307::221
@@ -24847,6 +24892,8 @@ ispmon.samknows.tpe01             IN  A   	163.22.28.30
 ispmon.samknows.mlab2.tpe01       IN  A   	163.22.28.30
 ispmon.samknows.tpe01             IN  A   	163.22.28.43
 ispmon.samknows.mlab3.tpe01       IN  A   	163.22.28.43
+ispmon.samknows.tpe01             IN  A   	163.22.28.56
+ispmon.samknows.mlab4.tpe01       IN  A   	163.22.28.56
 ispmon.samknows.trn01             IN  A   	194.116.85.209
 ispmon.samknows.mlab1.trn01       IN  A   	194.116.85.209
 ispmon.samknows.trn01             IN  A   	194.116.85.222
@@ -25905,6 +25952,8 @@ ispmon.samknowsv4.tpe01           IN  A   	163.22.28.30
 ispmon.samknows.mlab2v4.tpe01     IN  A   	163.22.28.30
 ispmon.samknowsv4.tpe01           IN  A   	163.22.28.43
 ispmon.samknows.mlab3v4.tpe01     IN  A   	163.22.28.43
+ispmon.samknowsv4.tpe01           IN  A   	163.22.28.56
+ispmon.samknows.mlab4v4.tpe01     IN  A   	163.22.28.56
 ispmon.samknowsv4.trn01           IN  A   	194.116.85.209
 ispmon.samknows.mlab1v4.trn01     IN  A   	194.116.85.209
 ispmon.samknowsv4.trn01           IN  A   	194.116.85.222
@@ -26931,6 +26980,8 @@ ispmon.samknows.tpe01             IN  AAAA	2001:e10:6840:28::30
 ispmon.samknows.mlab2.tpe01       IN  AAAA	2001:e10:6840:28::30
 ispmon.samknows.tpe01             IN  AAAA	2001:e10:6840:28::43
 ispmon.samknows.mlab3.tpe01       IN  AAAA	2001:e10:6840:28::43
+ispmon.samknows.tpe01             IN  AAAA	2001:e10:6840:28::56
+ispmon.samknows.mlab4.tpe01       IN  AAAA	2001:e10:6840:28::56
 ispmon.samknows.trn01             IN  AAAA	2001:7f8:23:307::209
 ispmon.samknows.mlab1.trn01       IN  AAAA	2001:7f8:23:307::209
 ispmon.samknows.trn01             IN  AAAA	2001:7f8:23:307::222
@@ -27957,6 +28008,8 @@ ispmon.samknowsv6.tpe01           IN  AAAA	2001:e10:6840:28::30
 ispmon.samknows.mlab2v6.tpe01     IN  AAAA	2001:e10:6840:28::30
 ispmon.samknowsv6.tpe01           IN  AAAA	2001:e10:6840:28::43
 ispmon.samknows.mlab3v6.tpe01     IN  AAAA	2001:e10:6840:28::43
+ispmon.samknowsv6.tpe01           IN  AAAA	2001:e10:6840:28::56
+ispmon.samknows.mlab4v6.tpe01     IN  AAAA	2001:e10:6840:28::56
 ispmon.samknowsv6.trn01           IN  AAAA	2001:7f8:23:307::209
 ispmon.samknows.mlab1v6.trn01     IN  AAAA	2001:7f8:23:307::209
 ispmon.samknowsv6.trn01           IN  AAAA	2001:7f8:23:307::222
@@ -29015,6 +29068,8 @@ bismark.gt.tpe01                  IN  A   	163.22.28.31
 bismark.gt.mlab2.tpe01            IN  A   	163.22.28.31
 bismark.gt.tpe01                  IN  A   	163.22.28.44
 bismark.gt.mlab3.tpe01            IN  A   	163.22.28.44
+bismark.gt.tpe01                  IN  A   	163.22.28.57
+bismark.gt.mlab4.tpe01            IN  A   	163.22.28.57
 bismark.gt.trn01                  IN  A   	194.116.85.210
 bismark.gt.mlab1.trn01            IN  A   	194.116.85.210
 bismark.gt.trn01                  IN  A   	194.116.85.223
@@ -30073,6 +30128,8 @@ bismark.gtv4.tpe01                IN  A   	163.22.28.31
 bismark.gt.mlab2v4.tpe01          IN  A   	163.22.28.31
 bismark.gtv4.tpe01                IN  A   	163.22.28.44
 bismark.gt.mlab3v4.tpe01          IN  A   	163.22.28.44
+bismark.gtv4.tpe01                IN  A   	163.22.28.57
+bismark.gt.mlab4v4.tpe01          IN  A   	163.22.28.57
 bismark.gtv4.trn01                IN  A   	194.116.85.210
 bismark.gt.mlab1v4.trn01          IN  A   	194.116.85.210
 bismark.gtv4.trn01                IN  A   	194.116.85.223
@@ -31139,6 +31196,8 @@ neubot.mlab.tpe01                 IN  A   	163.22.28.32
 neubot.mlab.mlab2.tpe01           IN  A   	163.22.28.32
 neubot.mlab.tpe01                 IN  A   	163.22.28.45
 neubot.mlab.mlab3.tpe01           IN  A   	163.22.28.45
+neubot.mlab.tpe01                 IN  A   	163.22.28.58
+neubot.mlab.mlab4.tpe01           IN  A   	163.22.28.58
 neubot.mlab.trn01                 IN  A   	194.116.85.211
 neubot.mlab.mlab1.trn01           IN  A   	194.116.85.211
 neubot.mlab.trn01                 IN  A   	194.116.85.224
@@ -32197,6 +32256,8 @@ neubot.mlabv4.tpe01               IN  A   	163.22.28.32
 neubot.mlab.mlab2v4.tpe01         IN  A   	163.22.28.32
 neubot.mlabv4.tpe01               IN  A   	163.22.28.45
 neubot.mlab.mlab3v4.tpe01         IN  A   	163.22.28.45
+neubot.mlabv4.tpe01               IN  A   	163.22.28.58
+neubot.mlab.mlab4v4.tpe01         IN  A   	163.22.28.58
 neubot.mlabv4.trn01               IN  A   	194.116.85.211
 neubot.mlab.mlab1v4.trn01         IN  A   	194.116.85.211
 neubot.mlabv4.trn01               IN  A   	194.116.85.224
@@ -33223,6 +33284,8 @@ neubot.mlab.tpe01                 IN  AAAA	2001:e10:6840:28::32
 neubot.mlab.mlab2.tpe01           IN  AAAA	2001:e10:6840:28::32
 neubot.mlab.tpe01                 IN  AAAA	2001:e10:6840:28::45
 neubot.mlab.mlab3.tpe01           IN  AAAA	2001:e10:6840:28::45
+neubot.mlab.tpe01                 IN  AAAA	2001:e10:6840:28::58
+neubot.mlab.mlab4.tpe01           IN  AAAA	2001:e10:6840:28::58
 neubot.mlab.trn01                 IN  AAAA	2001:7f8:23:307::211
 neubot.mlab.mlab1.trn01           IN  AAAA	2001:7f8:23:307::211
 neubot.mlab.trn01                 IN  AAAA	2001:7f8:23:307::224
@@ -34249,6 +34312,8 @@ neubot.mlabv6.tpe01               IN  AAAA	2001:e10:6840:28::32
 neubot.mlab.mlab2v6.tpe01         IN  AAAA	2001:e10:6840:28::32
 neubot.mlabv6.tpe01               IN  AAAA	2001:e10:6840:28::45
 neubot.mlab.mlab3v6.tpe01         IN  AAAA	2001:e10:6840:28::45
+neubot.mlabv6.tpe01               IN  AAAA	2001:e10:6840:28::58
+neubot.mlab.mlab4v6.tpe01         IN  AAAA	2001:e10:6840:28::58
 neubot.mlabv6.trn01               IN  AAAA	2001:7f8:23:307::211
 neubot.mlab.mlab1v6.trn01         IN  AAAA	2001:7f8:23:307::211
 neubot.mlabv6.trn01               IN  AAAA	2001:7f8:23:307::224
@@ -35307,6 +35372,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2.tpe01            IN  A   	163.22.28.33
 1.michigan.tpe01                  IN  A   	163.22.28.46
 1.michigan.mlab3.tpe01            IN  A   	163.22.28.46
+1.michigan.tpe01                  IN  A   	163.22.28.59
+1.michigan.mlab4.tpe01            IN  A   	163.22.28.59
 1.michigan.trn01                  IN  A   	194.116.85.212
 1.michigan.mlab1.trn01            IN  A   	194.116.85.212
 1.michigan.trn01                  IN  A   	194.116.85.225
@@ -36365,6 +36432,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2v4.tpe01          IN  A   	163.22.28.33
 1.michiganv4.tpe01                IN  A   	163.22.28.46
 1.michigan.mlab3v4.tpe01          IN  A   	163.22.28.46
+1.michiganv4.tpe01                IN  A   	163.22.28.59
+1.michigan.mlab4v4.tpe01          IN  A   	163.22.28.59
 1.michiganv4.trn01                IN  A   	194.116.85.212
 1.michigan.mlab1v4.trn01          IN  A   	194.116.85.212
 1.michiganv4.trn01                IN  A   	194.116.85.225
@@ -37391,6 +37460,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2.tpe01            IN  AAAA	2001:e10:6840:28::33
 1.michigan.tpe01                  IN  AAAA	2001:e10:6840:28::46
 1.michigan.mlab3.tpe01            IN  AAAA	2001:e10:6840:28::46
+1.michigan.tpe01                  IN  AAAA	2001:e10:6840:28::59
+1.michigan.mlab4.tpe01            IN  AAAA	2001:e10:6840:28::59
 1.michigan.trn01                  IN  AAAA	2001:7f8:23:307::212
 1.michigan.mlab1.trn01            IN  AAAA	2001:7f8:23:307::212
 1.michigan.trn01                  IN  AAAA	2001:7f8:23:307::225
@@ -38417,6 +38488,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2v6.tpe01          IN  AAAA	2001:e10:6840:28::33
 1.michiganv6.tpe01                IN  AAAA	2001:e10:6840:28::46
 1.michigan.mlab3v6.tpe01          IN  AAAA	2001:e10:6840:28::46
+1.michiganv6.tpe01                IN  AAAA	2001:e10:6840:28::59
+1.michigan.mlab4v6.tpe01          IN  AAAA	2001:e10:6840:28::59
 1.michiganv6.trn01                IN  AAAA	2001:7f8:23:307::212
 1.michigan.mlab1v6.trn01          IN  AAAA	2001:7f8:23:307::212
 1.michiganv6.trn01                IN  AAAA	2001:7f8:23:307::225
@@ -39475,6 +39548,8 @@ utility.mlab.tpe01                IN  A   	163.22.28.34
 utility.mlab.mlab2.tpe01          IN  A   	163.22.28.34
 utility.mlab.tpe01                IN  A   	163.22.28.47
 utility.mlab.mlab3.tpe01          IN  A   	163.22.28.47
+utility.mlab.tpe01                IN  A   	163.22.28.60
+utility.mlab.mlab4.tpe01          IN  A   	163.22.28.60
 utility.mlab.trn01                IN  A   	194.116.85.213
 utility.mlab.mlab1.trn01          IN  A   	194.116.85.213
 utility.mlab.trn01                IN  A   	194.116.85.226
@@ -40533,6 +40608,8 @@ utility.mlabv4.tpe01              IN  A   	163.22.28.34
 utility.mlab.mlab2v4.tpe01        IN  A   	163.22.28.34
 utility.mlabv4.tpe01              IN  A   	163.22.28.47
 utility.mlab.mlab3v4.tpe01        IN  A   	163.22.28.47
+utility.mlabv4.tpe01              IN  A   	163.22.28.60
+utility.mlab.mlab4v4.tpe01        IN  A   	163.22.28.60
 utility.mlabv4.trn01              IN  A   	194.116.85.213
 utility.mlab.mlab1v4.trn01        IN  A   	194.116.85.213
 utility.mlabv4.trn01              IN  A   	194.116.85.226
@@ -41559,6 +41636,8 @@ utility.mlab.tpe01                IN  AAAA	2001:e10:6840:28::34
 utility.mlab.mlab2.tpe01          IN  AAAA	2001:e10:6840:28::34
 utility.mlab.tpe01                IN  AAAA	2001:e10:6840:28::47
 utility.mlab.mlab3.tpe01          IN  AAAA	2001:e10:6840:28::47
+utility.mlab.tpe01                IN  AAAA	2001:e10:6840:28::60
+utility.mlab.mlab4.tpe01          IN  AAAA	2001:e10:6840:28::60
 utility.mlab.trn01                IN  AAAA	2001:7f8:23:307::213
 utility.mlab.mlab1.trn01          IN  AAAA	2001:7f8:23:307::213
 utility.mlab.trn01                IN  AAAA	2001:7f8:23:307::226
@@ -42585,6 +42664,8 @@ utility.mlabv6.tpe01              IN  AAAA	2001:e10:6840:28::34
 utility.mlab.mlab2v6.tpe01        IN  AAAA	2001:e10:6840:28::34
 utility.mlabv6.tpe01              IN  AAAA	2001:e10:6840:28::47
 utility.mlab.mlab3v6.tpe01        IN  AAAA	2001:e10:6840:28::47
+utility.mlabv6.tpe01              IN  AAAA	2001:e10:6840:28::60
+utility.mlab.mlab4v6.tpe01        IN  AAAA	2001:e10:6840:28::60
 utility.mlabv6.trn01              IN  AAAA	2001:7f8:23:307::213
 utility.mlab.mlab1v6.trn01        IN  AAAA	2001:7f8:23:307::213
 utility.mlabv6.trn01              IN  AAAA	2001:7f8:23:307::226

@@ -3,7 +3,7 @@ $ORIGIN measurementlab.net.
 $TTL 120
 
 @    IN    SOA    sns-pb.isc.org.  support.measurementlab.net.    (
-    2017121900 ;Serial Number
+    2018100200 ;Serial Number
     1h  ;refresh
     900 ;retry
     1w  ;expire
@@ -60,6 +60,7 @@ test         IN    CNAME    ghs.googlehosted.com.
 mirror-test  IN    CNAME    c.storage.googleapis.com.
 viz          IN    CNAME    ghs.googlehosted.com.
 data-api     IN    CNAME    ghs.googlehosted.com.
+support      IN    A    35.208.161.188
 
 ;
 ; mlc services

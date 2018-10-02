@@ -60,7 +60,7 @@ test         IN    CNAME    ghs.googlehosted.com.
 mirror-test  IN    CNAME    c.storage.googleapis.com.
 viz          IN    CNAME    ghs.googlehosted.com.
 data-api     IN    CNAME    ghs.googlehosted.com.
-support	     IN    A    35.208.161.188
+support      IN    A    35.208.161.188
 
 ;
 ; mlc services

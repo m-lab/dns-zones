@@ -8,7 +8,7 @@ $ORIGIN measurement-lab.org.
 $TTL    300
 
 @       IN      SOA     sns-pb.isc.org. support.measurementlab.net. (
-        2018092800      ; Serial
+        2018101700      ; Serial
         3600     ; Refresh
         600       ; Retry
         604800      ; Expire
@@ -173,6 +173,8 @@ r1.bru03                          IN  A   	62.115.229.193
 s1.bru03                          IN  A   	62.115.229.194
 r1.bru04                          IN  A   	77.67.119.1
 s1.bru04                          IN  A   	77.67.119.2
+r1.cpt01                          IN  A   	154.114.19.65
+s1.cpt01                          IN  A   	154.114.19.66
 r1.den01                          IN  A   	184.105.23.65
 s1.den01                          IN  A   	184.105.23.66
 r1.den02                          IN  A   	4.34.58.1
@@ -496,6 +498,10 @@ mlab1d.bru04                      IN  A   	77.67.119.4
 mlab2d.bru04                      IN  A   	77.67.119.5
 mlab3d.bru04                      IN  A   	77.67.119.6
 mlab4d.bru04                      IN  A   	77.67.119.7
+mlab1d.cpt01                      IN  A   	154.114.19.68
+mlab2d.cpt01                      IN  A   	154.114.19.69
+mlab3d.cpt01                      IN  A   	154.114.19.70
+mlab4d.cpt01                      IN  A   	154.114.19.71
 mlab1d.den01                      IN  A   	184.105.23.68
 mlab2d.den01                      IN  A   	184.105.23.69
 mlab3d.den01                      IN  A   	184.105.23.70
@@ -563,6 +569,7 @@ mlab4d.fra04                      IN  A   	62.67.198.199
 mlab1d.ham01                      IN  A   	80.239.142.196
 mlab2d.ham01                      IN  A   	80.239.142.197
 mlab3d.ham01                      IN  A   	80.239.142.198
+mlab4d.ham01                      IN  A   	80.239.142.199
 mlab1d.hnd01                      IN  A   	203.178.130.196
 mlab2d.hnd01                      IN  A   	203.178.130.197
 mlab3d.hnd01                      IN  A   	203.178.130.198
@@ -594,6 +601,7 @@ mlab4d.iad06                      IN  A   	209.170.119.199
 mlab1d.jnb01                      IN  A   	196.24.45.132
 mlab2d.jnb01                      IN  A   	196.24.45.133
 mlab3d.jnb01                      IN  A   	196.24.45.134
+mlab4d.jnb01                      IN  A   	196.24.45.135
 mlab1d.lax01                      IN  A   	38.98.51.4
 mlab2d.lax01                      IN  A   	38.98.51.5
 mlab3d.lax01                      IN  A   	38.98.51.6
@@ -730,6 +738,7 @@ mlab4d.mnl01                      IN  A   	202.90.156.7
 mlab1d.mpm01                      IN  A   	41.94.23.4
 mlab2d.mpm01                      IN  A   	41.94.23.5
 mlab3d.mpm01                      IN  A   	41.94.23.6
+mlab4d.mpm01                      IN  A   	41.94.23.7
 mlab1d.nbo01                      IN  A   	197.136.0.68
 mlab2d.nbo01                      IN  A   	197.136.0.69
 mlab3d.nbo01                      IN  A   	197.136.0.70
@@ -1027,6 +1036,10 @@ mlab1.bru04                       IN  A   	77.67.119.9
 mlab2.bru04                       IN  A   	77.67.119.22
 mlab3.bru04                       IN  A   	77.67.119.35
 mlab4.bru04                       IN  A   	77.67.119.48
+mlab1.cpt01                       IN  A   	154.114.19.73
+mlab2.cpt01                       IN  A   	154.114.19.86
+mlab3.cpt01                       IN  A   	154.114.19.99
+mlab4.cpt01                       IN  A   	154.114.19.112
 mlab1.den01                       IN  A   	184.105.23.73
 mlab2.den01                       IN  A   	184.105.23.86
 mlab3.den01                       IN  A   	184.105.23.99
@@ -1094,6 +1107,7 @@ mlab4.fra04                       IN  A   	62.67.198.240
 mlab1.ham01                       IN  A   	80.239.142.201
 mlab2.ham01                       IN  A   	80.239.142.214
 mlab3.ham01                       IN  A   	80.239.142.227
+mlab4.ham01                       IN  A   	80.239.142.240
 mlab1.hnd01                       IN  A   	203.178.130.201
 mlab2.hnd01                       IN  A   	203.178.130.214
 mlab3.hnd01                       IN  A   	203.178.130.227
@@ -1125,6 +1139,7 @@ mlab4.iad06                       IN  A   	209.170.119.240
 mlab1.jnb01                       IN  A   	196.24.45.137
 mlab2.jnb01                       IN  A   	196.24.45.150
 mlab3.jnb01                       IN  A   	196.24.45.163
+mlab4.jnb01                       IN  A   	196.24.45.176
 mlab1.lax01                       IN  A   	38.98.51.9
 mlab2.lax01                       IN  A   	38.98.51.22
 mlab3.lax01                       IN  A   	38.98.51.35
@@ -1261,6 +1276,7 @@ mlab4.mnl01                       IN  A   	202.90.156.48
 mlab1.mpm01                       IN  A   	41.94.23.9
 mlab2.mpm01                       IN  A   	41.94.23.22
 mlab3.mpm01                       IN  A   	41.94.23.35
+mlab4.mpm01                       IN  A   	41.94.23.48
 mlab1.nbo01                       IN  A   	197.136.0.73
 mlab2.nbo01                       IN  A   	197.136.0.86
 mlab3.nbo01                       IN  A   	197.136.0.99
@@ -1558,6 +1574,10 @@ mlab1v4.bru04                     IN  A   	77.67.119.9
 mlab2v4.bru04                     IN  A   	77.67.119.22
 mlab3v4.bru04                     IN  A   	77.67.119.35
 mlab4v4.bru04                     IN  A   	77.67.119.48
+mlab1v4.cpt01                     IN  A   	154.114.19.73
+mlab2v4.cpt01                     IN  A   	154.114.19.86
+mlab3v4.cpt01                     IN  A   	154.114.19.99
+mlab4v4.cpt01                     IN  A   	154.114.19.112
 mlab1v4.den01                     IN  A   	184.105.23.73
 mlab2v4.den01                     IN  A   	184.105.23.86
 mlab3v4.den01                     IN  A   	184.105.23.99
@@ -1625,6 +1645,7 @@ mlab4v4.fra04                     IN  A   	62.67.198.240
 mlab1v4.ham01                     IN  A   	80.239.142.201
 mlab2v4.ham01                     IN  A   	80.239.142.214
 mlab3v4.ham01                     IN  A   	80.239.142.227
+mlab4v4.ham01                     IN  A   	80.239.142.240
 mlab1v4.hnd01                     IN  A   	203.178.130.201
 mlab2v4.hnd01                     IN  A   	203.178.130.214
 mlab3v4.hnd01                     IN  A   	203.178.130.227
@@ -1656,6 +1677,7 @@ mlab4v4.iad06                     IN  A   	209.170.119.240
 mlab1v4.jnb01                     IN  A   	196.24.45.137
 mlab2v4.jnb01                     IN  A   	196.24.45.150
 mlab3v4.jnb01                     IN  A   	196.24.45.163
+mlab4v4.jnb01                     IN  A   	196.24.45.176
 mlab1v4.lax01                     IN  A   	38.98.51.9
 mlab2v4.lax01                     IN  A   	38.98.51.22
 mlab3v4.lax01                     IN  A   	38.98.51.35
@@ -1792,6 +1814,7 @@ mlab4v4.mnl01                     IN  A   	202.90.156.48
 mlab1v4.mpm01                     IN  A   	41.94.23.9
 mlab2v4.mpm01                     IN  A   	41.94.23.22
 mlab3v4.mpm01                     IN  A   	41.94.23.35
+mlab4v4.mpm01                     IN  A   	41.94.23.48
 mlab1v4.nbo01                     IN  A   	197.136.0.73
 mlab2v4.nbo01                     IN  A   	197.136.0.86
 mlab3v4.nbo01                     IN  A   	197.136.0.99
@@ -2086,6 +2109,10 @@ mlab1.bru04                       IN  AAAA	2001:668:1f:69::9
 mlab2.bru04                       IN  AAAA	2001:668:1f:69::22
 mlab3.bru04                       IN  AAAA	2001:668:1f:69::35
 mlab4.bru04                       IN  AAAA	2001:668:1f:69::48
+mlab1.cpt01                       IN  AAAA	2001:4200:0:e::73
+mlab2.cpt01                       IN  AAAA	2001:4200:0:e::86
+mlab3.cpt01                       IN  AAAA	2001:4200:0:e::99
+mlab4.cpt01                       IN  AAAA	2001:4200:0:e::112
 mlab1.den01                       IN  AAAA	2001:470:1:250::73
 mlab2.den01                       IN  AAAA	2001:470:1:250::86
 mlab3.den01                       IN  AAAA	2001:470:1:250::99
@@ -2153,6 +2180,7 @@ mlab4.fra04                       IN  AAAA	2001:4c08:2003:40::240
 mlab1.ham01                       IN  AAAA	2001:2030:0:19::201
 mlab2.ham01                       IN  AAAA	2001:2030:0:19::214
 mlab3.ham01                       IN  AAAA	2001:2030:0:19::227
+mlab4.ham01                       IN  AAAA	2001:2030:0:19::240
 mlab1.hnd01                       IN  AAAA	2001:200:0:b801::201
 mlab2.hnd01                       IN  AAAA	2001:200:0:b801::214
 mlab3.hnd01                       IN  AAAA	2001:200:0:b801::227
@@ -2184,6 +2212,7 @@ mlab4.iad06                       IN  AAAA	2001:2030:0:29::240
 mlab1.jnb01                       IN  AAAA	2001:4200:fff0:4512::137
 mlab2.jnb01                       IN  AAAA	2001:4200:fff0:4512::150
 mlab3.jnb01                       IN  AAAA	2001:4200:fff0:4512::163
+mlab4.jnb01                       IN  AAAA	2001:4200:fff0:4512::176
 mlab1.lax01                       IN  AAAA	2001:550:6800::9
 mlab2.lax01                       IN  AAAA	2001:550:6800::22
 mlab3.lax01                       IN  AAAA	2001:550:6800::35
@@ -2601,6 +2630,10 @@ mlab1v6.bru04                     IN  AAAA	2001:668:1f:69::9
 mlab2v6.bru04                     IN  AAAA	2001:668:1f:69::22
 mlab3v6.bru04                     IN  AAAA	2001:668:1f:69::35
 mlab4v6.bru04                     IN  AAAA	2001:668:1f:69::48
+mlab1v6.cpt01                     IN  AAAA	2001:4200:0:e::73
+mlab2v6.cpt01                     IN  AAAA	2001:4200:0:e::86
+mlab3v6.cpt01                     IN  AAAA	2001:4200:0:e::99
+mlab4v6.cpt01                     IN  AAAA	2001:4200:0:e::112
 mlab1v6.den01                     IN  AAAA	2001:470:1:250::73
 mlab2v6.den01                     IN  AAAA	2001:470:1:250::86
 mlab3v6.den01                     IN  AAAA	2001:470:1:250::99
@@ -2668,6 +2701,7 @@ mlab4v6.fra04                     IN  AAAA	2001:4c08:2003:40::240
 mlab1v6.ham01                     IN  AAAA	2001:2030:0:19::201
 mlab2v6.ham01                     IN  AAAA	2001:2030:0:19::214
 mlab3v6.ham01                     IN  AAAA	2001:2030:0:19::227
+mlab4v6.ham01                     IN  AAAA	2001:2030:0:19::240
 mlab1v6.hnd01                     IN  AAAA	2001:200:0:b801::201
 mlab2v6.hnd01                     IN  AAAA	2001:200:0:b801::214
 mlab3v6.hnd01                     IN  AAAA	2001:200:0:b801::227
@@ -2699,6 +2733,7 @@ mlab4v6.iad06                     IN  AAAA	2001:2030:0:29::240
 mlab1v6.jnb01                     IN  AAAA	2001:4200:fff0:4512::137
 mlab2v6.jnb01                     IN  AAAA	2001:4200:fff0:4512::150
 mlab3v6.jnb01                     IN  AAAA	2001:4200:fff0:4512::163
+mlab4v6.jnb01                     IN  AAAA	2001:4200:fff0:4512::176
 mlab1v6.lax01                     IN  AAAA	2001:550:6800::9
 mlab2v6.lax01                     IN  AAAA	2001:550:6800::22
 mlab3v6.lax01                     IN  AAAA	2001:550:6800::35
@@ -3226,6 +3261,14 @@ ndt.iupui.bru04                   IN  A   	77.67.119.37
 ndt.iupui.mlab3.bru04             IN  A   	77.67.119.37
 ndt.iupui.bru04                   IN  A   	77.67.119.50
 ndt.iupui.mlab4.bru04             IN  A   	77.67.119.50
+ndt.iupui.cpt01                   IN  A   	154.114.19.75
+ndt.iupui.mlab1.cpt01             IN  A   	154.114.19.75
+ndt.iupui.cpt01                   IN  A   	154.114.19.88
+ndt.iupui.mlab2.cpt01             IN  A   	154.114.19.88
+ndt.iupui.cpt01                   IN  A   	154.114.19.101
+ndt.iupui.mlab3.cpt01             IN  A   	154.114.19.101
+ndt.iupui.cpt01                   IN  A   	154.114.19.114
+ndt.iupui.mlab4.cpt01             IN  A   	154.114.19.114
 ndt.iupui.den01                   IN  A   	184.105.23.75
 ndt.iupui.mlab1.den01             IN  A   	184.105.23.75
 ndt.iupui.den01                   IN  A   	184.105.23.88
@@ -3360,6 +3403,8 @@ ndt.iupui.ham01                   IN  A   	80.239.142.216
 ndt.iupui.mlab2.ham01             IN  A   	80.239.142.216
 ndt.iupui.ham01                   IN  A   	80.239.142.233
 ndt.iupui.mlab3.ham01             IN  A   	80.239.142.233
+ndt.iupui.ham01                   IN  A   	80.239.142.242
+ndt.iupui.mlab4.ham01             IN  A   	80.239.142.242
 ndt.iupui.hnd01                   IN  A   	203.178.130.203
 ndt.iupui.mlab1.hnd01             IN  A   	203.178.130.203
 ndt.iupui.hnd01                   IN  A   	203.178.130.216
@@ -3422,6 +3467,8 @@ ndt.iupui.jnb01                   IN  A   	196.24.45.152
 ndt.iupui.mlab2.jnb01             IN  A   	196.24.45.152
 ndt.iupui.jnb01                   IN  A   	196.24.45.165
 ndt.iupui.mlab3.jnb01             IN  A   	196.24.45.165
+ndt.iupui.jnb01                   IN  A   	196.24.45.178
+ndt.iupui.mlab4.jnb01             IN  A   	196.24.45.178
 ndt.iupui.lax01                   IN  A   	38.98.51.20
 ndt.iupui.mlab1.lax01             IN  A   	38.98.51.20
 ndt.iupui.lax01                   IN  A   	38.98.51.33
@@ -3694,6 +3741,8 @@ ndt.iupui.mpm01                   IN  A   	41.94.23.24
 ndt.iupui.mlab2.mpm01             IN  A   	41.94.23.24
 ndt.iupui.mpm01                   IN  A   	41.94.23.37
 ndt.iupui.mlab3.mpm01             IN  A   	41.94.23.37
+ndt.iupui.mpm01                   IN  A   	41.94.23.50
+ndt.iupui.mlab4.mpm01             IN  A   	41.94.23.50
 ndt.iupui.nbo01                   IN  A   	197.136.0.75
 ndt.iupui.mlab1.nbo01             IN  A   	197.136.0.75
 ndt.iupui.nbo01                   IN  A   	197.136.0.88
@@ -4286,6 +4335,14 @@ ndt.iupuiv4.bru04                 IN  A   	77.67.119.37
 ndt.iupui.mlab3v4.bru04           IN  A   	77.67.119.37
 ndt.iupuiv4.bru04                 IN  A   	77.67.119.50
 ndt.iupui.mlab4v4.bru04           IN  A   	77.67.119.50
+ndt.iupuiv4.cpt01                 IN  A   	154.114.19.75
+ndt.iupui.mlab1v4.cpt01           IN  A   	154.114.19.75
+ndt.iupuiv4.cpt01                 IN  A   	154.114.19.88
+ndt.iupui.mlab2v4.cpt01           IN  A   	154.114.19.88
+ndt.iupuiv4.cpt01                 IN  A   	154.114.19.101
+ndt.iupui.mlab3v4.cpt01           IN  A   	154.114.19.101
+ndt.iupuiv4.cpt01                 IN  A   	154.114.19.114
+ndt.iupui.mlab4v4.cpt01           IN  A   	154.114.19.114
 ndt.iupuiv4.den01                 IN  A   	184.105.23.75
 ndt.iupui.mlab1v4.den01           IN  A   	184.105.23.75
 ndt.iupuiv4.den01                 IN  A   	184.105.23.88
@@ -4420,6 +4477,8 @@ ndt.iupuiv4.ham01                 IN  A   	80.239.142.216
 ndt.iupui.mlab2v4.ham01           IN  A   	80.239.142.216
 ndt.iupuiv4.ham01                 IN  A   	80.239.142.233
 ndt.iupui.mlab3v4.ham01           IN  A   	80.239.142.233
+ndt.iupuiv4.ham01                 IN  A   	80.239.142.242
+ndt.iupui.mlab4v4.ham01           IN  A   	80.239.142.242
 ndt.iupuiv4.hnd01                 IN  A   	203.178.130.203
 ndt.iupui.mlab1v4.hnd01           IN  A   	203.178.130.203
 ndt.iupuiv4.hnd01                 IN  A   	203.178.130.216
@@ -4482,6 +4541,8 @@ ndt.iupuiv4.jnb01                 IN  A   	196.24.45.152
 ndt.iupui.mlab2v4.jnb01           IN  A   	196.24.45.152
 ndt.iupuiv4.jnb01                 IN  A   	196.24.45.165
 ndt.iupui.mlab3v4.jnb01           IN  A   	196.24.45.165
+ndt.iupuiv4.jnb01                 IN  A   	196.24.45.178
+ndt.iupui.mlab4v4.jnb01           IN  A   	196.24.45.178
 ndt.iupuiv4.lax01                 IN  A   	38.98.51.20
 ndt.iupui.mlab1v4.lax01           IN  A   	38.98.51.20
 ndt.iupuiv4.lax01                 IN  A   	38.98.51.33
@@ -4754,6 +4815,8 @@ ndt.iupuiv4.mpm01                 IN  A   	41.94.23.24
 ndt.iupui.mlab2v4.mpm01           IN  A   	41.94.23.24
 ndt.iupuiv4.mpm01                 IN  A   	41.94.23.37
 ndt.iupui.mlab3v4.mpm01           IN  A   	41.94.23.37
+ndt.iupuiv4.mpm01                 IN  A   	41.94.23.50
+ndt.iupui.mlab4v4.mpm01           IN  A   	41.94.23.50
 ndt.iupuiv4.nbo01                 IN  A   	197.136.0.75
 ndt.iupui.mlab1v4.nbo01           IN  A   	197.136.0.75
 ndt.iupuiv4.nbo01                 IN  A   	197.136.0.88
@@ -5340,6 +5403,14 @@ ndt.iupui.bru04                   IN  AAAA	2001:668:1f:69::37
 ndt.iupui.mlab3.bru04             IN  AAAA	2001:668:1f:69::37
 ndt.iupui.bru04                   IN  AAAA	2001:668:1f:69::50
 ndt.iupui.mlab4.bru04             IN  AAAA	2001:668:1f:69::50
+ndt.iupui.cpt01                   IN  AAAA	2001:4200:0:e::75
+ndt.iupui.mlab1.cpt01             IN  AAAA	2001:4200:0:e::75
+ndt.iupui.cpt01                   IN  AAAA	2001:4200:0:e::88
+ndt.iupui.mlab2.cpt01             IN  AAAA	2001:4200:0:e::88
+ndt.iupui.cpt01                   IN  AAAA	2001:4200:0:e::101
+ndt.iupui.mlab3.cpt01             IN  AAAA	2001:4200:0:e::101
+ndt.iupui.cpt01                   IN  AAAA	2001:4200:0:e::114
+ndt.iupui.mlab4.cpt01             IN  AAAA	2001:4200:0:e::114
 ndt.iupui.den01                   IN  AAAA	2001:470:1:250::75
 ndt.iupui.mlab1.den01             IN  AAAA	2001:470:1:250::75
 ndt.iupui.den01                   IN  AAAA	2001:470:1:250::88
@@ -5474,6 +5545,8 @@ ndt.iupui.ham01                   IN  AAAA	2001:2030:0:19::216
 ndt.iupui.mlab2.ham01             IN  AAAA	2001:2030:0:19::216
 ndt.iupui.ham01                   IN  AAAA	2001:2030:0:19::233
 ndt.iupui.mlab3.ham01             IN  AAAA	2001:2030:0:19::233
+ndt.iupui.ham01                   IN  AAAA	2001:2030:0:19::242
+ndt.iupui.mlab4.ham01             IN  AAAA	2001:2030:0:19::242
 ndt.iupui.hnd01                   IN  AAAA	2001:200:0:b801::203
 ndt.iupui.mlab1.hnd01             IN  AAAA	2001:200:0:b801::203
 ndt.iupui.hnd01                   IN  AAAA	2001:200:0:b801::216
@@ -5536,6 +5609,8 @@ ndt.iupui.jnb01                   IN  AAAA	2001:4200:fff0:4512::152
 ndt.iupui.mlab2.jnb01             IN  AAAA	2001:4200:fff0:4512::152
 ndt.iupui.jnb01                   IN  AAAA	2001:4200:fff0:4512::165
 ndt.iupui.mlab3.jnb01             IN  AAAA	2001:4200:fff0:4512::165
+ndt.iupui.jnb01                   IN  AAAA	2001:4200:fff0:4512::178
+ndt.iupui.mlab4.jnb01             IN  AAAA	2001:4200:fff0:4512::178
 ndt.iupui.lax01                   IN  AAAA	2001:550:6800::20
 ndt.iupui.mlab1.lax01             IN  AAAA	2001:550:6800::20
 ndt.iupui.lax01                   IN  AAAA	2001:550:6800::33
@@ -6368,6 +6443,14 @@ ndt.iupuiv6.bru04                 IN  AAAA	2001:668:1f:69::37
 ndt.iupui.mlab3v6.bru04           IN  AAAA	2001:668:1f:69::37
 ndt.iupuiv6.bru04                 IN  AAAA	2001:668:1f:69::50
 ndt.iupui.mlab4v6.bru04           IN  AAAA	2001:668:1f:69::50
+ndt.iupuiv6.cpt01                 IN  AAAA	2001:4200:0:e::75
+ndt.iupui.mlab1v6.cpt01           IN  AAAA	2001:4200:0:e::75
+ndt.iupuiv6.cpt01                 IN  AAAA	2001:4200:0:e::88
+ndt.iupui.mlab2v6.cpt01           IN  AAAA	2001:4200:0:e::88
+ndt.iupuiv6.cpt01                 IN  AAAA	2001:4200:0:e::101
+ndt.iupui.mlab3v6.cpt01           IN  AAAA	2001:4200:0:e::101
+ndt.iupuiv6.cpt01                 IN  AAAA	2001:4200:0:e::114
+ndt.iupui.mlab4v6.cpt01           IN  AAAA	2001:4200:0:e::114
 ndt.iupuiv6.den01                 IN  AAAA	2001:470:1:250::75
 ndt.iupui.mlab1v6.den01           IN  AAAA	2001:470:1:250::75
 ndt.iupuiv6.den01                 IN  AAAA	2001:470:1:250::88
@@ -6502,6 +6585,8 @@ ndt.iupuiv6.ham01                 IN  AAAA	2001:2030:0:19::216
 ndt.iupui.mlab2v6.ham01           IN  AAAA	2001:2030:0:19::216
 ndt.iupuiv6.ham01                 IN  AAAA	2001:2030:0:19::233
 ndt.iupui.mlab3v6.ham01           IN  AAAA	2001:2030:0:19::233
+ndt.iupuiv6.ham01                 IN  AAAA	2001:2030:0:19::242
+ndt.iupui.mlab4v6.ham01           IN  AAAA	2001:2030:0:19::242
 ndt.iupuiv6.hnd01                 IN  AAAA	2001:200:0:b801::203
 ndt.iupui.mlab1v6.hnd01           IN  AAAA	2001:200:0:b801::203
 ndt.iupuiv6.hnd01                 IN  AAAA	2001:200:0:b801::216
@@ -6564,6 +6649,8 @@ ndt.iupuiv6.jnb01                 IN  AAAA	2001:4200:fff0:4512::152
 ndt.iupui.mlab2v6.jnb01           IN  AAAA	2001:4200:fff0:4512::152
 ndt.iupuiv6.jnb01                 IN  AAAA	2001:4200:fff0:4512::165
 ndt.iupui.mlab3v6.jnb01           IN  AAAA	2001:4200:fff0:4512::165
+ndt.iupuiv6.jnb01                 IN  AAAA	2001:4200:fff0:4512::178
+ndt.iupui.mlab4v6.jnb01           IN  AAAA	2001:4200:fff0:4512::178
 ndt.iupuiv6.lax01                 IN  AAAA	2001:550:6800::20
 ndt.iupui.mlab1v6.lax01           IN  AAAA	2001:550:6800::20
 ndt.iupuiv6.lax01                 IN  AAAA	2001:550:6800::33
@@ -7295,6 +7382,10 @@ ndt-iupui-mlab1-bru04             IN  A   	77.67.119.11
 ndt-iupui-mlab2-bru04             IN  A   	77.67.119.24
 ndt-iupui-mlab3-bru04             IN  A   	77.67.119.37
 ndt-iupui-mlab4-bru04             IN  A   	77.67.119.50
+ndt-iupui-mlab1-cpt01             IN  A   	154.114.19.75
+ndt-iupui-mlab2-cpt01             IN  A   	154.114.19.88
+ndt-iupui-mlab3-cpt01             IN  A   	154.114.19.101
+ndt-iupui-mlab4-cpt01             IN  A   	154.114.19.114
 ndt-iupui-mlab1-den01             IN  A   	184.105.23.75
 ndt-iupui-mlab2-den01             IN  A   	184.105.23.88
 ndt-iupui-mlab3-den01             IN  A   	184.105.23.101
@@ -7362,6 +7453,7 @@ ndt-iupui-mlab4-fra04             IN  A   	62.67.198.242
 ndt-iupui-mlab1-ham01             IN  A   	80.239.142.203
 ndt-iupui-mlab2-ham01             IN  A   	80.239.142.216
 ndt-iupui-mlab3-ham01             IN  A   	80.239.142.233
+ndt-iupui-mlab4-ham01             IN  A   	80.239.142.242
 ndt-iupui-mlab1-hnd01             IN  A   	203.178.130.203
 ndt-iupui-mlab2-hnd01             IN  A   	203.178.130.216
 ndt-iupui-mlab3-hnd01             IN  A   	203.178.130.229
@@ -7393,6 +7485,7 @@ ndt-iupui-mlab4-iad06             IN  A   	209.170.119.242
 ndt-iupui-mlab1-jnb01             IN  A   	196.24.45.139
 ndt-iupui-mlab2-jnb01             IN  A   	196.24.45.152
 ndt-iupui-mlab3-jnb01             IN  A   	196.24.45.165
+ndt-iupui-mlab4-jnb01             IN  A   	196.24.45.178
 ndt-iupui-mlab1-lax01             IN  A   	38.98.51.20
 ndt-iupui-mlab2-lax01             IN  A   	38.98.51.33
 ndt-iupui-mlab3-lax01             IN  A   	38.98.51.45
@@ -7529,6 +7622,7 @@ ndt-iupui-mlab4-mnl01             IN  A   	202.90.156.50
 ndt-iupui-mlab1-mpm01             IN  A   	41.94.23.11
 ndt-iupui-mlab2-mpm01             IN  A   	41.94.23.24
 ndt-iupui-mlab3-mpm01             IN  A   	41.94.23.37
+ndt-iupui-mlab4-mpm01             IN  A   	41.94.23.50
 ndt-iupui-mlab1-nbo01             IN  A   	197.136.0.75
 ndt-iupui-mlab2-nbo01             IN  A   	197.136.0.88
 ndt-iupui-mlab3-nbo01             IN  A   	197.136.0.101
@@ -7826,6 +7920,10 @@ ndt-iupui-mlab1v4-bru04           IN  A   	77.67.119.11
 ndt-iupui-mlab2v4-bru04           IN  A   	77.67.119.24
 ndt-iupui-mlab3v4-bru04           IN  A   	77.67.119.37
 ndt-iupui-mlab4v4-bru04           IN  A   	77.67.119.50
+ndt-iupui-mlab1v4-cpt01           IN  A   	154.114.19.75
+ndt-iupui-mlab2v4-cpt01           IN  A   	154.114.19.88
+ndt-iupui-mlab3v4-cpt01           IN  A   	154.114.19.101
+ndt-iupui-mlab4v4-cpt01           IN  A   	154.114.19.114
 ndt-iupui-mlab1v4-den01           IN  A   	184.105.23.75
 ndt-iupui-mlab2v4-den01           IN  A   	184.105.23.88
 ndt-iupui-mlab3v4-den01           IN  A   	184.105.23.101
@@ -7893,6 +7991,7 @@ ndt-iupui-mlab4v4-fra04           IN  A   	62.67.198.242
 ndt-iupui-mlab1v4-ham01           IN  A   	80.239.142.203
 ndt-iupui-mlab2v4-ham01           IN  A   	80.239.142.216
 ndt-iupui-mlab3v4-ham01           IN  A   	80.239.142.233
+ndt-iupui-mlab4v4-ham01           IN  A   	80.239.142.242
 ndt-iupui-mlab1v4-hnd01           IN  A   	203.178.130.203
 ndt-iupui-mlab2v4-hnd01           IN  A   	203.178.130.216
 ndt-iupui-mlab3v4-hnd01           IN  A   	203.178.130.229
@@ -7924,6 +8023,7 @@ ndt-iupui-mlab4v4-iad06           IN  A   	209.170.119.242
 ndt-iupui-mlab1v4-jnb01           IN  A   	196.24.45.139
 ndt-iupui-mlab2v4-jnb01           IN  A   	196.24.45.152
 ndt-iupui-mlab3v4-jnb01           IN  A   	196.24.45.165
+ndt-iupui-mlab4v4-jnb01           IN  A   	196.24.45.178
 ndt-iupui-mlab1v4-lax01           IN  A   	38.98.51.20
 ndt-iupui-mlab2v4-lax01           IN  A   	38.98.51.33
 ndt-iupui-mlab3v4-lax01           IN  A   	38.98.51.45
@@ -8060,6 +8160,7 @@ ndt-iupui-mlab4v4-mnl01           IN  A   	202.90.156.50
 ndt-iupui-mlab1v4-mpm01           IN  A   	41.94.23.11
 ndt-iupui-mlab2v4-mpm01           IN  A   	41.94.23.24
 ndt-iupui-mlab3v4-mpm01           IN  A   	41.94.23.37
+ndt-iupui-mlab4v4-mpm01           IN  A   	41.94.23.50
 ndt-iupui-mlab1v4-nbo01           IN  A   	197.136.0.75
 ndt-iupui-mlab2v4-nbo01           IN  A   	197.136.0.88
 ndt-iupui-mlab3v4-nbo01           IN  A   	197.136.0.101
@@ -8354,6 +8455,10 @@ ndt-iupui-mlab1-bru04             IN  AAAA	2001:668:1f:69::11
 ndt-iupui-mlab2-bru04             IN  AAAA	2001:668:1f:69::24
 ndt-iupui-mlab3-bru04             IN  AAAA	2001:668:1f:69::37
 ndt-iupui-mlab4-bru04             IN  AAAA	2001:668:1f:69::50
+ndt-iupui-mlab1-cpt01             IN  AAAA	2001:4200:0:e::75
+ndt-iupui-mlab2-cpt01             IN  AAAA	2001:4200:0:e::88
+ndt-iupui-mlab3-cpt01             IN  AAAA	2001:4200:0:e::101
+ndt-iupui-mlab4-cpt01             IN  AAAA	2001:4200:0:e::114
 ndt-iupui-mlab1-den01             IN  AAAA	2001:470:1:250::75
 ndt-iupui-mlab2-den01             IN  AAAA	2001:470:1:250::88
 ndt-iupui-mlab3-den01             IN  AAAA	2001:470:1:250::101
@@ -8421,6 +8526,7 @@ ndt-iupui-mlab4-fra04             IN  AAAA	2001:4c08:2003:40::242
 ndt-iupui-mlab1-ham01             IN  AAAA	2001:2030:0:19::203
 ndt-iupui-mlab2-ham01             IN  AAAA	2001:2030:0:19::216
 ndt-iupui-mlab3-ham01             IN  AAAA	2001:2030:0:19::233
+ndt-iupui-mlab4-ham01             IN  AAAA	2001:2030:0:19::242
 ndt-iupui-mlab1-hnd01             IN  AAAA	2001:200:0:b801::203
 ndt-iupui-mlab2-hnd01             IN  AAAA	2001:200:0:b801::216
 ndt-iupui-mlab3-hnd01             IN  AAAA	2001:200:0:b801::229
@@ -8452,6 +8558,7 @@ ndt-iupui-mlab4-iad06             IN  AAAA	2001:2030:0:29::242
 ndt-iupui-mlab1-jnb01             IN  AAAA	2001:4200:fff0:4512::139
 ndt-iupui-mlab2-jnb01             IN  AAAA	2001:4200:fff0:4512::152
 ndt-iupui-mlab3-jnb01             IN  AAAA	2001:4200:fff0:4512::165
+ndt-iupui-mlab4-jnb01             IN  AAAA	2001:4200:fff0:4512::178
 ndt-iupui-mlab1-lax01             IN  AAAA	2001:550:6800::20
 ndt-iupui-mlab2-lax01             IN  AAAA	2001:550:6800::33
 ndt-iupui-mlab3-lax01             IN  AAAA	2001:550:6800::45
@@ -8869,6 +8976,10 @@ ndt-iupui-mlab1v6-bru04           IN  AAAA	2001:668:1f:69::11
 ndt-iupui-mlab2v6-bru04           IN  AAAA	2001:668:1f:69::24
 ndt-iupui-mlab3v6-bru04           IN  AAAA	2001:668:1f:69::37
 ndt-iupui-mlab4v6-bru04           IN  AAAA	2001:668:1f:69::50
+ndt-iupui-mlab1v6-cpt01           IN  AAAA	2001:4200:0:e::75
+ndt-iupui-mlab2v6-cpt01           IN  AAAA	2001:4200:0:e::88
+ndt-iupui-mlab3v6-cpt01           IN  AAAA	2001:4200:0:e::101
+ndt-iupui-mlab4v6-cpt01           IN  AAAA	2001:4200:0:e::114
 ndt-iupui-mlab1v6-den01           IN  AAAA	2001:470:1:250::75
 ndt-iupui-mlab2v6-den01           IN  AAAA	2001:470:1:250::88
 ndt-iupui-mlab3v6-den01           IN  AAAA	2001:470:1:250::101
@@ -8936,6 +9047,7 @@ ndt-iupui-mlab4v6-fra04           IN  AAAA	2001:4c08:2003:40::242
 ndt-iupui-mlab1v6-ham01           IN  AAAA	2001:2030:0:19::203
 ndt-iupui-mlab2v6-ham01           IN  AAAA	2001:2030:0:19::216
 ndt-iupui-mlab3v6-ham01           IN  AAAA	2001:2030:0:19::233
+ndt-iupui-mlab4v6-ham01           IN  AAAA	2001:2030:0:19::242
 ndt-iupui-mlab1v6-hnd01           IN  AAAA	2001:200:0:b801::203
 ndt-iupui-mlab2v6-hnd01           IN  AAAA	2001:200:0:b801::216
 ndt-iupui-mlab3v6-hnd01           IN  AAAA	2001:200:0:b801::229
@@ -8967,6 +9079,7 @@ ndt-iupui-mlab4v6-iad06           IN  AAAA	2001:2030:0:29::242
 ndt-iupui-mlab1v6-jnb01           IN  AAAA	2001:4200:fff0:4512::139
 ndt-iupui-mlab2v6-jnb01           IN  AAAA	2001:4200:fff0:4512::152
 ndt-iupui-mlab3v6-jnb01           IN  AAAA	2001:4200:fff0:4512::165
+ndt-iupui-mlab4v6-jnb01           IN  AAAA	2001:4200:fff0:4512::178
 ndt-iupui-mlab1v6-lax01           IN  AAAA	2001:550:6800::20
 ndt-iupui-mlab2v6-lax01           IN  AAAA	2001:550:6800::33
 ndt-iupui-mlab3v6-lax01           IN  AAAA	2001:550:6800::45
@@ -9494,6 +9607,14 @@ npad.iupui.bru04                  IN  A   	77.67.119.38
 npad.iupui.mlab3.bru04            IN  A   	77.67.119.38
 npad.iupui.bru04                  IN  A   	77.67.119.51
 npad.iupui.mlab4.bru04            IN  A   	77.67.119.51
+npad.iupui.cpt01                  IN  A   	154.114.19.76
+npad.iupui.mlab1.cpt01            IN  A   	154.114.19.76
+npad.iupui.cpt01                  IN  A   	154.114.19.89
+npad.iupui.mlab2.cpt01            IN  A   	154.114.19.89
+npad.iupui.cpt01                  IN  A   	154.114.19.102
+npad.iupui.mlab3.cpt01            IN  A   	154.114.19.102
+npad.iupui.cpt01                  IN  A   	154.114.19.115
+npad.iupui.mlab4.cpt01            IN  A   	154.114.19.115
 npad.iupui.den01                  IN  A   	184.105.23.76
 npad.iupui.mlab1.den01            IN  A   	184.105.23.76
 npad.iupui.den01                  IN  A   	184.105.23.89
@@ -9628,6 +9749,8 @@ npad.iupui.ham01                  IN  A   	80.239.142.217
 npad.iupui.mlab2.ham01            IN  A   	80.239.142.217
 npad.iupui.ham01                  IN  A   	80.239.142.228
 npad.iupui.mlab3.ham01            IN  A   	80.239.142.228
+npad.iupui.ham01                  IN  A   	80.239.142.243
+npad.iupui.mlab4.ham01            IN  A   	80.239.142.243
 npad.iupui.hnd01                  IN  A   	203.178.130.204
 npad.iupui.mlab1.hnd01            IN  A   	203.178.130.204
 npad.iupui.hnd01                  IN  A   	203.178.130.217
@@ -9690,6 +9813,8 @@ npad.iupui.jnb01                  IN  A   	196.24.45.153
 npad.iupui.mlab2.jnb01            IN  A   	196.24.45.153
 npad.iupui.jnb01                  IN  A   	196.24.45.166
 npad.iupui.mlab3.jnb01            IN  A   	196.24.45.166
+npad.iupui.jnb01                  IN  A   	196.24.45.179
+npad.iupui.mlab4.jnb01            IN  A   	196.24.45.179
 npad.iupui.lax01                  IN  A   	38.98.51.10
 npad.iupui.mlab1.lax01            IN  A   	38.98.51.10
 npad.iupui.lax01                  IN  A   	38.98.51.23
@@ -9962,6 +10087,8 @@ npad.iupui.mpm01                  IN  A   	41.94.23.25
 npad.iupui.mlab2.mpm01            IN  A   	41.94.23.25
 npad.iupui.mpm01                  IN  A   	41.94.23.38
 npad.iupui.mlab3.mpm01            IN  A   	41.94.23.38
+npad.iupui.mpm01                  IN  A   	41.94.23.51
+npad.iupui.mlab4.mpm01            IN  A   	41.94.23.51
 npad.iupui.nbo01                  IN  A   	197.136.0.76
 npad.iupui.mlab1.nbo01            IN  A   	197.136.0.76
 npad.iupui.nbo01                  IN  A   	197.136.0.89
@@ -10554,6 +10681,14 @@ npad.iupuiv4.bru04                IN  A   	77.67.119.38
 npad.iupui.mlab3v4.bru04          IN  A   	77.67.119.38
 npad.iupuiv4.bru04                IN  A   	77.67.119.51
 npad.iupui.mlab4v4.bru04          IN  A   	77.67.119.51
+npad.iupuiv4.cpt01                IN  A   	154.114.19.76
+npad.iupui.mlab1v4.cpt01          IN  A   	154.114.19.76
+npad.iupuiv4.cpt01                IN  A   	154.114.19.89
+npad.iupui.mlab2v4.cpt01          IN  A   	154.114.19.89
+npad.iupuiv4.cpt01                IN  A   	154.114.19.102
+npad.iupui.mlab3v4.cpt01          IN  A   	154.114.19.102
+npad.iupuiv4.cpt01                IN  A   	154.114.19.115
+npad.iupui.mlab4v4.cpt01          IN  A   	154.114.19.115
 npad.iupuiv4.den01                IN  A   	184.105.23.76
 npad.iupui.mlab1v4.den01          IN  A   	184.105.23.76
 npad.iupuiv4.den01                IN  A   	184.105.23.89
@@ -10688,6 +10823,8 @@ npad.iupuiv4.ham01                IN  A   	80.239.142.217
 npad.iupui.mlab2v4.ham01          IN  A   	80.239.142.217
 npad.iupuiv4.ham01                IN  A   	80.239.142.228
 npad.iupui.mlab3v4.ham01          IN  A   	80.239.142.228
+npad.iupuiv4.ham01                IN  A   	80.239.142.243
+npad.iupui.mlab4v4.ham01          IN  A   	80.239.142.243
 npad.iupuiv4.hnd01                IN  A   	203.178.130.204
 npad.iupui.mlab1v4.hnd01          IN  A   	203.178.130.204
 npad.iupuiv4.hnd01                IN  A   	203.178.130.217
@@ -10750,6 +10887,8 @@ npad.iupuiv4.jnb01                IN  A   	196.24.45.153
 npad.iupui.mlab2v4.jnb01          IN  A   	196.24.45.153
 npad.iupuiv4.jnb01                IN  A   	196.24.45.166
 npad.iupui.mlab3v4.jnb01          IN  A   	196.24.45.166
+npad.iupuiv4.jnb01                IN  A   	196.24.45.179
+npad.iupui.mlab4v4.jnb01          IN  A   	196.24.45.179
 npad.iupuiv4.lax01                IN  A   	38.98.51.10
 npad.iupui.mlab1v4.lax01          IN  A   	38.98.51.10
 npad.iupuiv4.lax01                IN  A   	38.98.51.23
@@ -11022,6 +11161,8 @@ npad.iupuiv4.mpm01                IN  A   	41.94.23.25
 npad.iupui.mlab2v4.mpm01          IN  A   	41.94.23.25
 npad.iupuiv4.mpm01                IN  A   	41.94.23.38
 npad.iupui.mlab3v4.mpm01          IN  A   	41.94.23.38
+npad.iupuiv4.mpm01                IN  A   	41.94.23.51
+npad.iupui.mlab4v4.mpm01          IN  A   	41.94.23.51
 npad.iupuiv4.nbo01                IN  A   	197.136.0.76
 npad.iupui.mlab1v4.nbo01          IN  A   	197.136.0.76
 npad.iupuiv4.nbo01                IN  A   	197.136.0.89
@@ -11608,6 +11749,14 @@ npad.iupui.bru04                  IN  AAAA	2001:668:1f:69::38
 npad.iupui.mlab3.bru04            IN  AAAA	2001:668:1f:69::38
 npad.iupui.bru04                  IN  AAAA	2001:668:1f:69::51
 npad.iupui.mlab4.bru04            IN  AAAA	2001:668:1f:69::51
+npad.iupui.cpt01                  IN  AAAA	2001:4200:0:e::76
+npad.iupui.mlab1.cpt01            IN  AAAA	2001:4200:0:e::76
+npad.iupui.cpt01                  IN  AAAA	2001:4200:0:e::89
+npad.iupui.mlab2.cpt01            IN  AAAA	2001:4200:0:e::89
+npad.iupui.cpt01                  IN  AAAA	2001:4200:0:e::102
+npad.iupui.mlab3.cpt01            IN  AAAA	2001:4200:0:e::102
+npad.iupui.cpt01                  IN  AAAA	2001:4200:0:e::115
+npad.iupui.mlab4.cpt01            IN  AAAA	2001:4200:0:e::115
 npad.iupui.den01                  IN  AAAA	2001:470:1:250::76
 npad.iupui.mlab1.den01            IN  AAAA	2001:470:1:250::76
 npad.iupui.den01                  IN  AAAA	2001:470:1:250::89
@@ -11742,6 +11891,8 @@ npad.iupui.ham01                  IN  AAAA	2001:2030:0:19::217
 npad.iupui.mlab2.ham01            IN  AAAA	2001:2030:0:19::217
 npad.iupui.ham01                  IN  AAAA	2001:2030:0:19::228
 npad.iupui.mlab3.ham01            IN  AAAA	2001:2030:0:19::228
+npad.iupui.ham01                  IN  AAAA	2001:2030:0:19::243
+npad.iupui.mlab4.ham01            IN  AAAA	2001:2030:0:19::243
 npad.iupui.hnd01                  IN  AAAA	2001:200:0:b801::204
 npad.iupui.mlab1.hnd01            IN  AAAA	2001:200:0:b801::204
 npad.iupui.hnd01                  IN  AAAA	2001:200:0:b801::217
@@ -11804,6 +11955,8 @@ npad.iupui.jnb01                  IN  AAAA	2001:4200:fff0:4512::153
 npad.iupui.mlab2.jnb01            IN  AAAA	2001:4200:fff0:4512::153
 npad.iupui.jnb01                  IN  AAAA	2001:4200:fff0:4512::166
 npad.iupui.mlab3.jnb01            IN  AAAA	2001:4200:fff0:4512::166
+npad.iupui.jnb01                  IN  AAAA	2001:4200:fff0:4512::179
+npad.iupui.mlab4.jnb01            IN  AAAA	2001:4200:fff0:4512::179
 npad.iupui.lax01                  IN  AAAA	2001:550:6800::10
 npad.iupui.mlab1.lax01            IN  AAAA	2001:550:6800::10
 npad.iupui.lax01                  IN  AAAA	2001:550:6800::23
@@ -12636,6 +12789,14 @@ npad.iupuiv6.bru04                IN  AAAA	2001:668:1f:69::38
 npad.iupui.mlab3v6.bru04          IN  AAAA	2001:668:1f:69::38
 npad.iupuiv6.bru04                IN  AAAA	2001:668:1f:69::51
 npad.iupui.mlab4v6.bru04          IN  AAAA	2001:668:1f:69::51
+npad.iupuiv6.cpt01                IN  AAAA	2001:4200:0:e::76
+npad.iupui.mlab1v6.cpt01          IN  AAAA	2001:4200:0:e::76
+npad.iupuiv6.cpt01                IN  AAAA	2001:4200:0:e::89
+npad.iupui.mlab2v6.cpt01          IN  AAAA	2001:4200:0:e::89
+npad.iupuiv6.cpt01                IN  AAAA	2001:4200:0:e::102
+npad.iupui.mlab3v6.cpt01          IN  AAAA	2001:4200:0:e::102
+npad.iupuiv6.cpt01                IN  AAAA	2001:4200:0:e::115
+npad.iupui.mlab4v6.cpt01          IN  AAAA	2001:4200:0:e::115
 npad.iupuiv6.den01                IN  AAAA	2001:470:1:250::76
 npad.iupui.mlab1v6.den01          IN  AAAA	2001:470:1:250::76
 npad.iupuiv6.den01                IN  AAAA	2001:470:1:250::89
@@ -12770,6 +12931,8 @@ npad.iupuiv6.ham01                IN  AAAA	2001:2030:0:19::217
 npad.iupui.mlab2v6.ham01          IN  AAAA	2001:2030:0:19::217
 npad.iupuiv6.ham01                IN  AAAA	2001:2030:0:19::228
 npad.iupui.mlab3v6.ham01          IN  AAAA	2001:2030:0:19::228
+npad.iupuiv6.ham01                IN  AAAA	2001:2030:0:19::243
+npad.iupui.mlab4v6.ham01          IN  AAAA	2001:2030:0:19::243
 npad.iupuiv6.hnd01                IN  AAAA	2001:200:0:b801::204
 npad.iupui.mlab1v6.hnd01          IN  AAAA	2001:200:0:b801::204
 npad.iupuiv6.hnd01                IN  AAAA	2001:200:0:b801::217
@@ -12832,6 +12995,8 @@ npad.iupuiv6.jnb01                IN  AAAA	2001:4200:fff0:4512::153
 npad.iupui.mlab2v6.jnb01          IN  AAAA	2001:4200:fff0:4512::153
 npad.iupuiv6.jnb01                IN  AAAA	2001:4200:fff0:4512::166
 npad.iupui.mlab3v6.jnb01          IN  AAAA	2001:4200:fff0:4512::166
+npad.iupuiv6.jnb01                IN  AAAA	2001:4200:fff0:4512::179
+npad.iupui.mlab4v6.jnb01          IN  AAAA	2001:4200:fff0:4512::179
 npad.iupuiv6.lax01                IN  AAAA	2001:550:6800::10
 npad.iupui.mlab1v6.lax01          IN  AAAA	2001:550:6800::10
 npad.iupuiv6.lax01                IN  AAAA	2001:550:6800::23
@@ -13670,6 +13835,14 @@ diff.mlab.bru04                   IN  A   	77.67.119.40
 diff.mlab.mlab3.bru04             IN  A   	77.67.119.40
 diff.mlab.bru04                   IN  A   	77.67.119.53
 diff.mlab.mlab4.bru04             IN  A   	77.67.119.53
+diff.mlab.cpt01                   IN  A   	154.114.19.78
+diff.mlab.mlab1.cpt01             IN  A   	154.114.19.78
+diff.mlab.cpt01                   IN  A   	154.114.19.91
+diff.mlab.mlab2.cpt01             IN  A   	154.114.19.91
+diff.mlab.cpt01                   IN  A   	154.114.19.104
+diff.mlab.mlab3.cpt01             IN  A   	154.114.19.104
+diff.mlab.cpt01                   IN  A   	154.114.19.117
+diff.mlab.mlab4.cpt01             IN  A   	154.114.19.117
 diff.mlab.den01                   IN  A   	184.105.23.78
 diff.mlab.mlab1.den01             IN  A   	184.105.23.78
 diff.mlab.den01                   IN  A   	184.105.23.91
@@ -13804,6 +13977,8 @@ diff.mlab.ham01                   IN  A   	80.239.142.224
 diff.mlab.mlab2.ham01             IN  A   	80.239.142.224
 diff.mlab.ham01                   IN  A   	80.239.142.237
 diff.mlab.mlab3.ham01             IN  A   	80.239.142.237
+diff.mlab.ham01                   IN  A   	80.239.142.245
+diff.mlab.mlab4.ham01             IN  A   	80.239.142.245
 diff.mlab.hnd01                   IN  A   	203.178.130.206
 diff.mlab.mlab1.hnd01             IN  A   	203.178.130.206
 diff.mlab.hnd01                   IN  A   	203.178.130.219
@@ -13866,6 +14041,8 @@ diff.mlab.jnb01                   IN  A   	196.24.45.155
 diff.mlab.mlab2.jnb01             IN  A   	196.24.45.155
 diff.mlab.jnb01                   IN  A   	196.24.45.168
 diff.mlab.mlab3.jnb01             IN  A   	196.24.45.168
+diff.mlab.jnb01                   IN  A   	196.24.45.181
+diff.mlab.mlab4.jnb01             IN  A   	196.24.45.181
 diff.mlab.lax01                   IN  A   	38.98.51.16
 diff.mlab.mlab1.lax01             IN  A   	38.98.51.16
 diff.mlab.lax01                   IN  A   	38.98.51.30
@@ -14138,6 +14315,8 @@ diff.mlab.mpm01                   IN  A   	41.94.23.27
 diff.mlab.mlab2.mpm01             IN  A   	41.94.23.27
 diff.mlab.mpm01                   IN  A   	41.94.23.40
 diff.mlab.mlab3.mpm01             IN  A   	41.94.23.40
+diff.mlab.mpm01                   IN  A   	41.94.23.53
+diff.mlab.mlab4.mpm01             IN  A   	41.94.23.53
 diff.mlab.nbo01                   IN  A   	197.136.0.78
 diff.mlab.mlab1.nbo01             IN  A   	197.136.0.78
 diff.mlab.nbo01                   IN  A   	197.136.0.91
@@ -14730,6 +14909,14 @@ diff.mlabv4.bru04                 IN  A   	77.67.119.40
 diff.mlab.mlab3v4.bru04           IN  A   	77.67.119.40
 diff.mlabv4.bru04                 IN  A   	77.67.119.53
 diff.mlab.mlab4v4.bru04           IN  A   	77.67.119.53
+diff.mlabv4.cpt01                 IN  A   	154.114.19.78
+diff.mlab.mlab1v4.cpt01           IN  A   	154.114.19.78
+diff.mlabv4.cpt01                 IN  A   	154.114.19.91
+diff.mlab.mlab2v4.cpt01           IN  A   	154.114.19.91
+diff.mlabv4.cpt01                 IN  A   	154.114.19.104
+diff.mlab.mlab3v4.cpt01           IN  A   	154.114.19.104
+diff.mlabv4.cpt01                 IN  A   	154.114.19.117
+diff.mlab.mlab4v4.cpt01           IN  A   	154.114.19.117
 diff.mlabv4.den01                 IN  A   	184.105.23.78
 diff.mlab.mlab1v4.den01           IN  A   	184.105.23.78
 diff.mlabv4.den01                 IN  A   	184.105.23.91
@@ -14864,6 +15051,8 @@ diff.mlabv4.ham01                 IN  A   	80.239.142.224
 diff.mlab.mlab2v4.ham01           IN  A   	80.239.142.224
 diff.mlabv4.ham01                 IN  A   	80.239.142.237
 diff.mlab.mlab3v4.ham01           IN  A   	80.239.142.237
+diff.mlabv4.ham01                 IN  A   	80.239.142.245
+diff.mlab.mlab4v4.ham01           IN  A   	80.239.142.245
 diff.mlabv4.hnd01                 IN  A   	203.178.130.206
 diff.mlab.mlab1v4.hnd01           IN  A   	203.178.130.206
 diff.mlabv4.hnd01                 IN  A   	203.178.130.219
@@ -14926,6 +15115,8 @@ diff.mlabv4.jnb01                 IN  A   	196.24.45.155
 diff.mlab.mlab2v4.jnb01           IN  A   	196.24.45.155
 diff.mlabv4.jnb01                 IN  A   	196.24.45.168
 diff.mlab.mlab3v4.jnb01           IN  A   	196.24.45.168
+diff.mlabv4.jnb01                 IN  A   	196.24.45.181
+diff.mlab.mlab4v4.jnb01           IN  A   	196.24.45.181
 diff.mlabv4.lax01                 IN  A   	38.98.51.16
 diff.mlab.mlab1v4.lax01           IN  A   	38.98.51.16
 diff.mlabv4.lax01                 IN  A   	38.98.51.30
@@ -15198,6 +15389,8 @@ diff.mlabv4.mpm01                 IN  A   	41.94.23.27
 diff.mlab.mlab2v4.mpm01           IN  A   	41.94.23.27
 diff.mlabv4.mpm01                 IN  A   	41.94.23.40
 diff.mlab.mlab3v4.mpm01           IN  A   	41.94.23.40
+diff.mlabv4.mpm01                 IN  A   	41.94.23.53
+diff.mlab.mlab4v4.mpm01           IN  A   	41.94.23.53
 diff.mlabv4.nbo01                 IN  A   	197.136.0.78
 diff.mlab.mlab1v4.nbo01           IN  A   	197.136.0.78
 diff.mlabv4.nbo01                 IN  A   	197.136.0.91
@@ -15784,6 +15977,14 @@ diff.mlab.bru04                   IN  AAAA	2001:668:1f:69::40
 diff.mlab.mlab3.bru04             IN  AAAA	2001:668:1f:69::40
 diff.mlab.bru04                   IN  AAAA	2001:668:1f:69::53
 diff.mlab.mlab4.bru04             IN  AAAA	2001:668:1f:69::53
+diff.mlab.cpt01                   IN  AAAA	2001:4200:0:e::78
+diff.mlab.mlab1.cpt01             IN  AAAA	2001:4200:0:e::78
+diff.mlab.cpt01                   IN  AAAA	2001:4200:0:e::91
+diff.mlab.mlab2.cpt01             IN  AAAA	2001:4200:0:e::91
+diff.mlab.cpt01                   IN  AAAA	2001:4200:0:e::104
+diff.mlab.mlab3.cpt01             IN  AAAA	2001:4200:0:e::104
+diff.mlab.cpt01                   IN  AAAA	2001:4200:0:e::117
+diff.mlab.mlab4.cpt01             IN  AAAA	2001:4200:0:e::117
 diff.mlab.den01                   IN  AAAA	2001:470:1:250::78
 diff.mlab.mlab1.den01             IN  AAAA	2001:470:1:250::78
 diff.mlab.den01                   IN  AAAA	2001:470:1:250::91
@@ -15918,6 +16119,8 @@ diff.mlab.ham01                   IN  AAAA	2001:2030:0:19::224
 diff.mlab.mlab2.ham01             IN  AAAA	2001:2030:0:19::224
 diff.mlab.ham01                   IN  AAAA	2001:2030:0:19::237
 diff.mlab.mlab3.ham01             IN  AAAA	2001:2030:0:19::237
+diff.mlab.ham01                   IN  AAAA	2001:2030:0:19::245
+diff.mlab.mlab4.ham01             IN  AAAA	2001:2030:0:19::245
 diff.mlab.hnd01                   IN  AAAA	2001:200:0:b801::206
 diff.mlab.mlab1.hnd01             IN  AAAA	2001:200:0:b801::206
 diff.mlab.hnd01                   IN  AAAA	2001:200:0:b801::219
@@ -15980,6 +16183,8 @@ diff.mlab.jnb01                   IN  AAAA	2001:4200:fff0:4512::155
 diff.mlab.mlab2.jnb01             IN  AAAA	2001:4200:fff0:4512::155
 diff.mlab.jnb01                   IN  AAAA	2001:4200:fff0:4512::168
 diff.mlab.mlab3.jnb01             IN  AAAA	2001:4200:fff0:4512::168
+diff.mlab.jnb01                   IN  AAAA	2001:4200:fff0:4512::181
+diff.mlab.mlab4.jnb01             IN  AAAA	2001:4200:fff0:4512::181
 diff.mlab.lax01                   IN  AAAA	2001:550:6800::16
 diff.mlab.mlab1.lax01             IN  AAAA	2001:550:6800::16
 diff.mlab.lax01                   IN  AAAA	2001:550:6800::30
@@ -16812,6 +17017,14 @@ diff.mlabv6.bru04                 IN  AAAA	2001:668:1f:69::40
 diff.mlab.mlab3v6.bru04           IN  AAAA	2001:668:1f:69::40
 diff.mlabv6.bru04                 IN  AAAA	2001:668:1f:69::53
 diff.mlab.mlab4v6.bru04           IN  AAAA	2001:668:1f:69::53
+diff.mlabv6.cpt01                 IN  AAAA	2001:4200:0:e::78
+diff.mlab.mlab1v6.cpt01           IN  AAAA	2001:4200:0:e::78
+diff.mlabv6.cpt01                 IN  AAAA	2001:4200:0:e::91
+diff.mlab.mlab2v6.cpt01           IN  AAAA	2001:4200:0:e::91
+diff.mlabv6.cpt01                 IN  AAAA	2001:4200:0:e::104
+diff.mlab.mlab3v6.cpt01           IN  AAAA	2001:4200:0:e::104
+diff.mlabv6.cpt01                 IN  AAAA	2001:4200:0:e::117
+diff.mlab.mlab4v6.cpt01           IN  AAAA	2001:4200:0:e::117
 diff.mlabv6.den01                 IN  AAAA	2001:470:1:250::78
 diff.mlab.mlab1v6.den01           IN  AAAA	2001:470:1:250::78
 diff.mlabv6.den01                 IN  AAAA	2001:470:1:250::91
@@ -16946,6 +17159,8 @@ diff.mlabv6.ham01                 IN  AAAA	2001:2030:0:19::224
 diff.mlab.mlab2v6.ham01           IN  AAAA	2001:2030:0:19::224
 diff.mlabv6.ham01                 IN  AAAA	2001:2030:0:19::237
 diff.mlab.mlab3v6.ham01           IN  AAAA	2001:2030:0:19::237
+diff.mlabv6.ham01                 IN  AAAA	2001:2030:0:19::245
+diff.mlab.mlab4v6.ham01           IN  AAAA	2001:2030:0:19::245
 diff.mlabv6.hnd01                 IN  AAAA	2001:200:0:b801::206
 diff.mlab.mlab1v6.hnd01           IN  AAAA	2001:200:0:b801::206
 diff.mlabv6.hnd01                 IN  AAAA	2001:200:0:b801::219
@@ -17008,6 +17223,8 @@ diff.mlabv6.jnb01                 IN  AAAA	2001:4200:fff0:4512::155
 diff.mlab.mlab2v6.jnb01           IN  AAAA	2001:4200:fff0:4512::155
 diff.mlabv6.jnb01                 IN  AAAA	2001:4200:fff0:4512::168
 diff.mlab.mlab3v6.jnb01           IN  AAAA	2001:4200:fff0:4512::168
+diff.mlabv6.jnb01                 IN  AAAA	2001:4200:fff0:4512::181
+diff.mlab.mlab4v6.jnb01           IN  AAAA	2001:4200:fff0:4512::181
 diff.mlabv6.lax01                 IN  AAAA	2001:550:6800::16
 diff.mlab.mlab1v6.lax01           IN  AAAA	2001:550:6800::16
 diff.mlabv6.lax01                 IN  AAAA	2001:550:6800::30
@@ -17846,6 +18063,14 @@ geoloc4.uw.bru04                  IN  A   	77.67.119.41
 geoloc4.uw.mlab3.bru04            IN  A   	77.67.119.41
 geoloc4.uw.bru04                  IN  A   	77.67.119.54
 geoloc4.uw.mlab4.bru04            IN  A   	77.67.119.54
+geoloc4.uw.cpt01                  IN  A   	154.114.19.79
+geoloc4.uw.mlab1.cpt01            IN  A   	154.114.19.79
+geoloc4.uw.cpt01                  IN  A   	154.114.19.92
+geoloc4.uw.mlab2.cpt01            IN  A   	154.114.19.92
+geoloc4.uw.cpt01                  IN  A   	154.114.19.105
+geoloc4.uw.mlab3.cpt01            IN  A   	154.114.19.105
+geoloc4.uw.cpt01                  IN  A   	154.114.19.118
+geoloc4.uw.mlab4.cpt01            IN  A   	154.114.19.118
 geoloc4.uw.den01                  IN  A   	184.105.23.79
 geoloc4.uw.mlab1.den01            IN  A   	184.105.23.79
 geoloc4.uw.den01                  IN  A   	184.105.23.92
@@ -17980,6 +18205,8 @@ geoloc4.uw.ham01                  IN  A   	80.239.142.222
 geoloc4.uw.mlab2.ham01            IN  A   	80.239.142.222
 geoloc4.uw.ham01                  IN  A   	80.239.142.235
 geoloc4.uw.mlab3.ham01            IN  A   	80.239.142.235
+geoloc4.uw.ham01                  IN  A   	80.239.142.246
+geoloc4.uw.mlab4.ham01            IN  A   	80.239.142.246
 geoloc4.uw.hnd01                  IN  A   	203.178.130.207
 geoloc4.uw.mlab1.hnd01            IN  A   	203.178.130.207
 geoloc4.uw.hnd01                  IN  A   	203.178.130.220
@@ -18042,6 +18269,8 @@ geoloc4.uw.jnb01                  IN  A   	196.24.45.156
 geoloc4.uw.mlab2.jnb01            IN  A   	196.24.45.156
 geoloc4.uw.jnb01                  IN  A   	196.24.45.169
 geoloc4.uw.mlab3.jnb01            IN  A   	196.24.45.169
+geoloc4.uw.jnb01                  IN  A   	196.24.45.182
+geoloc4.uw.mlab4.jnb01            IN  A   	196.24.45.182
 geoloc4.uw.lax01                  IN  A   	38.98.51.13
 geoloc4.uw.mlab1.lax01            IN  A   	38.98.51.13
 geoloc4.uw.lax01                  IN  A   	38.98.51.27
@@ -18314,6 +18543,8 @@ geoloc4.uw.mpm01                  IN  A   	41.94.23.28
 geoloc4.uw.mlab2.mpm01            IN  A   	41.94.23.28
 geoloc4.uw.mpm01                  IN  A   	41.94.23.41
 geoloc4.uw.mlab3.mpm01            IN  A   	41.94.23.41
+geoloc4.uw.mpm01                  IN  A   	41.94.23.54
+geoloc4.uw.mlab4.mpm01            IN  A   	41.94.23.54
 geoloc4.uw.nbo01                  IN  A   	197.136.0.79
 geoloc4.uw.mlab1.nbo01            IN  A   	197.136.0.79
 geoloc4.uw.nbo01                  IN  A   	197.136.0.92
@@ -18906,6 +19137,14 @@ geoloc4.uwv4.bru04                IN  A   	77.67.119.41
 geoloc4.uw.mlab3v4.bru04          IN  A   	77.67.119.41
 geoloc4.uwv4.bru04                IN  A   	77.67.119.54
 geoloc4.uw.mlab4v4.bru04          IN  A   	77.67.119.54
+geoloc4.uwv4.cpt01                IN  A   	154.114.19.79
+geoloc4.uw.mlab1v4.cpt01          IN  A   	154.114.19.79
+geoloc4.uwv4.cpt01                IN  A   	154.114.19.92
+geoloc4.uw.mlab2v4.cpt01          IN  A   	154.114.19.92
+geoloc4.uwv4.cpt01                IN  A   	154.114.19.105
+geoloc4.uw.mlab3v4.cpt01          IN  A   	154.114.19.105
+geoloc4.uwv4.cpt01                IN  A   	154.114.19.118
+geoloc4.uw.mlab4v4.cpt01          IN  A   	154.114.19.118
 geoloc4.uwv4.den01                IN  A   	184.105.23.79
 geoloc4.uw.mlab1v4.den01          IN  A   	184.105.23.79
 geoloc4.uwv4.den01                IN  A   	184.105.23.92
@@ -19040,6 +19279,8 @@ geoloc4.uwv4.ham01                IN  A   	80.239.142.222
 geoloc4.uw.mlab2v4.ham01          IN  A   	80.239.142.222
 geoloc4.uwv4.ham01                IN  A   	80.239.142.235
 geoloc4.uw.mlab3v4.ham01          IN  A   	80.239.142.235
+geoloc4.uwv4.ham01                IN  A   	80.239.142.246
+geoloc4.uw.mlab4v4.ham01          IN  A   	80.239.142.246
 geoloc4.uwv4.hnd01                IN  A   	203.178.130.207
 geoloc4.uw.mlab1v4.hnd01          IN  A   	203.178.130.207
 geoloc4.uwv4.hnd01                IN  A   	203.178.130.220
@@ -19102,6 +19343,8 @@ geoloc4.uwv4.jnb01                IN  A   	196.24.45.156
 geoloc4.uw.mlab2v4.jnb01          IN  A   	196.24.45.156
 geoloc4.uwv4.jnb01                IN  A   	196.24.45.169
 geoloc4.uw.mlab3v4.jnb01          IN  A   	196.24.45.169
+geoloc4.uwv4.jnb01                IN  A   	196.24.45.182
+geoloc4.uw.mlab4v4.jnb01          IN  A   	196.24.45.182
 geoloc4.uwv4.lax01                IN  A   	38.98.51.13
 geoloc4.uw.mlab1v4.lax01          IN  A   	38.98.51.13
 geoloc4.uwv4.lax01                IN  A   	38.98.51.27
@@ -19374,6 +19617,8 @@ geoloc4.uwv4.mpm01                IN  A   	41.94.23.28
 geoloc4.uw.mlab2v4.mpm01          IN  A   	41.94.23.28
 geoloc4.uwv4.mpm01                IN  A   	41.94.23.41
 geoloc4.uw.mlab3v4.mpm01          IN  A   	41.94.23.41
+geoloc4.uwv4.mpm01                IN  A   	41.94.23.54
+geoloc4.uw.mlab4v4.mpm01          IN  A   	41.94.23.54
 geoloc4.uwv4.nbo01                IN  A   	197.136.0.79
 geoloc4.uw.mlab1v4.nbo01          IN  A   	197.136.0.79
 geoloc4.uwv4.nbo01                IN  A   	197.136.0.92
@@ -19986,6 +20231,14 @@ ooni.mlab.bru04                   IN  A   	77.67.119.42
 ooni.mlab.mlab3.bru04             IN  A   	77.67.119.42
 ooni.mlab.bru04                   IN  A   	77.67.119.55
 ooni.mlab.mlab4.bru04             IN  A   	77.67.119.55
+ooni.mlab.cpt01                   IN  A   	154.114.19.80
+ooni.mlab.mlab1.cpt01             IN  A   	154.114.19.80
+ooni.mlab.cpt01                   IN  A   	154.114.19.93
+ooni.mlab.mlab2.cpt01             IN  A   	154.114.19.93
+ooni.mlab.cpt01                   IN  A   	154.114.19.106
+ooni.mlab.mlab3.cpt01             IN  A   	154.114.19.106
+ooni.mlab.cpt01                   IN  A   	154.114.19.119
+ooni.mlab.mlab4.cpt01             IN  A   	154.114.19.119
 ooni.mlab.den01                   IN  A   	184.105.23.80
 ooni.mlab.mlab1.den01             IN  A   	184.105.23.80
 ooni.mlab.den01                   IN  A   	184.105.23.93
@@ -20120,6 +20373,8 @@ ooni.mlab.ham01                   IN  A   	80.239.142.223
 ooni.mlab.mlab2.ham01             IN  A   	80.239.142.223
 ooni.mlab.ham01                   IN  A   	80.239.142.236
 ooni.mlab.mlab3.ham01             IN  A   	80.239.142.236
+ooni.mlab.ham01                   IN  A   	80.239.142.247
+ooni.mlab.mlab4.ham01             IN  A   	80.239.142.247
 ooni.mlab.hnd01                   IN  A   	203.178.130.208
 ooni.mlab.mlab1.hnd01             IN  A   	203.178.130.208
 ooni.mlab.hnd01                   IN  A   	203.178.130.221
@@ -20182,6 +20437,8 @@ ooni.mlab.jnb01                   IN  A   	196.24.45.157
 ooni.mlab.mlab2.jnb01             IN  A   	196.24.45.157
 ooni.mlab.jnb01                   IN  A   	196.24.45.170
 ooni.mlab.mlab3.jnb01             IN  A   	196.24.45.170
+ooni.mlab.jnb01                   IN  A   	196.24.45.183
+ooni.mlab.mlab4.jnb01             IN  A   	196.24.45.183
 ooni.mlab.lax01                   IN  A   	38.98.51.15
 ooni.mlab.mlab1.lax01             IN  A   	38.98.51.15
 ooni.mlab.lax01                   IN  A   	38.98.51.29
@@ -20454,6 +20711,8 @@ ooni.mlab.mpm01                   IN  A   	41.94.23.29
 ooni.mlab.mlab2.mpm01             IN  A   	41.94.23.29
 ooni.mlab.mpm01                   IN  A   	41.94.23.42
 ooni.mlab.mlab3.mpm01             IN  A   	41.94.23.42
+ooni.mlab.mpm01                   IN  A   	41.94.23.55
+ooni.mlab.mlab4.mpm01             IN  A   	41.94.23.55
 ooni.mlab.nbo01                   IN  A   	197.136.0.80
 ooni.mlab.mlab1.nbo01             IN  A   	197.136.0.80
 ooni.mlab.nbo01                   IN  A   	197.136.0.93
@@ -21046,6 +21305,14 @@ ooni.mlabv4.bru04                 IN  A   	77.67.119.42
 ooni.mlab.mlab3v4.bru04           IN  A   	77.67.119.42
 ooni.mlabv4.bru04                 IN  A   	77.67.119.55
 ooni.mlab.mlab4v4.bru04           IN  A   	77.67.119.55
+ooni.mlabv4.cpt01                 IN  A   	154.114.19.80
+ooni.mlab.mlab1v4.cpt01           IN  A   	154.114.19.80
+ooni.mlabv4.cpt01                 IN  A   	154.114.19.93
+ooni.mlab.mlab2v4.cpt01           IN  A   	154.114.19.93
+ooni.mlabv4.cpt01                 IN  A   	154.114.19.106
+ooni.mlab.mlab3v4.cpt01           IN  A   	154.114.19.106
+ooni.mlabv4.cpt01                 IN  A   	154.114.19.119
+ooni.mlab.mlab4v4.cpt01           IN  A   	154.114.19.119
 ooni.mlabv4.den01                 IN  A   	184.105.23.80
 ooni.mlab.mlab1v4.den01           IN  A   	184.105.23.80
 ooni.mlabv4.den01                 IN  A   	184.105.23.93
@@ -21180,6 +21447,8 @@ ooni.mlabv4.ham01                 IN  A   	80.239.142.223
 ooni.mlab.mlab2v4.ham01           IN  A   	80.239.142.223
 ooni.mlabv4.ham01                 IN  A   	80.239.142.236
 ooni.mlab.mlab3v4.ham01           IN  A   	80.239.142.236
+ooni.mlabv4.ham01                 IN  A   	80.239.142.247
+ooni.mlab.mlab4v4.ham01           IN  A   	80.239.142.247
 ooni.mlabv4.hnd01                 IN  A   	203.178.130.208
 ooni.mlab.mlab1v4.hnd01           IN  A   	203.178.130.208
 ooni.mlabv4.hnd01                 IN  A   	203.178.130.221
@@ -21242,6 +21511,8 @@ ooni.mlabv4.jnb01                 IN  A   	196.24.45.157
 ooni.mlab.mlab2v4.jnb01           IN  A   	196.24.45.157
 ooni.mlabv4.jnb01                 IN  A   	196.24.45.170
 ooni.mlab.mlab3v4.jnb01           IN  A   	196.24.45.170
+ooni.mlabv4.jnb01                 IN  A   	196.24.45.183
+ooni.mlab.mlab4v4.jnb01           IN  A   	196.24.45.183
 ooni.mlabv4.lax01                 IN  A   	38.98.51.15
 ooni.mlab.mlab1v4.lax01           IN  A   	38.98.51.15
 ooni.mlabv4.lax01                 IN  A   	38.98.51.29
@@ -21514,6 +21785,8 @@ ooni.mlabv4.mpm01                 IN  A   	41.94.23.29
 ooni.mlab.mlab2v4.mpm01           IN  A   	41.94.23.29
 ooni.mlabv4.mpm01                 IN  A   	41.94.23.42
 ooni.mlab.mlab3v4.mpm01           IN  A   	41.94.23.42
+ooni.mlabv4.mpm01                 IN  A   	41.94.23.55
+ooni.mlab.mlab4v4.mpm01           IN  A   	41.94.23.55
 ooni.mlabv4.nbo01                 IN  A   	197.136.0.80
 ooni.mlab.mlab1v4.nbo01           IN  A   	197.136.0.80
 ooni.mlabv4.nbo01                 IN  A   	197.136.0.93
@@ -22100,6 +22373,14 @@ ooni.mlab.bru04                   IN  AAAA	2001:668:1f:69::42
 ooni.mlab.mlab3.bru04             IN  AAAA	2001:668:1f:69::42
 ooni.mlab.bru04                   IN  AAAA	2001:668:1f:69::55
 ooni.mlab.mlab4.bru04             IN  AAAA	2001:668:1f:69::55
+ooni.mlab.cpt01                   IN  AAAA	2001:4200:0:e::80
+ooni.mlab.mlab1.cpt01             IN  AAAA	2001:4200:0:e::80
+ooni.mlab.cpt01                   IN  AAAA	2001:4200:0:e::93
+ooni.mlab.mlab2.cpt01             IN  AAAA	2001:4200:0:e::93
+ooni.mlab.cpt01                   IN  AAAA	2001:4200:0:e::106
+ooni.mlab.mlab3.cpt01             IN  AAAA	2001:4200:0:e::106
+ooni.mlab.cpt01                   IN  AAAA	2001:4200:0:e::119
+ooni.mlab.mlab4.cpt01             IN  AAAA	2001:4200:0:e::119
 ooni.mlab.den01                   IN  AAAA	2001:470:1:250::80
 ooni.mlab.mlab1.den01             IN  AAAA	2001:470:1:250::80
 ooni.mlab.den01                   IN  AAAA	2001:470:1:250::93
@@ -22234,6 +22515,8 @@ ooni.mlab.ham01                   IN  AAAA	2001:2030:0:19::223
 ooni.mlab.mlab2.ham01             IN  AAAA	2001:2030:0:19::223
 ooni.mlab.ham01                   IN  AAAA	2001:2030:0:19::236
 ooni.mlab.mlab3.ham01             IN  AAAA	2001:2030:0:19::236
+ooni.mlab.ham01                   IN  AAAA	2001:2030:0:19::247
+ooni.mlab.mlab4.ham01             IN  AAAA	2001:2030:0:19::247
 ooni.mlab.hnd01                   IN  AAAA	2001:200:0:b801::208
 ooni.mlab.mlab1.hnd01             IN  AAAA	2001:200:0:b801::208
 ooni.mlab.hnd01                   IN  AAAA	2001:200:0:b801::221
@@ -22296,6 +22579,8 @@ ooni.mlab.jnb01                   IN  AAAA	2001:4200:fff0:4512::157
 ooni.mlab.mlab2.jnb01             IN  AAAA	2001:4200:fff0:4512::157
 ooni.mlab.jnb01                   IN  AAAA	2001:4200:fff0:4512::170
 ooni.mlab.mlab3.jnb01             IN  AAAA	2001:4200:fff0:4512::170
+ooni.mlab.jnb01                   IN  AAAA	2001:4200:fff0:4512::183
+ooni.mlab.mlab4.jnb01             IN  AAAA	2001:4200:fff0:4512::183
 ooni.mlab.lax01                   IN  AAAA	2001:550:6800::15
 ooni.mlab.mlab1.lax01             IN  AAAA	2001:550:6800::15
 ooni.mlab.lax01                   IN  AAAA	2001:550:6800::29
@@ -23128,6 +23413,14 @@ ooni.mlabv6.bru04                 IN  AAAA	2001:668:1f:69::42
 ooni.mlab.mlab3v6.bru04           IN  AAAA	2001:668:1f:69::42
 ooni.mlabv6.bru04                 IN  AAAA	2001:668:1f:69::55
 ooni.mlab.mlab4v6.bru04           IN  AAAA	2001:668:1f:69::55
+ooni.mlabv6.cpt01                 IN  AAAA	2001:4200:0:e::80
+ooni.mlab.mlab1v6.cpt01           IN  AAAA	2001:4200:0:e::80
+ooni.mlabv6.cpt01                 IN  AAAA	2001:4200:0:e::93
+ooni.mlab.mlab2v6.cpt01           IN  AAAA	2001:4200:0:e::93
+ooni.mlabv6.cpt01                 IN  AAAA	2001:4200:0:e::106
+ooni.mlab.mlab3v6.cpt01           IN  AAAA	2001:4200:0:e::106
+ooni.mlabv6.cpt01                 IN  AAAA	2001:4200:0:e::119
+ooni.mlab.mlab4v6.cpt01           IN  AAAA	2001:4200:0:e::119
 ooni.mlabv6.den01                 IN  AAAA	2001:470:1:250::80
 ooni.mlab.mlab1v6.den01           IN  AAAA	2001:470:1:250::80
 ooni.mlabv6.den01                 IN  AAAA	2001:470:1:250::93
@@ -23262,6 +23555,8 @@ ooni.mlabv6.ham01                 IN  AAAA	2001:2030:0:19::223
 ooni.mlab.mlab2v6.ham01           IN  AAAA	2001:2030:0:19::223
 ooni.mlabv6.ham01                 IN  AAAA	2001:2030:0:19::236
 ooni.mlab.mlab3v6.ham01           IN  AAAA	2001:2030:0:19::236
+ooni.mlabv6.ham01                 IN  AAAA	2001:2030:0:19::247
+ooni.mlab.mlab4v6.ham01           IN  AAAA	2001:2030:0:19::247
 ooni.mlabv6.hnd01                 IN  AAAA	2001:200:0:b801::208
 ooni.mlab.mlab1v6.hnd01           IN  AAAA	2001:200:0:b801::208
 ooni.mlabv6.hnd01                 IN  AAAA	2001:200:0:b801::221
@@ -23324,6 +23619,8 @@ ooni.mlabv6.jnb01                 IN  AAAA	2001:4200:fff0:4512::157
 ooni.mlab.mlab2v6.jnb01           IN  AAAA	2001:4200:fff0:4512::157
 ooni.mlabv6.jnb01                 IN  AAAA	2001:4200:fff0:4512::170
 ooni.mlab.mlab3v6.jnb01           IN  AAAA	2001:4200:fff0:4512::170
+ooni.mlabv6.jnb01                 IN  AAAA	2001:4200:fff0:4512::183
+ooni.mlab.mlab4v6.jnb01           IN  AAAA	2001:4200:fff0:4512::183
 ooni.mlabv6.lax01                 IN  AAAA	2001:550:6800::15
 ooni.mlab.mlab1v6.lax01           IN  AAAA	2001:550:6800::15
 ooni.mlabv6.lax01                 IN  AAAA	2001:550:6800::29
@@ -24162,6 +24459,14 @@ ispmon.samknows.bru04             IN  A   	77.67.119.43
 ispmon.samknows.mlab3.bru04       IN  A   	77.67.119.43
 ispmon.samknows.bru04             IN  A   	77.67.119.56
 ispmon.samknows.mlab4.bru04       IN  A   	77.67.119.56
+ispmon.samknows.cpt01             IN  A   	154.114.19.81
+ispmon.samknows.mlab1.cpt01       IN  A   	154.114.19.81
+ispmon.samknows.cpt01             IN  A   	154.114.19.94
+ispmon.samknows.mlab2.cpt01       IN  A   	154.114.19.94
+ispmon.samknows.cpt01             IN  A   	154.114.19.107
+ispmon.samknows.mlab3.cpt01       IN  A   	154.114.19.107
+ispmon.samknows.cpt01             IN  A   	154.114.19.120
+ispmon.samknows.mlab4.cpt01       IN  A   	154.114.19.120
 ispmon.samknows.den01             IN  A   	184.105.23.81
 ispmon.samknows.mlab1.den01       IN  A   	184.105.23.81
 ispmon.samknows.den01             IN  A   	184.105.23.94
@@ -24296,6 +24601,8 @@ ispmon.samknows.ham01             IN  A   	80.239.142.226
 ispmon.samknows.mlab2.ham01       IN  A   	80.239.142.226
 ispmon.samknows.ham01             IN  A   	80.239.142.239
 ispmon.samknows.mlab3.ham01       IN  A   	80.239.142.239
+ispmon.samknows.ham01             IN  A   	80.239.142.248
+ispmon.samknows.mlab4.ham01       IN  A   	80.239.142.248
 ispmon.samknows.hnd01             IN  A   	203.178.130.209
 ispmon.samknows.mlab1.hnd01       IN  A   	203.178.130.209
 ispmon.samknows.hnd01             IN  A   	203.178.130.222
@@ -24358,6 +24665,8 @@ ispmon.samknows.jnb01             IN  A   	196.24.45.158
 ispmon.samknows.mlab2.jnb01       IN  A   	196.24.45.158
 ispmon.samknows.jnb01             IN  A   	196.24.45.171
 ispmon.samknows.mlab3.jnb01       IN  A   	196.24.45.171
+ispmon.samknows.jnb01             IN  A   	196.24.45.184
+ispmon.samknows.mlab4.jnb01       IN  A   	196.24.45.184
 ispmon.samknows.lax01             IN  A   	38.98.51.21
 ispmon.samknows.mlab1.lax01       IN  A   	38.98.51.21
 ispmon.samknows.lax01             IN  A   	38.98.51.34
@@ -24630,6 +24939,8 @@ ispmon.samknows.mpm01             IN  A   	41.94.23.30
 ispmon.samknows.mlab2.mpm01       IN  A   	41.94.23.30
 ispmon.samknows.mpm01             IN  A   	41.94.23.43
 ispmon.samknows.mlab3.mpm01       IN  A   	41.94.23.43
+ispmon.samknows.mpm01             IN  A   	41.94.23.56
+ispmon.samknows.mlab4.mpm01       IN  A   	41.94.23.56
 ispmon.samknows.nbo01             IN  A   	197.136.0.81
 ispmon.samknows.mlab1.nbo01       IN  A   	197.136.0.81
 ispmon.samknows.nbo01             IN  A   	197.136.0.94
@@ -25222,6 +25533,14 @@ ispmon.samknowsv4.bru04           IN  A   	77.67.119.43
 ispmon.samknows.mlab3v4.bru04     IN  A   	77.67.119.43
 ispmon.samknowsv4.bru04           IN  A   	77.67.119.56
 ispmon.samknows.mlab4v4.bru04     IN  A   	77.67.119.56
+ispmon.samknowsv4.cpt01           IN  A   	154.114.19.81
+ispmon.samknows.mlab1v4.cpt01     IN  A   	154.114.19.81
+ispmon.samknowsv4.cpt01           IN  A   	154.114.19.94
+ispmon.samknows.mlab2v4.cpt01     IN  A   	154.114.19.94
+ispmon.samknowsv4.cpt01           IN  A   	154.114.19.107
+ispmon.samknows.mlab3v4.cpt01     IN  A   	154.114.19.107
+ispmon.samknowsv4.cpt01           IN  A   	154.114.19.120
+ispmon.samknows.mlab4v4.cpt01     IN  A   	154.114.19.120
 ispmon.samknowsv4.den01           IN  A   	184.105.23.81
 ispmon.samknows.mlab1v4.den01     IN  A   	184.105.23.81
 ispmon.samknowsv4.den01           IN  A   	184.105.23.94
@@ -25356,6 +25675,8 @@ ispmon.samknowsv4.ham01           IN  A   	80.239.142.226
 ispmon.samknows.mlab2v4.ham01     IN  A   	80.239.142.226
 ispmon.samknowsv4.ham01           IN  A   	80.239.142.239
 ispmon.samknows.mlab3v4.ham01     IN  A   	80.239.142.239
+ispmon.samknowsv4.ham01           IN  A   	80.239.142.248
+ispmon.samknows.mlab4v4.ham01     IN  A   	80.239.142.248
 ispmon.samknowsv4.hnd01           IN  A   	203.178.130.209
 ispmon.samknows.mlab1v4.hnd01     IN  A   	203.178.130.209
 ispmon.samknowsv4.hnd01           IN  A   	203.178.130.222
@@ -25418,6 +25739,8 @@ ispmon.samknowsv4.jnb01           IN  A   	196.24.45.158
 ispmon.samknows.mlab2v4.jnb01     IN  A   	196.24.45.158
 ispmon.samknowsv4.jnb01           IN  A   	196.24.45.171
 ispmon.samknows.mlab3v4.jnb01     IN  A   	196.24.45.171
+ispmon.samknowsv4.jnb01           IN  A   	196.24.45.184
+ispmon.samknows.mlab4v4.jnb01     IN  A   	196.24.45.184
 ispmon.samknowsv4.lax01           IN  A   	38.98.51.21
 ispmon.samknows.mlab1v4.lax01     IN  A   	38.98.51.21
 ispmon.samknowsv4.lax01           IN  A   	38.98.51.34
@@ -25690,6 +26013,8 @@ ispmon.samknowsv4.mpm01           IN  A   	41.94.23.30
 ispmon.samknows.mlab2v4.mpm01     IN  A   	41.94.23.30
 ispmon.samknowsv4.mpm01           IN  A   	41.94.23.43
 ispmon.samknows.mlab3v4.mpm01     IN  A   	41.94.23.43
+ispmon.samknowsv4.mpm01           IN  A   	41.94.23.56
+ispmon.samknows.mlab4v4.mpm01     IN  A   	41.94.23.56
 ispmon.samknowsv4.nbo01           IN  A   	197.136.0.81
 ispmon.samknows.mlab1v4.nbo01     IN  A   	197.136.0.81
 ispmon.samknowsv4.nbo01           IN  A   	197.136.0.94
@@ -26276,6 +26601,14 @@ ispmon.samknows.bru04             IN  AAAA	2001:668:1f:69::43
 ispmon.samknows.mlab3.bru04       IN  AAAA	2001:668:1f:69::43
 ispmon.samknows.bru04             IN  AAAA	2001:668:1f:69::56
 ispmon.samknows.mlab4.bru04       IN  AAAA	2001:668:1f:69::56
+ispmon.samknows.cpt01             IN  AAAA	2001:4200:0:e::81
+ispmon.samknows.mlab1.cpt01       IN  AAAA	2001:4200:0:e::81
+ispmon.samknows.cpt01             IN  AAAA	2001:4200:0:e::94
+ispmon.samknows.mlab2.cpt01       IN  AAAA	2001:4200:0:e::94
+ispmon.samknows.cpt01             IN  AAAA	2001:4200:0:e::107
+ispmon.samknows.mlab3.cpt01       IN  AAAA	2001:4200:0:e::107
+ispmon.samknows.cpt01             IN  AAAA	2001:4200:0:e::120
+ispmon.samknows.mlab4.cpt01       IN  AAAA	2001:4200:0:e::120
 ispmon.samknows.den01             IN  AAAA	2001:470:1:250::81
 ispmon.samknows.mlab1.den01       IN  AAAA	2001:470:1:250::81
 ispmon.samknows.den01             IN  AAAA	2001:470:1:250::94
@@ -26410,6 +26743,8 @@ ispmon.samknows.ham01             IN  AAAA	2001:2030:0:19::226
 ispmon.samknows.mlab2.ham01       IN  AAAA	2001:2030:0:19::226
 ispmon.samknows.ham01             IN  AAAA	2001:2030:0:19::239
 ispmon.samknows.mlab3.ham01       IN  AAAA	2001:2030:0:19::239
+ispmon.samknows.ham01             IN  AAAA	2001:2030:0:19::248
+ispmon.samknows.mlab4.ham01       IN  AAAA	2001:2030:0:19::248
 ispmon.samknows.hnd01             IN  AAAA	2001:200:0:b801::209
 ispmon.samknows.mlab1.hnd01       IN  AAAA	2001:200:0:b801::209
 ispmon.samknows.hnd01             IN  AAAA	2001:200:0:b801::222
@@ -26472,6 +26807,8 @@ ispmon.samknows.jnb01             IN  AAAA	2001:4200:fff0:4512::158
 ispmon.samknows.mlab2.jnb01       IN  AAAA	2001:4200:fff0:4512::158
 ispmon.samknows.jnb01             IN  AAAA	2001:4200:fff0:4512::171
 ispmon.samknows.mlab3.jnb01       IN  AAAA	2001:4200:fff0:4512::171
+ispmon.samknows.jnb01             IN  AAAA	2001:4200:fff0:4512::184
+ispmon.samknows.mlab4.jnb01       IN  AAAA	2001:4200:fff0:4512::184
 ispmon.samknows.lax01             IN  AAAA	2001:550:6800::21
 ispmon.samknows.mlab1.lax01       IN  AAAA	2001:550:6800::21
 ispmon.samknows.lax01             IN  AAAA	2001:550:6800::34
@@ -27304,6 +27641,14 @@ ispmon.samknowsv6.bru04           IN  AAAA	2001:668:1f:69::43
 ispmon.samknows.mlab3v6.bru04     IN  AAAA	2001:668:1f:69::43
 ispmon.samknowsv6.bru04           IN  AAAA	2001:668:1f:69::56
 ispmon.samknows.mlab4v6.bru04     IN  AAAA	2001:668:1f:69::56
+ispmon.samknowsv6.cpt01           IN  AAAA	2001:4200:0:e::81
+ispmon.samknows.mlab1v6.cpt01     IN  AAAA	2001:4200:0:e::81
+ispmon.samknowsv6.cpt01           IN  AAAA	2001:4200:0:e::94
+ispmon.samknows.mlab2v6.cpt01     IN  AAAA	2001:4200:0:e::94
+ispmon.samknowsv6.cpt01           IN  AAAA	2001:4200:0:e::107
+ispmon.samknows.mlab3v6.cpt01     IN  AAAA	2001:4200:0:e::107
+ispmon.samknowsv6.cpt01           IN  AAAA	2001:4200:0:e::120
+ispmon.samknows.mlab4v6.cpt01     IN  AAAA	2001:4200:0:e::120
 ispmon.samknowsv6.den01           IN  AAAA	2001:470:1:250::81
 ispmon.samknows.mlab1v6.den01     IN  AAAA	2001:470:1:250::81
 ispmon.samknowsv6.den01           IN  AAAA	2001:470:1:250::94
@@ -27438,6 +27783,8 @@ ispmon.samknowsv6.ham01           IN  AAAA	2001:2030:0:19::226
 ispmon.samknows.mlab2v6.ham01     IN  AAAA	2001:2030:0:19::226
 ispmon.samknowsv6.ham01           IN  AAAA	2001:2030:0:19::239
 ispmon.samknows.mlab3v6.ham01     IN  AAAA	2001:2030:0:19::239
+ispmon.samknowsv6.ham01           IN  AAAA	2001:2030:0:19::248
+ispmon.samknows.mlab4v6.ham01     IN  AAAA	2001:2030:0:19::248
 ispmon.samknowsv6.hnd01           IN  AAAA	2001:200:0:b801::209
 ispmon.samknows.mlab1v6.hnd01     IN  AAAA	2001:200:0:b801::209
 ispmon.samknowsv6.hnd01           IN  AAAA	2001:200:0:b801::222
@@ -27500,6 +27847,8 @@ ispmon.samknowsv6.jnb01           IN  AAAA	2001:4200:fff0:4512::158
 ispmon.samknows.mlab2v6.jnb01     IN  AAAA	2001:4200:fff0:4512::158
 ispmon.samknowsv6.jnb01           IN  AAAA	2001:4200:fff0:4512::171
 ispmon.samknows.mlab3v6.jnb01     IN  AAAA	2001:4200:fff0:4512::171
+ispmon.samknowsv6.jnb01           IN  AAAA	2001:4200:fff0:4512::184
+ispmon.samknows.mlab4v6.jnb01     IN  AAAA	2001:4200:fff0:4512::184
 ispmon.samknowsv6.lax01           IN  AAAA	2001:550:6800::21
 ispmon.samknows.mlab1v6.lax01     IN  AAAA	2001:550:6800::21
 ispmon.samknowsv6.lax01           IN  AAAA	2001:550:6800::34
@@ -28338,6 +28687,14 @@ bismark.gt.bru04                  IN  A   	77.67.119.44
 bismark.gt.mlab3.bru04            IN  A   	77.67.119.44
 bismark.gt.bru04                  IN  A   	77.67.119.57
 bismark.gt.mlab4.bru04            IN  A   	77.67.119.57
+bismark.gt.cpt01                  IN  A   	154.114.19.82
+bismark.gt.mlab1.cpt01            IN  A   	154.114.19.82
+bismark.gt.cpt01                  IN  A   	154.114.19.95
+bismark.gt.mlab2.cpt01            IN  A   	154.114.19.95
+bismark.gt.cpt01                  IN  A   	154.114.19.108
+bismark.gt.mlab3.cpt01            IN  A   	154.114.19.108
+bismark.gt.cpt01                  IN  A   	154.114.19.121
+bismark.gt.mlab4.cpt01            IN  A   	154.114.19.121
 bismark.gt.den01                  IN  A   	184.105.23.82
 bismark.gt.mlab1.den01            IN  A   	184.105.23.82
 bismark.gt.den01                  IN  A   	184.105.23.95
@@ -28472,6 +28829,8 @@ bismark.gt.ham01                  IN  A   	80.239.142.220
 bismark.gt.mlab2.ham01            IN  A   	80.239.142.220
 bismark.gt.ham01                  IN  A   	80.239.142.231
 bismark.gt.mlab3.ham01            IN  A   	80.239.142.231
+bismark.gt.ham01                  IN  A   	80.239.142.249
+bismark.gt.mlab4.ham01            IN  A   	80.239.142.249
 bismark.gt.hnd01                  IN  A   	203.178.130.210
 bismark.gt.mlab1.hnd01            IN  A   	203.178.130.210
 bismark.gt.hnd01                  IN  A   	203.178.130.223
@@ -28534,6 +28893,8 @@ bismark.gt.jnb01                  IN  A   	196.24.45.159
 bismark.gt.mlab2.jnb01            IN  A   	196.24.45.159
 bismark.gt.jnb01                  IN  A   	196.24.45.172
 bismark.gt.mlab3.jnb01            IN  A   	196.24.45.172
+bismark.gt.jnb01                  IN  A   	196.24.45.185
+bismark.gt.mlab4.jnb01            IN  A   	196.24.45.185
 bismark.gt.lax01                  IN  A   	38.98.51.12
 bismark.gt.mlab1.lax01            IN  A   	38.98.51.12
 bismark.gt.lax01                  IN  A   	38.98.51.26
@@ -28806,6 +29167,8 @@ bismark.gt.mpm01                  IN  A   	41.94.23.31
 bismark.gt.mlab2.mpm01            IN  A   	41.94.23.31
 bismark.gt.mpm01                  IN  A   	41.94.23.44
 bismark.gt.mlab3.mpm01            IN  A   	41.94.23.44
+bismark.gt.mpm01                  IN  A   	41.94.23.57
+bismark.gt.mlab4.mpm01            IN  A   	41.94.23.57
 bismark.gt.nbo01                  IN  A   	197.136.0.82
 bismark.gt.mlab1.nbo01            IN  A   	197.136.0.82
 bismark.gt.nbo01                  IN  A   	197.136.0.95
@@ -29398,6 +29761,14 @@ bismark.gtv4.bru04                IN  A   	77.67.119.44
 bismark.gt.mlab3v4.bru04          IN  A   	77.67.119.44
 bismark.gtv4.bru04                IN  A   	77.67.119.57
 bismark.gt.mlab4v4.bru04          IN  A   	77.67.119.57
+bismark.gtv4.cpt01                IN  A   	154.114.19.82
+bismark.gt.mlab1v4.cpt01          IN  A   	154.114.19.82
+bismark.gtv4.cpt01                IN  A   	154.114.19.95
+bismark.gt.mlab2v4.cpt01          IN  A   	154.114.19.95
+bismark.gtv4.cpt01                IN  A   	154.114.19.108
+bismark.gt.mlab3v4.cpt01          IN  A   	154.114.19.108
+bismark.gtv4.cpt01                IN  A   	154.114.19.121
+bismark.gt.mlab4v4.cpt01          IN  A   	154.114.19.121
 bismark.gtv4.den01                IN  A   	184.105.23.82
 bismark.gt.mlab1v4.den01          IN  A   	184.105.23.82
 bismark.gtv4.den01                IN  A   	184.105.23.95
@@ -29532,6 +29903,8 @@ bismark.gtv4.ham01                IN  A   	80.239.142.220
 bismark.gt.mlab2v4.ham01          IN  A   	80.239.142.220
 bismark.gtv4.ham01                IN  A   	80.239.142.231
 bismark.gt.mlab3v4.ham01          IN  A   	80.239.142.231
+bismark.gtv4.ham01                IN  A   	80.239.142.249
+bismark.gt.mlab4v4.ham01          IN  A   	80.239.142.249
 bismark.gtv4.hnd01                IN  A   	203.178.130.210
 bismark.gt.mlab1v4.hnd01          IN  A   	203.178.130.210
 bismark.gtv4.hnd01                IN  A   	203.178.130.223
@@ -29594,6 +29967,8 @@ bismark.gtv4.jnb01                IN  A   	196.24.45.159
 bismark.gt.mlab2v4.jnb01          IN  A   	196.24.45.159
 bismark.gtv4.jnb01                IN  A   	196.24.45.172
 bismark.gt.mlab3v4.jnb01          IN  A   	196.24.45.172
+bismark.gtv4.jnb01                IN  A   	196.24.45.185
+bismark.gt.mlab4v4.jnb01          IN  A   	196.24.45.185
 bismark.gtv4.lax01                IN  A   	38.98.51.12
 bismark.gt.mlab1v4.lax01          IN  A   	38.98.51.12
 bismark.gtv4.lax01                IN  A   	38.98.51.26
@@ -29866,6 +30241,8 @@ bismark.gtv4.mpm01                IN  A   	41.94.23.31
 bismark.gt.mlab2v4.mpm01          IN  A   	41.94.23.31
 bismark.gtv4.mpm01                IN  A   	41.94.23.44
 bismark.gt.mlab3v4.mpm01          IN  A   	41.94.23.44
+bismark.gtv4.mpm01                IN  A   	41.94.23.57
+bismark.gt.mlab4v4.mpm01          IN  A   	41.94.23.57
 bismark.gtv4.nbo01                IN  A   	197.136.0.82
 bismark.gt.mlab1v4.nbo01          IN  A   	197.136.0.82
 bismark.gtv4.nbo01                IN  A   	197.136.0.95
@@ -30466,6 +30843,14 @@ neubot.mlab.bru04                 IN  A   	77.67.119.45
 neubot.mlab.mlab3.bru04           IN  A   	77.67.119.45
 neubot.mlab.bru04                 IN  A   	77.67.119.58
 neubot.mlab.mlab4.bru04           IN  A   	77.67.119.58
+neubot.mlab.cpt01                 IN  A   	154.114.19.83
+neubot.mlab.mlab1.cpt01           IN  A   	154.114.19.83
+neubot.mlab.cpt01                 IN  A   	154.114.19.96
+neubot.mlab.mlab2.cpt01           IN  A   	154.114.19.96
+neubot.mlab.cpt01                 IN  A   	154.114.19.109
+neubot.mlab.mlab3.cpt01           IN  A   	154.114.19.109
+neubot.mlab.cpt01                 IN  A   	154.114.19.122
+neubot.mlab.mlab4.cpt01           IN  A   	154.114.19.122
 neubot.mlab.den01                 IN  A   	184.105.23.83
 neubot.mlab.mlab1.den01           IN  A   	184.105.23.83
 neubot.mlab.den01                 IN  A   	184.105.23.96
@@ -30600,6 +30985,8 @@ neubot.mlab.ham01                 IN  A   	80.239.142.225
 neubot.mlab.mlab2.ham01           IN  A   	80.239.142.225
 neubot.mlab.ham01                 IN  A   	80.239.142.238
 neubot.mlab.mlab3.ham01           IN  A   	80.239.142.238
+neubot.mlab.ham01                 IN  A   	80.239.142.250
+neubot.mlab.mlab4.ham01           IN  A   	80.239.142.250
 neubot.mlab.hnd01                 IN  A   	203.178.130.211
 neubot.mlab.mlab1.hnd01           IN  A   	203.178.130.211
 neubot.mlab.hnd01                 IN  A   	203.178.130.224
@@ -30662,6 +31049,8 @@ neubot.mlab.jnb01                 IN  A   	196.24.45.160
 neubot.mlab.mlab2.jnb01           IN  A   	196.24.45.160
 neubot.mlab.jnb01                 IN  A   	196.24.45.173
 neubot.mlab.mlab3.jnb01           IN  A   	196.24.45.173
+neubot.mlab.jnb01                 IN  A   	196.24.45.186
+neubot.mlab.mlab4.jnb01           IN  A   	196.24.45.186
 neubot.mlab.lax01                 IN  A   	38.98.51.19
 neubot.mlab.mlab1.lax01           IN  A   	38.98.51.19
 neubot.mlab.lax01                 IN  A   	38.98.51.32
@@ -30934,6 +31323,8 @@ neubot.mlab.mpm01                 IN  A   	41.94.23.32
 neubot.mlab.mlab2.mpm01           IN  A   	41.94.23.32
 neubot.mlab.mpm01                 IN  A   	41.94.23.45
 neubot.mlab.mlab3.mpm01           IN  A   	41.94.23.45
+neubot.mlab.mpm01                 IN  A   	41.94.23.58
+neubot.mlab.mlab4.mpm01           IN  A   	41.94.23.58
 neubot.mlab.nbo01                 IN  A   	197.136.0.83
 neubot.mlab.mlab1.nbo01           IN  A   	197.136.0.83
 neubot.mlab.nbo01                 IN  A   	197.136.0.96
@@ -31526,6 +31917,14 @@ neubot.mlabv4.bru04               IN  A   	77.67.119.45
 neubot.mlab.mlab3v4.bru04         IN  A   	77.67.119.45
 neubot.mlabv4.bru04               IN  A   	77.67.119.58
 neubot.mlab.mlab4v4.bru04         IN  A   	77.67.119.58
+neubot.mlabv4.cpt01               IN  A   	154.114.19.83
+neubot.mlab.mlab1v4.cpt01         IN  A   	154.114.19.83
+neubot.mlabv4.cpt01               IN  A   	154.114.19.96
+neubot.mlab.mlab2v4.cpt01         IN  A   	154.114.19.96
+neubot.mlabv4.cpt01               IN  A   	154.114.19.109
+neubot.mlab.mlab3v4.cpt01         IN  A   	154.114.19.109
+neubot.mlabv4.cpt01               IN  A   	154.114.19.122
+neubot.mlab.mlab4v4.cpt01         IN  A   	154.114.19.122
 neubot.mlabv4.den01               IN  A   	184.105.23.83
 neubot.mlab.mlab1v4.den01         IN  A   	184.105.23.83
 neubot.mlabv4.den01               IN  A   	184.105.23.96
@@ -31660,6 +32059,8 @@ neubot.mlabv4.ham01               IN  A   	80.239.142.225
 neubot.mlab.mlab2v4.ham01         IN  A   	80.239.142.225
 neubot.mlabv4.ham01               IN  A   	80.239.142.238
 neubot.mlab.mlab3v4.ham01         IN  A   	80.239.142.238
+neubot.mlabv4.ham01               IN  A   	80.239.142.250
+neubot.mlab.mlab4v4.ham01         IN  A   	80.239.142.250
 neubot.mlabv4.hnd01               IN  A   	203.178.130.211
 neubot.mlab.mlab1v4.hnd01         IN  A   	203.178.130.211
 neubot.mlabv4.hnd01               IN  A   	203.178.130.224
@@ -31722,6 +32123,8 @@ neubot.mlabv4.jnb01               IN  A   	196.24.45.160
 neubot.mlab.mlab2v4.jnb01         IN  A   	196.24.45.160
 neubot.mlabv4.jnb01               IN  A   	196.24.45.173
 neubot.mlab.mlab3v4.jnb01         IN  A   	196.24.45.173
+neubot.mlabv4.jnb01               IN  A   	196.24.45.186
+neubot.mlab.mlab4v4.jnb01         IN  A   	196.24.45.186
 neubot.mlabv4.lax01               IN  A   	38.98.51.19
 neubot.mlab.mlab1v4.lax01         IN  A   	38.98.51.19
 neubot.mlabv4.lax01               IN  A   	38.98.51.32
@@ -31994,6 +32397,8 @@ neubot.mlabv4.mpm01               IN  A   	41.94.23.32
 neubot.mlab.mlab2v4.mpm01         IN  A   	41.94.23.32
 neubot.mlabv4.mpm01               IN  A   	41.94.23.45
 neubot.mlab.mlab3v4.mpm01         IN  A   	41.94.23.45
+neubot.mlabv4.mpm01               IN  A   	41.94.23.58
+neubot.mlab.mlab4v4.mpm01         IN  A   	41.94.23.58
 neubot.mlabv4.nbo01               IN  A   	197.136.0.83
 neubot.mlab.mlab1v4.nbo01         IN  A   	197.136.0.83
 neubot.mlabv4.nbo01               IN  A   	197.136.0.96
@@ -32580,6 +32985,14 @@ neubot.mlab.bru04                 IN  AAAA	2001:668:1f:69::45
 neubot.mlab.mlab3.bru04           IN  AAAA	2001:668:1f:69::45
 neubot.mlab.bru04                 IN  AAAA	2001:668:1f:69::58
 neubot.mlab.mlab4.bru04           IN  AAAA	2001:668:1f:69::58
+neubot.mlab.cpt01                 IN  AAAA	2001:4200:0:e::83
+neubot.mlab.mlab1.cpt01           IN  AAAA	2001:4200:0:e::83
+neubot.mlab.cpt01                 IN  AAAA	2001:4200:0:e::96
+neubot.mlab.mlab2.cpt01           IN  AAAA	2001:4200:0:e::96
+neubot.mlab.cpt01                 IN  AAAA	2001:4200:0:e::109
+neubot.mlab.mlab3.cpt01           IN  AAAA	2001:4200:0:e::109
+neubot.mlab.cpt01                 IN  AAAA	2001:4200:0:e::122
+neubot.mlab.mlab4.cpt01           IN  AAAA	2001:4200:0:e::122
 neubot.mlab.den01                 IN  AAAA	2001:470:1:250::83
 neubot.mlab.mlab1.den01           IN  AAAA	2001:470:1:250::83
 neubot.mlab.den01                 IN  AAAA	2001:470:1:250::96
@@ -32714,6 +33127,8 @@ neubot.mlab.ham01                 IN  AAAA	2001:2030:0:19::225
 neubot.mlab.mlab2.ham01           IN  AAAA	2001:2030:0:19::225
 neubot.mlab.ham01                 IN  AAAA	2001:2030:0:19::238
 neubot.mlab.mlab3.ham01           IN  AAAA	2001:2030:0:19::238
+neubot.mlab.ham01                 IN  AAAA	2001:2030:0:19::250
+neubot.mlab.mlab4.ham01           IN  AAAA	2001:2030:0:19::250
 neubot.mlab.hnd01                 IN  AAAA	2001:200:0:b801::211
 neubot.mlab.mlab1.hnd01           IN  AAAA	2001:200:0:b801::211
 neubot.mlab.hnd01                 IN  AAAA	2001:200:0:b801::224
@@ -32776,6 +33191,8 @@ neubot.mlab.jnb01                 IN  AAAA	2001:4200:fff0:4512::160
 neubot.mlab.mlab2.jnb01           IN  AAAA	2001:4200:fff0:4512::160
 neubot.mlab.jnb01                 IN  AAAA	2001:4200:fff0:4512::173
 neubot.mlab.mlab3.jnb01           IN  AAAA	2001:4200:fff0:4512::173
+neubot.mlab.jnb01                 IN  AAAA	2001:4200:fff0:4512::186
+neubot.mlab.mlab4.jnb01           IN  AAAA	2001:4200:fff0:4512::186
 neubot.mlab.lax01                 IN  AAAA	2001:550:6800::19
 neubot.mlab.mlab1.lax01           IN  AAAA	2001:550:6800::19
 neubot.mlab.lax01                 IN  AAAA	2001:550:6800::32
@@ -33608,6 +34025,14 @@ neubot.mlabv6.bru04               IN  AAAA	2001:668:1f:69::45
 neubot.mlab.mlab3v6.bru04         IN  AAAA	2001:668:1f:69::45
 neubot.mlabv6.bru04               IN  AAAA	2001:668:1f:69::58
 neubot.mlab.mlab4v6.bru04         IN  AAAA	2001:668:1f:69::58
+neubot.mlabv6.cpt01               IN  AAAA	2001:4200:0:e::83
+neubot.mlab.mlab1v6.cpt01         IN  AAAA	2001:4200:0:e::83
+neubot.mlabv6.cpt01               IN  AAAA	2001:4200:0:e::96
+neubot.mlab.mlab2v6.cpt01         IN  AAAA	2001:4200:0:e::96
+neubot.mlabv6.cpt01               IN  AAAA	2001:4200:0:e::109
+neubot.mlab.mlab3v6.cpt01         IN  AAAA	2001:4200:0:e::109
+neubot.mlabv6.cpt01               IN  AAAA	2001:4200:0:e::122
+neubot.mlab.mlab4v6.cpt01         IN  AAAA	2001:4200:0:e::122
 neubot.mlabv6.den01               IN  AAAA	2001:470:1:250::83
 neubot.mlab.mlab1v6.den01         IN  AAAA	2001:470:1:250::83
 neubot.mlabv6.den01               IN  AAAA	2001:470:1:250::96
@@ -33742,6 +34167,8 @@ neubot.mlabv6.ham01               IN  AAAA	2001:2030:0:19::225
 neubot.mlab.mlab2v6.ham01         IN  AAAA	2001:2030:0:19::225
 neubot.mlabv6.ham01               IN  AAAA	2001:2030:0:19::238
 neubot.mlab.mlab3v6.ham01         IN  AAAA	2001:2030:0:19::238
+neubot.mlabv6.ham01               IN  AAAA	2001:2030:0:19::250
+neubot.mlab.mlab4v6.ham01         IN  AAAA	2001:2030:0:19::250
 neubot.mlabv6.hnd01               IN  AAAA	2001:200:0:b801::211
 neubot.mlab.mlab1v6.hnd01         IN  AAAA	2001:200:0:b801::211
 neubot.mlabv6.hnd01               IN  AAAA	2001:200:0:b801::224
@@ -33804,6 +34231,8 @@ neubot.mlabv6.jnb01               IN  AAAA	2001:4200:fff0:4512::160
 neubot.mlab.mlab2v6.jnb01         IN  AAAA	2001:4200:fff0:4512::160
 neubot.mlabv6.jnb01               IN  AAAA	2001:4200:fff0:4512::173
 neubot.mlab.mlab3v6.jnb01         IN  AAAA	2001:4200:fff0:4512::173
+neubot.mlabv6.jnb01               IN  AAAA	2001:4200:fff0:4512::186
+neubot.mlab.mlab4v6.jnb01         IN  AAAA	2001:4200:fff0:4512::186
 neubot.mlabv6.lax01               IN  AAAA	2001:550:6800::19
 neubot.mlab.mlab1v6.lax01         IN  AAAA	2001:550:6800::19
 neubot.mlabv6.lax01               IN  AAAA	2001:550:6800::32
@@ -34642,6 +35071,14 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab3.bru04            IN  A   	77.67.119.46
 1.michigan.bru04                  IN  A   	77.67.119.59
 1.michigan.mlab4.bru04            IN  A   	77.67.119.59
+1.michigan.cpt01                  IN  A   	154.114.19.84
+1.michigan.mlab1.cpt01            IN  A   	154.114.19.84
+1.michigan.cpt01                  IN  A   	154.114.19.97
+1.michigan.mlab2.cpt01            IN  A   	154.114.19.97
+1.michigan.cpt01                  IN  A   	154.114.19.110
+1.michigan.mlab3.cpt01            IN  A   	154.114.19.110
+1.michigan.cpt01                  IN  A   	154.114.19.123
+1.michigan.mlab4.cpt01            IN  A   	154.114.19.123
 1.michigan.den01                  IN  A   	184.105.23.84
 1.michigan.mlab1.den01            IN  A   	184.105.23.84
 1.michigan.den01                  IN  A   	184.105.23.97
@@ -34776,6 +35213,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2.ham01            IN  A   	80.239.142.219
 1.michigan.ham01                  IN  A   	80.239.142.230
 1.michigan.mlab3.ham01            IN  A   	80.239.142.230
+1.michigan.ham01                  IN  A   	80.239.142.251
+1.michigan.mlab4.ham01            IN  A   	80.239.142.251
 1.michigan.hnd01                  IN  A   	203.178.130.212
 1.michigan.mlab1.hnd01            IN  A   	203.178.130.212
 1.michigan.hnd01                  IN  A   	203.178.130.225
@@ -34838,6 +35277,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2.jnb01            IN  A   	196.24.45.161
 1.michigan.jnb01                  IN  A   	196.24.45.174
 1.michigan.mlab3.jnb01            IN  A   	196.24.45.174
+1.michigan.jnb01                  IN  A   	196.24.45.187
+1.michigan.mlab4.jnb01            IN  A   	196.24.45.187
 1.michigan.lax01                  IN  A   	38.98.51.11
 1.michigan.mlab1.lax01            IN  A   	38.98.51.11
 1.michigan.lax01                  IN  A   	38.98.51.24
@@ -35110,6 +35551,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2.mpm01            IN  A   	41.94.23.33
 1.michigan.mpm01                  IN  A   	41.94.23.46
 1.michigan.mlab3.mpm01            IN  A   	41.94.23.46
+1.michigan.mpm01                  IN  A   	41.94.23.59
+1.michigan.mlab4.mpm01            IN  A   	41.94.23.59
 1.michigan.nbo01                  IN  A   	197.136.0.84
 1.michigan.mlab1.nbo01            IN  A   	197.136.0.84
 1.michigan.nbo01                  IN  A   	197.136.0.97
@@ -35702,6 +36145,14 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab3v4.bru04          IN  A   	77.67.119.46
 1.michiganv4.bru04                IN  A   	77.67.119.59
 1.michigan.mlab4v4.bru04          IN  A   	77.67.119.59
+1.michiganv4.cpt01                IN  A   	154.114.19.84
+1.michigan.mlab1v4.cpt01          IN  A   	154.114.19.84
+1.michiganv4.cpt01                IN  A   	154.114.19.97
+1.michigan.mlab2v4.cpt01          IN  A   	154.114.19.97
+1.michiganv4.cpt01                IN  A   	154.114.19.110
+1.michigan.mlab3v4.cpt01          IN  A   	154.114.19.110
+1.michiganv4.cpt01                IN  A   	154.114.19.123
+1.michigan.mlab4v4.cpt01          IN  A   	154.114.19.123
 1.michiganv4.den01                IN  A   	184.105.23.84
 1.michigan.mlab1v4.den01          IN  A   	184.105.23.84
 1.michiganv4.den01                IN  A   	184.105.23.97
@@ -35836,6 +36287,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2v4.ham01          IN  A   	80.239.142.219
 1.michiganv4.ham01                IN  A   	80.239.142.230
 1.michigan.mlab3v4.ham01          IN  A   	80.239.142.230
+1.michiganv4.ham01                IN  A   	80.239.142.251
+1.michigan.mlab4v4.ham01          IN  A   	80.239.142.251
 1.michiganv4.hnd01                IN  A   	203.178.130.212
 1.michigan.mlab1v4.hnd01          IN  A   	203.178.130.212
 1.michiganv4.hnd01                IN  A   	203.178.130.225
@@ -35898,6 +36351,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2v4.jnb01          IN  A   	196.24.45.161
 1.michiganv4.jnb01                IN  A   	196.24.45.174
 1.michigan.mlab3v4.jnb01          IN  A   	196.24.45.174
+1.michiganv4.jnb01                IN  A   	196.24.45.187
+1.michigan.mlab4v4.jnb01          IN  A   	196.24.45.187
 1.michiganv4.lax01                IN  A   	38.98.51.11
 1.michigan.mlab1v4.lax01          IN  A   	38.98.51.11
 1.michiganv4.lax01                IN  A   	38.98.51.24
@@ -36170,6 +36625,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2v4.mpm01          IN  A   	41.94.23.33
 1.michiganv4.mpm01                IN  A   	41.94.23.46
 1.michigan.mlab3v4.mpm01          IN  A   	41.94.23.46
+1.michiganv4.mpm01                IN  A   	41.94.23.59
+1.michigan.mlab4v4.mpm01          IN  A   	41.94.23.59
 1.michiganv4.nbo01                IN  A   	197.136.0.84
 1.michigan.mlab1v4.nbo01          IN  A   	197.136.0.84
 1.michiganv4.nbo01                IN  A   	197.136.0.97
@@ -36756,6 +37213,14 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab3.bru04            IN  AAAA	2001:668:1f:69::46
 1.michigan.bru04                  IN  AAAA	2001:668:1f:69::59
 1.michigan.mlab4.bru04            IN  AAAA	2001:668:1f:69::59
+1.michigan.cpt01                  IN  AAAA	2001:4200:0:e::84
+1.michigan.mlab1.cpt01            IN  AAAA	2001:4200:0:e::84
+1.michigan.cpt01                  IN  AAAA	2001:4200:0:e::97
+1.michigan.mlab2.cpt01            IN  AAAA	2001:4200:0:e::97
+1.michigan.cpt01                  IN  AAAA	2001:4200:0:e::110
+1.michigan.mlab3.cpt01            IN  AAAA	2001:4200:0:e::110
+1.michigan.cpt01                  IN  AAAA	2001:4200:0:e::123
+1.michigan.mlab4.cpt01            IN  AAAA	2001:4200:0:e::123
 1.michigan.den01                  IN  AAAA	2001:470:1:250::84
 1.michigan.mlab1.den01            IN  AAAA	2001:470:1:250::84
 1.michigan.den01                  IN  AAAA	2001:470:1:250::97
@@ -36890,6 +37355,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2.ham01            IN  AAAA	2001:2030:0:19::219
 1.michigan.ham01                  IN  AAAA	2001:2030:0:19::230
 1.michigan.mlab3.ham01            IN  AAAA	2001:2030:0:19::230
+1.michigan.ham01                  IN  AAAA	2001:2030:0:19::251
+1.michigan.mlab4.ham01            IN  AAAA	2001:2030:0:19::251
 1.michigan.hnd01                  IN  AAAA	2001:200:0:b801::212
 1.michigan.mlab1.hnd01            IN  AAAA	2001:200:0:b801::212
 1.michigan.hnd01                  IN  AAAA	2001:200:0:b801::225
@@ -36952,6 +37419,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2.jnb01            IN  AAAA	2001:4200:fff0:4512::161
 1.michigan.jnb01                  IN  AAAA	2001:4200:fff0:4512::174
 1.michigan.mlab3.jnb01            IN  AAAA	2001:4200:fff0:4512::174
+1.michigan.jnb01                  IN  AAAA	2001:4200:fff0:4512::187
+1.michigan.mlab4.jnb01            IN  AAAA	2001:4200:fff0:4512::187
 1.michigan.lax01                  IN  AAAA	2001:550:6800::11
 1.michigan.mlab1.lax01            IN  AAAA	2001:550:6800::11
 1.michigan.lax01                  IN  AAAA	2001:550:6800::24
@@ -37784,6 +38253,14 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab3v6.bru04          IN  AAAA	2001:668:1f:69::46
 1.michiganv6.bru04                IN  AAAA	2001:668:1f:69::59
 1.michigan.mlab4v6.bru04          IN  AAAA	2001:668:1f:69::59
+1.michiganv6.cpt01                IN  AAAA	2001:4200:0:e::84
+1.michigan.mlab1v6.cpt01          IN  AAAA	2001:4200:0:e::84
+1.michiganv6.cpt01                IN  AAAA	2001:4200:0:e::97
+1.michigan.mlab2v6.cpt01          IN  AAAA	2001:4200:0:e::97
+1.michiganv6.cpt01                IN  AAAA	2001:4200:0:e::110
+1.michigan.mlab3v6.cpt01          IN  AAAA	2001:4200:0:e::110
+1.michiganv6.cpt01                IN  AAAA	2001:4200:0:e::123
+1.michigan.mlab4v6.cpt01          IN  AAAA	2001:4200:0:e::123
 1.michiganv6.den01                IN  AAAA	2001:470:1:250::84
 1.michigan.mlab1v6.den01          IN  AAAA	2001:470:1:250::84
 1.michiganv6.den01                IN  AAAA	2001:470:1:250::97
@@ -37918,6 +38395,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2v6.ham01          IN  AAAA	2001:2030:0:19::219
 1.michiganv6.ham01                IN  AAAA	2001:2030:0:19::230
 1.michigan.mlab3v6.ham01          IN  AAAA	2001:2030:0:19::230
+1.michiganv6.ham01                IN  AAAA	2001:2030:0:19::251
+1.michigan.mlab4v6.ham01          IN  AAAA	2001:2030:0:19::251
 1.michiganv6.hnd01                IN  AAAA	2001:200:0:b801::212
 1.michigan.mlab1v6.hnd01          IN  AAAA	2001:200:0:b801::212
 1.michiganv6.hnd01                IN  AAAA	2001:200:0:b801::225
@@ -37980,6 +38459,8 @@ neubot.mlab.mlab4v6.iad1t         IN  AAAA	2610:18:8b40:202::58
 1.michigan.mlab2v6.jnb01          IN  AAAA	2001:4200:fff0:4512::161
 1.michiganv6.jnb01                IN  AAAA	2001:4200:fff0:4512::174
 1.michigan.mlab3v6.jnb01          IN  AAAA	2001:4200:fff0:4512::174
+1.michiganv6.jnb01                IN  AAAA	2001:4200:fff0:4512::187
+1.michigan.mlab4v6.jnb01          IN  AAAA	2001:4200:fff0:4512::187
 1.michiganv6.lax01                IN  AAAA	2001:550:6800::11
 1.michigan.mlab1v6.lax01          IN  AAAA	2001:550:6800::11
 1.michiganv6.lax01                IN  AAAA	2001:550:6800::24
@@ -38818,6 +39299,14 @@ utility.mlab.bru04                IN  A   	77.67.119.47
 utility.mlab.mlab3.bru04          IN  A   	77.67.119.47
 utility.mlab.bru04                IN  A   	77.67.119.60
 utility.mlab.mlab4.bru04          IN  A   	77.67.119.60
+utility.mlab.cpt01                IN  A   	154.114.19.85
+utility.mlab.mlab1.cpt01          IN  A   	154.114.19.85
+utility.mlab.cpt01                IN  A   	154.114.19.98
+utility.mlab.mlab2.cpt01          IN  A   	154.114.19.98
+utility.mlab.cpt01                IN  A   	154.114.19.111
+utility.mlab.mlab3.cpt01          IN  A   	154.114.19.111
+utility.mlab.cpt01                IN  A   	154.114.19.124
+utility.mlab.mlab4.cpt01          IN  A   	154.114.19.124
 utility.mlab.den01                IN  A   	184.105.23.85
 utility.mlab.mlab1.den01          IN  A   	184.105.23.85
 utility.mlab.den01                IN  A   	184.105.23.98
@@ -38952,6 +39441,8 @@ utility.mlab.ham01                IN  A   	80.239.142.221
 utility.mlab.mlab2.ham01          IN  A   	80.239.142.221
 utility.mlab.ham01                IN  A   	80.239.142.232
 utility.mlab.mlab3.ham01          IN  A   	80.239.142.232
+utility.mlab.ham01                IN  A   	80.239.142.252
+utility.mlab.mlab4.ham01          IN  A   	80.239.142.252
 utility.mlab.hnd01                IN  A   	203.178.130.213
 utility.mlab.mlab1.hnd01          IN  A   	203.178.130.213
 utility.mlab.hnd01                IN  A   	203.178.130.226
@@ -39014,6 +39505,8 @@ utility.mlab.jnb01                IN  A   	196.24.45.162
 utility.mlab.mlab2.jnb01          IN  A   	196.24.45.162
 utility.mlab.jnb01                IN  A   	196.24.45.175
 utility.mlab.mlab3.jnb01          IN  A   	196.24.45.175
+utility.mlab.jnb01                IN  A   	196.24.45.188
+utility.mlab.mlab4.jnb01          IN  A   	196.24.45.188
 utility.mlab.lax01                IN  A   	38.98.51.14
 utility.mlab.mlab1.lax01          IN  A   	38.98.51.14
 utility.mlab.lax01                IN  A   	38.98.51.28
@@ -39286,6 +39779,8 @@ utility.mlab.mpm01                IN  A   	41.94.23.34
 utility.mlab.mlab2.mpm01          IN  A   	41.94.23.34
 utility.mlab.mpm01                IN  A   	41.94.23.47
 utility.mlab.mlab3.mpm01          IN  A   	41.94.23.47
+utility.mlab.mpm01                IN  A   	41.94.23.60
+utility.mlab.mlab4.mpm01          IN  A   	41.94.23.60
 utility.mlab.nbo01                IN  A   	197.136.0.85
 utility.mlab.mlab1.nbo01          IN  A   	197.136.0.85
 utility.mlab.nbo01                IN  A   	197.136.0.98
@@ -39878,6 +40373,14 @@ utility.mlabv4.bru04              IN  A   	77.67.119.47
 utility.mlab.mlab3v4.bru04        IN  A   	77.67.119.47
 utility.mlabv4.bru04              IN  A   	77.67.119.60
 utility.mlab.mlab4v4.bru04        IN  A   	77.67.119.60
+utility.mlabv4.cpt01              IN  A   	154.114.19.85
+utility.mlab.mlab1v4.cpt01        IN  A   	154.114.19.85
+utility.mlabv4.cpt01              IN  A   	154.114.19.98
+utility.mlab.mlab2v4.cpt01        IN  A   	154.114.19.98
+utility.mlabv4.cpt01              IN  A   	154.114.19.111
+utility.mlab.mlab3v4.cpt01        IN  A   	154.114.19.111
+utility.mlabv4.cpt01              IN  A   	154.114.19.124
+utility.mlab.mlab4v4.cpt01        IN  A   	154.114.19.124
 utility.mlabv4.den01              IN  A   	184.105.23.85
 utility.mlab.mlab1v4.den01        IN  A   	184.105.23.85
 utility.mlabv4.den01              IN  A   	184.105.23.98
@@ -40012,6 +40515,8 @@ utility.mlabv4.ham01              IN  A   	80.239.142.221
 utility.mlab.mlab2v4.ham01        IN  A   	80.239.142.221
 utility.mlabv4.ham01              IN  A   	80.239.142.232
 utility.mlab.mlab3v4.ham01        IN  A   	80.239.142.232
+utility.mlabv4.ham01              IN  A   	80.239.142.252
+utility.mlab.mlab4v4.ham01        IN  A   	80.239.142.252
 utility.mlabv4.hnd01              IN  A   	203.178.130.213
 utility.mlab.mlab1v4.hnd01        IN  A   	203.178.130.213
 utility.mlabv4.hnd01              IN  A   	203.178.130.226
@@ -40074,6 +40579,8 @@ utility.mlabv4.jnb01              IN  A   	196.24.45.162
 utility.mlab.mlab2v4.jnb01        IN  A   	196.24.45.162
 utility.mlabv4.jnb01              IN  A   	196.24.45.175
 utility.mlab.mlab3v4.jnb01        IN  A   	196.24.45.175
+utility.mlabv4.jnb01              IN  A   	196.24.45.188
+utility.mlab.mlab4v4.jnb01        IN  A   	196.24.45.188
 utility.mlabv4.lax01              IN  A   	38.98.51.14
 utility.mlab.mlab1v4.lax01        IN  A   	38.98.51.14
 utility.mlabv4.lax01              IN  A   	38.98.51.28
@@ -40346,6 +40853,8 @@ utility.mlabv4.mpm01              IN  A   	41.94.23.34
 utility.mlab.mlab2v4.mpm01        IN  A   	41.94.23.34
 utility.mlabv4.mpm01              IN  A   	41.94.23.47
 utility.mlab.mlab3v4.mpm01        IN  A   	41.94.23.47
+utility.mlabv4.mpm01              IN  A   	41.94.23.60
+utility.mlab.mlab4v4.mpm01        IN  A   	41.94.23.60
 utility.mlabv4.nbo01              IN  A   	197.136.0.85
 utility.mlab.mlab1v4.nbo01        IN  A   	197.136.0.85
 utility.mlabv4.nbo01              IN  A   	197.136.0.98
@@ -40932,6 +41441,14 @@ utility.mlab.bru04                IN  AAAA	2001:668:1f:69::47
 utility.mlab.mlab3.bru04          IN  AAAA	2001:668:1f:69::47
 utility.mlab.bru04                IN  AAAA	2001:668:1f:69::60
 utility.mlab.mlab4.bru04          IN  AAAA	2001:668:1f:69::60
+utility.mlab.cpt01                IN  AAAA	2001:4200:0:e::85
+utility.mlab.mlab1.cpt01          IN  AAAA	2001:4200:0:e::85
+utility.mlab.cpt01                IN  AAAA	2001:4200:0:e::98
+utility.mlab.mlab2.cpt01          IN  AAAA	2001:4200:0:e::98
+utility.mlab.cpt01                IN  AAAA	2001:4200:0:e::111
+utility.mlab.mlab3.cpt01          IN  AAAA	2001:4200:0:e::111
+utility.mlab.cpt01                IN  AAAA	2001:4200:0:e::124
+utility.mlab.mlab4.cpt01          IN  AAAA	2001:4200:0:e::124
 utility.mlab.den01                IN  AAAA	2001:470:1:250::85
 utility.mlab.mlab1.den01          IN  AAAA	2001:470:1:250::85
 utility.mlab.den01                IN  AAAA	2001:470:1:250::98
@@ -41066,6 +41583,8 @@ utility.mlab.ham01                IN  AAAA	2001:2030:0:19::221
 utility.mlab.mlab2.ham01          IN  AAAA	2001:2030:0:19::221
 utility.mlab.ham01                IN  AAAA	2001:2030:0:19::232
 utility.mlab.mlab3.ham01          IN  AAAA	2001:2030:0:19::232
+utility.mlab.ham01                IN  AAAA	2001:2030:0:19::252
+utility.mlab.mlab4.ham01          IN  AAAA	2001:2030:0:19::252
 utility.mlab.hnd01                IN  AAAA	2001:200:0:b801::213
 utility.mlab.mlab1.hnd01          IN  AAAA	2001:200:0:b801::213
 utility.mlab.hnd01                IN  AAAA	2001:200:0:b801::226
@@ -41128,6 +41647,8 @@ utility.mlab.jnb01                IN  AAAA	2001:4200:fff0:4512::162
 utility.mlab.mlab2.jnb01          IN  AAAA	2001:4200:fff0:4512::162
 utility.mlab.jnb01                IN  AAAA	2001:4200:fff0:4512::175
 utility.mlab.mlab3.jnb01          IN  AAAA	2001:4200:fff0:4512::175
+utility.mlab.jnb01                IN  AAAA	2001:4200:fff0:4512::188
+utility.mlab.mlab4.jnb01          IN  AAAA	2001:4200:fff0:4512::188
 utility.mlab.lax01                IN  AAAA	2001:550:6800::14
 utility.mlab.mlab1.lax01          IN  AAAA	2001:550:6800::14
 utility.mlab.lax01                IN  AAAA	2001:550:6800::28
@@ -41960,6 +42481,14 @@ utility.mlabv6.bru04              IN  AAAA	2001:668:1f:69::47
 utility.mlab.mlab3v6.bru04        IN  AAAA	2001:668:1f:69::47
 utility.mlabv6.bru04              IN  AAAA	2001:668:1f:69::60
 utility.mlab.mlab4v6.bru04        IN  AAAA	2001:668:1f:69::60
+utility.mlabv6.cpt01              IN  AAAA	2001:4200:0:e::85
+utility.mlab.mlab1v6.cpt01        IN  AAAA	2001:4200:0:e::85
+utility.mlabv6.cpt01              IN  AAAA	2001:4200:0:e::98
+utility.mlab.mlab2v6.cpt01        IN  AAAA	2001:4200:0:e::98
+utility.mlabv6.cpt01              IN  AAAA	2001:4200:0:e::111
+utility.mlab.mlab3v6.cpt01        IN  AAAA	2001:4200:0:e::111
+utility.mlabv6.cpt01              IN  AAAA	2001:4200:0:e::124
+utility.mlab.mlab4v6.cpt01        IN  AAAA	2001:4200:0:e::124
 utility.mlabv6.den01              IN  AAAA	2001:470:1:250::85
 utility.mlab.mlab1v6.den01        IN  AAAA	2001:470:1:250::85
 utility.mlabv6.den01              IN  AAAA	2001:470:1:250::98
@@ -42094,6 +42623,8 @@ utility.mlabv6.ham01              IN  AAAA	2001:2030:0:19::221
 utility.mlab.mlab2v6.ham01        IN  AAAA	2001:2030:0:19::221
 utility.mlabv6.ham01              IN  AAAA	2001:2030:0:19::232
 utility.mlab.mlab3v6.ham01        IN  AAAA	2001:2030:0:19::232
+utility.mlabv6.ham01              IN  AAAA	2001:2030:0:19::252
+utility.mlab.mlab4v6.ham01        IN  AAAA	2001:2030:0:19::252
 utility.mlabv6.hnd01              IN  AAAA	2001:200:0:b801::213
 utility.mlab.mlab1v6.hnd01        IN  AAAA	2001:200:0:b801::213
 utility.mlabv6.hnd01              IN  AAAA	2001:200:0:b801::226
@@ -42156,6 +42687,8 @@ utility.mlabv6.jnb01              IN  AAAA	2001:4200:fff0:4512::162
 utility.mlab.mlab2v6.jnb01        IN  AAAA	2001:4200:fff0:4512::162
 utility.mlabv6.jnb01              IN  AAAA	2001:4200:fff0:4512::175
 utility.mlab.mlab3v6.jnb01        IN  AAAA	2001:4200:fff0:4512::175
+utility.mlabv6.jnb01              IN  AAAA	2001:4200:fff0:4512::188
+utility.mlab.mlab4v6.jnb01        IN  AAAA	2001:4200:fff0:4512::188
 utility.mlabv6.lax01              IN  AAAA	2001:550:6800::14
 utility.mlab.mlab1v6.lax01        IN  AAAA	2001:550:6800::14
 utility.mlabv6.lax01              IN  AAAA	2001:550:6800::28

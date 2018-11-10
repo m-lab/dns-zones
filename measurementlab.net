@@ -60,7 +60,7 @@ test         IN    CNAME    ghs.googlehosted.com.
 mirror-test  IN    CNAME    c.storage.googleapis.com.
 viz          IN    CNAME    ghs.googlehosted.com.
 data-api     IN    CNAME    ghs.googlehosted.com.
-openbalena      IN    A    35.209.108.67
+iot          IN    A        35.209.108.67
 
 ;
 ; mlc services

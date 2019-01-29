@@ -21,7 +21,7 @@ $TTL 120
 @        IN    MX    10    aspmx2.googlemail.com.
 @        IN    MX    10    aspmx3.googlemail.com.
 
-@              IN    A        35.241.9.189
+@              IN    A        45.56.98.222
 www            IN    A        35.241.9.189
 speed          IN    CNAME    d2617zhi55z8n7.cloudfront.net.
 www-staging    IN    CNAME    ghs.googlehosted.com.

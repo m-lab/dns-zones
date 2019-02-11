@@ -3,7 +3,7 @@ $ORIGIN measurementlab.net.
 $TTL 120
 
 @    IN    SOA    sns-pb.isc.org.  support.measurementlab.net.    (
-    2018100200 ;Serial Number
+    2019020700 ;Serial Number
     1h  ;refresh
     900 ;retry
     1w  ;expire
@@ -15,15 +15,18 @@ $TTL 120
 @        IN    TXT   "google-site-verification=lN4HHWmCV4gTtKslbFKZNrMNkYx4NhwsjSmmjsPr_Vg"
 @        IN    TXT   "google-site-verification=QzNQqgKdrElH34L_mzcEdeVoq1JP-WhiuMUB-Cm8oZg"
 @        IN    TXT   "google-site-verification=C901sQ7Uym2ZSuXbKSBsfncEXQ5tEzR4fAcAMoJnaX0"
+@        IN    TXT   "google-site-verification=JlPXKcX1J6YZfBv8xrQPE4LLWVwEm8BKu7Hv2OCW-Lw"
 @        IN    MX    1    aspmx.l.google.com.
 @        IN    MX    5    alt1.aspmx.l.google.com.
 @        IN    MX    5    alt2.aspmx.l.google.com.
 @        IN    MX    10    aspmx2.googlemail.com.
 @        IN    MX    10    aspmx3.googlemail.com.
 
-@              IN    A        45.56.98.222
+@              IN    A        151.101.65.195
+@              IN    A        151.101.1.195
+www            IN    A        151.101.65.195
+www            IN    A        151.101.1.195
 speed          IN    CNAME    d2617zhi55z8n7.cloudfront.net.
-www            IN    CNAME    d3f2vqxgk3exj.cloudfront.net.
 www-staging    IN    CNAME    ghs.googlehosted.com.
 
 ;@        IN    A     72.249.86.184

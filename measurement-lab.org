@@ -8,7 +8,7 @@ $ORIGIN measurement-lab.org.
 $TTL    300
 
 @       IN      SOA     sns-pb.isc.org. support.measurementlab.net. (
-        2019022800      ; Serial
+        2019031401      ; Serial
         3600     ; Refresh
         600       ; Retry
         604800      ; Expire
@@ -265,8 +265,6 @@ r1.lis02                          IN  A   	195.89.147.129
 s1.lis02                          IN  A   	195.89.147.130
 r1.lju01                          IN  A   	91.239.96.65
 s1.lju01                          IN  A   	91.239.96.66
-r1.los01                          IN  A   	196.216.149.65
-s1.los01                          IN  A   	196.216.149.66
 r1.mad02                          IN  A   	213.242.96.129
 s1.mad02                          IN  A   	213.242.96.130
 r1.mad03                          IN  A   	80.239.229.129
@@ -676,9 +674,6 @@ mlab1d.lju01                      IN  A   	91.239.96.68
 mlab2d.lju01                      IN  A   	91.239.96.69
 mlab3d.lju01                      IN  A   	91.239.96.70
 mlab4d.lju01                      IN  A   	91.239.96.71
-mlab1d.los01                      IN  A   	196.216.149.68
-mlab2d.los01                      IN  A   	196.216.149.69
-mlab3d.los01                      IN  A   	196.216.149.70
 mlab1d.mad02                      IN  A   	213.242.96.132
 mlab2d.mad02                      IN  A   	213.242.96.133
 mlab3d.mad02                      IN  A   	213.242.96.134
@@ -1206,9 +1201,6 @@ mlab1.lju01                       IN  A   	91.239.96.73
 mlab2.lju01                       IN  A   	91.239.96.86
 mlab3.lju01                       IN  A   	91.239.96.99
 mlab4.lju01                       IN  A   	91.239.96.112
-mlab1.los01                       IN  A   	196.216.149.73
-mlab2.los01                       IN  A   	196.216.149.86
-mlab3.los01                       IN  A   	196.216.149.99
 mlab1.mad02                       IN  A   	213.242.96.137
 mlab2.mad02                       IN  A   	213.242.96.150
 mlab3.mad02                       IN  A   	213.242.96.163
@@ -1736,9 +1728,6 @@ mlab1v4.lju01                     IN  A   	91.239.96.73
 mlab2v4.lju01                     IN  A   	91.239.96.86
 mlab3v4.lju01                     IN  A   	91.239.96.99
 mlab4v4.lju01                     IN  A   	91.239.96.112
-mlab1v4.los01                     IN  A   	196.216.149.73
-mlab2v4.los01                     IN  A   	196.216.149.86
-mlab3v4.los01                     IN  A   	196.216.149.99
 mlab1v4.mad02                     IN  A   	213.242.96.137
 mlab2v4.mad02                     IN  A   	213.242.96.150
 mlab3v4.mad02                     IN  A   	213.242.96.163
@@ -3581,12 +3570,6 @@ ndt.iupui.lju01                   IN  A   	91.239.96.101
 ndt.iupui.mlab3.lju01             IN  A   	91.239.96.101
 ndt.iupui.lju01                   IN  A   	91.239.96.114
 ndt.iupui.mlab4.lju01             IN  A   	91.239.96.114
-ndt.iupui.los01                   IN  A   	196.216.149.75
-ndt.iupui.mlab1.los01             IN  A   	196.216.149.75
-ndt.iupui.los01                   IN  A   	196.216.149.88
-ndt.iupui.mlab2.los01             IN  A   	196.216.149.88
-ndt.iupui.los01                   IN  A   	196.216.149.101
-ndt.iupui.mlab3.los01             IN  A   	196.216.149.101
 ndt.iupui.mad02                   IN  A   	213.242.96.139
 ndt.iupui.mlab1.mad02             IN  A   	213.242.96.139
 ndt.iupui.mad02                   IN  A   	213.242.96.152
@@ -4639,12 +4622,6 @@ ndt.iupuiv4.lju01                 IN  A   	91.239.96.101
 ndt.iupui.mlab3v4.lju01           IN  A   	91.239.96.101
 ndt.iupuiv4.lju01                 IN  A   	91.239.96.114
 ndt.iupui.mlab4v4.lju01           IN  A   	91.239.96.114
-ndt.iupuiv4.los01                 IN  A   	196.216.149.75
-ndt.iupui.mlab1v4.los01           IN  A   	196.216.149.75
-ndt.iupuiv4.los01                 IN  A   	196.216.149.88
-ndt.iupui.mlab2v4.los01           IN  A   	196.216.149.88
-ndt.iupuiv4.los01                 IN  A   	196.216.149.101
-ndt.iupui.mlab3v4.los01           IN  A   	196.216.149.101
 ndt.iupuiv4.mad02                 IN  A   	213.242.96.139
 ndt.iupui.mlab1v4.mad02           IN  A   	213.242.96.139
 ndt.iupuiv4.mad02                 IN  A   	213.242.96.152
@@ -7456,9 +7433,6 @@ ndt-iupui-mlab1-lju01             IN  A   	91.239.96.75
 ndt-iupui-mlab2-lju01             IN  A   	91.239.96.88
 ndt-iupui-mlab3-lju01             IN  A   	91.239.96.101
 ndt-iupui-mlab4-lju01             IN  A   	91.239.96.114
-ndt-iupui-mlab1-los01             IN  A   	196.216.149.75
-ndt-iupui-mlab2-los01             IN  A   	196.216.149.88
-ndt-iupui-mlab3-los01             IN  A   	196.216.149.101
 ndt-iupui-mlab1-mad02             IN  A   	213.242.96.139
 ndt-iupui-mlab2-mad02             IN  A   	213.242.96.152
 ndt-iupui-mlab3-mad02             IN  A   	213.242.96.165
@@ -7986,9 +7960,6 @@ ndt-iupui-mlab1v4-lju01           IN  A   	91.239.96.75
 ndt-iupui-mlab2v4-lju01           IN  A   	91.239.96.88
 ndt-iupui-mlab3v4-lju01           IN  A   	91.239.96.101
 ndt-iupui-mlab4v4-lju01           IN  A   	91.239.96.114
-ndt-iupui-mlab1v4-los01           IN  A   	196.216.149.75
-ndt-iupui-mlab2v4-los01           IN  A   	196.216.149.88
-ndt-iupui-mlab3v4-los01           IN  A   	196.216.149.101
 ndt-iupui-mlab1v4-mad02           IN  A   	213.242.96.139
 ndt-iupui-mlab2v4-mad02           IN  A   	213.242.96.152
 ndt-iupui-mlab3v4-mad02           IN  A   	213.242.96.165
@@ -9831,12 +9802,6 @@ npad.iupui.lju01                  IN  A   	91.239.96.102
 npad.iupui.mlab3.lju01            IN  A   	91.239.96.102
 npad.iupui.lju01                  IN  A   	91.239.96.115
 npad.iupui.mlab4.lju01            IN  A   	91.239.96.115
-npad.iupui.los01                  IN  A   	196.216.149.76
-npad.iupui.mlab1.los01            IN  A   	196.216.149.76
-npad.iupui.los01                  IN  A   	196.216.149.89
-npad.iupui.mlab2.los01            IN  A   	196.216.149.89
-npad.iupui.los01                  IN  A   	196.216.149.102
-npad.iupui.mlab3.los01            IN  A   	196.216.149.102
 npad.iupui.mad02                  IN  A   	213.242.96.140
 npad.iupui.mlab1.mad02            IN  A   	213.242.96.140
 npad.iupui.mad02                  IN  A   	213.242.96.153
@@ -10889,12 +10854,6 @@ npad.iupuiv4.lju01                IN  A   	91.239.96.102
 npad.iupui.mlab3v4.lju01          IN  A   	91.239.96.102
 npad.iupuiv4.lju01                IN  A   	91.239.96.115
 npad.iupui.mlab4v4.lju01          IN  A   	91.239.96.115
-npad.iupuiv4.los01                IN  A   	196.216.149.76
-npad.iupui.mlab1v4.los01          IN  A   	196.216.149.76
-npad.iupuiv4.los01                IN  A   	196.216.149.89
-npad.iupui.mlab2v4.los01          IN  A   	196.216.149.89
-npad.iupuiv4.los01                IN  A   	196.216.149.102
-npad.iupui.mlab3v4.los01          IN  A   	196.216.149.102
 npad.iupuiv4.mad02                IN  A   	213.242.96.140
 npad.iupui.mlab1v4.mad02          IN  A   	213.242.96.140
 npad.iupuiv4.mad02                IN  A   	213.242.96.153
@@ -13995,12 +13954,6 @@ diff.mlab.lju01                   IN  A   	91.239.96.104
 diff.mlab.mlab3.lju01             IN  A   	91.239.96.104
 diff.mlab.lju01                   IN  A   	91.239.96.117
 diff.mlab.mlab4.lju01             IN  A   	91.239.96.117
-diff.mlab.los01                   IN  A   	196.216.149.78
-diff.mlab.mlab1.los01             IN  A   	196.216.149.78
-diff.mlab.los01                   IN  A   	196.216.149.91
-diff.mlab.mlab2.los01             IN  A   	196.216.149.91
-diff.mlab.los01                   IN  A   	196.216.149.104
-diff.mlab.mlab3.los01             IN  A   	196.216.149.104
 diff.mlab.mad02                   IN  A   	213.242.96.142
 diff.mlab.mlab1.mad02             IN  A   	213.242.96.142
 diff.mlab.mad02                   IN  A   	213.242.96.155
@@ -15053,12 +15006,6 @@ diff.mlabv4.lju01                 IN  A   	91.239.96.104
 diff.mlab.mlab3v4.lju01           IN  A   	91.239.96.104
 diff.mlabv4.lju01                 IN  A   	91.239.96.117
 diff.mlab.mlab4v4.lju01           IN  A   	91.239.96.117
-diff.mlabv4.los01                 IN  A   	196.216.149.78
-diff.mlab.mlab1v4.los01           IN  A   	196.216.149.78
-diff.mlabv4.los01                 IN  A   	196.216.149.91
-diff.mlab.mlab2v4.los01           IN  A   	196.216.149.91
-diff.mlabv4.los01                 IN  A   	196.216.149.104
-diff.mlab.mlab3v4.los01           IN  A   	196.216.149.104
 diff.mlabv4.mad02                 IN  A   	213.242.96.142
 diff.mlab.mlab1v4.mad02           IN  A   	213.242.96.142
 diff.mlabv4.mad02                 IN  A   	213.242.96.155
@@ -18159,12 +18106,6 @@ geoloc4.uw.lju01                  IN  A   	91.239.96.105
 geoloc4.uw.mlab3.lju01            IN  A   	91.239.96.105
 geoloc4.uw.lju01                  IN  A   	91.239.96.118
 geoloc4.uw.mlab4.lju01            IN  A   	91.239.96.118
-geoloc4.uw.los01                  IN  A   	196.216.149.79
-geoloc4.uw.mlab1.los01            IN  A   	196.216.149.79
-geoloc4.uw.los01                  IN  A   	196.216.149.92
-geoloc4.uw.mlab2.los01            IN  A   	196.216.149.92
-geoloc4.uw.los01                  IN  A   	196.216.149.105
-geoloc4.uw.mlab3.los01            IN  A   	196.216.149.105
 geoloc4.uw.mad02                  IN  A   	213.242.96.143
 geoloc4.uw.mlab1.mad02            IN  A   	213.242.96.143
 geoloc4.uw.mad02                  IN  A   	213.242.96.156
@@ -19217,12 +19158,6 @@ geoloc4.uwv4.lju01                IN  A   	91.239.96.105
 geoloc4.uw.mlab3v4.lju01          IN  A   	91.239.96.105
 geoloc4.uwv4.lju01                IN  A   	91.239.96.118
 geoloc4.uw.mlab4v4.lju01          IN  A   	91.239.96.118
-geoloc4.uwv4.los01                IN  A   	196.216.149.79
-geoloc4.uw.mlab1v4.los01          IN  A   	196.216.149.79
-geoloc4.uwv4.los01                IN  A   	196.216.149.92
-geoloc4.uw.mlab2v4.los01          IN  A   	196.216.149.92
-geoloc4.uwv4.los01                IN  A   	196.216.149.105
-geoloc4.uw.mlab3v4.los01          IN  A   	196.216.149.105
 geoloc4.uwv4.mad02                IN  A   	213.242.96.143
 geoloc4.uw.mlab1v4.mad02          IN  A   	213.242.96.143
 geoloc4.uwv4.mad02                IN  A   	213.242.96.156
@@ -20295,12 +20230,6 @@ ooni.mlab.lju01                   IN  A   	91.239.96.106
 ooni.mlab.mlab3.lju01             IN  A   	91.239.96.106
 ooni.mlab.lju01                   IN  A   	91.239.96.119
 ooni.mlab.mlab4.lju01             IN  A   	91.239.96.119
-ooni.mlab.los01                   IN  A   	196.216.149.80
-ooni.mlab.mlab1.los01             IN  A   	196.216.149.80
-ooni.mlab.los01                   IN  A   	196.216.149.93
-ooni.mlab.mlab2.los01             IN  A   	196.216.149.93
-ooni.mlab.los01                   IN  A   	196.216.149.106
-ooni.mlab.mlab3.los01             IN  A   	196.216.149.106
 ooni.mlab.mad02                   IN  A   	213.242.96.144
 ooni.mlab.mlab1.mad02             IN  A   	213.242.96.144
 ooni.mlab.mad02                   IN  A   	213.242.96.157
@@ -21353,12 +21282,6 @@ ooni.mlabv4.lju01                 IN  A   	91.239.96.106
 ooni.mlab.mlab3v4.lju01           IN  A   	91.239.96.106
 ooni.mlabv4.lju01                 IN  A   	91.239.96.119
 ooni.mlab.mlab4v4.lju01           IN  A   	91.239.96.119
-ooni.mlabv4.los01                 IN  A   	196.216.149.80
-ooni.mlab.mlab1v4.los01           IN  A   	196.216.149.80
-ooni.mlabv4.los01                 IN  A   	196.216.149.93
-ooni.mlab.mlab2v4.los01           IN  A   	196.216.149.93
-ooni.mlabv4.los01                 IN  A   	196.216.149.106
-ooni.mlab.mlab3v4.los01           IN  A   	196.216.149.106
 ooni.mlabv4.mad02                 IN  A   	213.242.96.144
 ooni.mlab.mlab1v4.mad02           IN  A   	213.242.96.144
 ooni.mlabv4.mad02                 IN  A   	213.242.96.157
@@ -24459,12 +24382,6 @@ ispmon.samknows.lju01             IN  A   	91.239.96.107
 ispmon.samknows.mlab3.lju01       IN  A   	91.239.96.107
 ispmon.samknows.lju01             IN  A   	91.239.96.120
 ispmon.samknows.mlab4.lju01       IN  A   	91.239.96.120
-ispmon.samknows.los01             IN  A   	196.216.149.81
-ispmon.samknows.mlab1.los01       IN  A   	196.216.149.81
-ispmon.samknows.los01             IN  A   	196.216.149.94
-ispmon.samknows.mlab2.los01       IN  A   	196.216.149.94
-ispmon.samknows.los01             IN  A   	196.216.149.107
-ispmon.samknows.mlab3.los01       IN  A   	196.216.149.107
 ispmon.samknows.mad02             IN  A   	213.242.96.145
 ispmon.samknows.mlab1.mad02       IN  A   	213.242.96.145
 ispmon.samknows.mad02             IN  A   	213.242.96.158
@@ -25517,12 +25434,6 @@ ispmon.samknowsv4.lju01           IN  A   	91.239.96.107
 ispmon.samknows.mlab3v4.lju01     IN  A   	91.239.96.107
 ispmon.samknowsv4.lju01           IN  A   	91.239.96.120
 ispmon.samknows.mlab4v4.lju01     IN  A   	91.239.96.120
-ispmon.samknowsv4.los01           IN  A   	196.216.149.81
-ispmon.samknows.mlab1v4.los01     IN  A   	196.216.149.81
-ispmon.samknowsv4.los01           IN  A   	196.216.149.94
-ispmon.samknows.mlab2v4.los01     IN  A   	196.216.149.94
-ispmon.samknowsv4.los01           IN  A   	196.216.149.107
-ispmon.samknows.mlab3v4.los01     IN  A   	196.216.149.107
 ispmon.samknowsv4.mad02           IN  A   	213.242.96.145
 ispmon.samknows.mlab1v4.mad02     IN  A   	213.242.96.145
 ispmon.samknowsv4.mad02           IN  A   	213.242.96.158
@@ -28623,12 +28534,6 @@ bismark.gt.lju01                  IN  A   	91.239.96.108
 bismark.gt.mlab3.lju01            IN  A   	91.239.96.108
 bismark.gt.lju01                  IN  A   	91.239.96.121
 bismark.gt.mlab4.lju01            IN  A   	91.239.96.121
-bismark.gt.los01                  IN  A   	196.216.149.82
-bismark.gt.mlab1.los01            IN  A   	196.216.149.82
-bismark.gt.los01                  IN  A   	196.216.149.95
-bismark.gt.mlab2.los01            IN  A   	196.216.149.95
-bismark.gt.los01                  IN  A   	196.216.149.108
-bismark.gt.mlab3.los01            IN  A   	196.216.149.108
 bismark.gt.mad02                  IN  A   	213.242.96.146
 bismark.gt.mlab1.mad02            IN  A   	213.242.96.146
 bismark.gt.mad02                  IN  A   	213.242.96.159
@@ -29681,12 +29586,6 @@ bismark.gtv4.lju01                IN  A   	91.239.96.108
 bismark.gt.mlab3v4.lju01          IN  A   	91.239.96.108
 bismark.gtv4.lju01                IN  A   	91.239.96.121
 bismark.gt.mlab4v4.lju01          IN  A   	91.239.96.121
-bismark.gtv4.los01                IN  A   	196.216.149.82
-bismark.gt.mlab1v4.los01          IN  A   	196.216.149.82
-bismark.gtv4.los01                IN  A   	196.216.149.95
-bismark.gt.mlab2v4.los01          IN  A   	196.216.149.95
-bismark.gtv4.los01                IN  A   	196.216.149.108
-bismark.gt.mlab3v4.los01          IN  A   	196.216.149.108
 bismark.gtv4.mad02                IN  A   	213.242.96.146
 bismark.gt.mlab1v4.mad02          IN  A   	213.242.96.146
 bismark.gtv4.mad02                IN  A   	213.242.96.159
@@ -30747,12 +30646,6 @@ neubot.mlab.lju01                 IN  A   	91.239.96.109
 neubot.mlab.mlab3.lju01           IN  A   	91.239.96.109
 neubot.mlab.lju01                 IN  A   	91.239.96.122
 neubot.mlab.mlab4.lju01           IN  A   	91.239.96.122
-neubot.mlab.los01                 IN  A   	196.216.149.83
-neubot.mlab.mlab1.los01           IN  A   	196.216.149.83
-neubot.mlab.los01                 IN  A   	196.216.149.96
-neubot.mlab.mlab2.los01           IN  A   	196.216.149.96
-neubot.mlab.los01                 IN  A   	196.216.149.109
-neubot.mlab.mlab3.los01           IN  A   	196.216.149.109
 neubot.mlab.mad02                 IN  A   	213.242.96.147
 neubot.mlab.mlab1.mad02           IN  A   	213.242.96.147
 neubot.mlab.mad02                 IN  A   	213.242.96.160
@@ -31805,12 +31698,6 @@ neubot.mlabv4.lju01               IN  A   	91.239.96.109
 neubot.mlab.mlab3v4.lju01         IN  A   	91.239.96.109
 neubot.mlabv4.lju01               IN  A   	91.239.96.122
 neubot.mlab.mlab4v4.lju01         IN  A   	91.239.96.122
-neubot.mlabv4.los01               IN  A   	196.216.149.83
-neubot.mlab.mlab1v4.los01         IN  A   	196.216.149.83
-neubot.mlabv4.los01               IN  A   	196.216.149.96
-neubot.mlab.mlab2v4.los01         IN  A   	196.216.149.96
-neubot.mlabv4.los01               IN  A   	196.216.149.109
-neubot.mlab.mlab3v4.los01         IN  A   	196.216.149.109
 neubot.mlabv4.mad02               IN  A   	213.242.96.147
 neubot.mlab.mlab1v4.mad02         IN  A   	213.242.96.147
 neubot.mlabv4.mad02               IN  A   	213.242.96.160
@@ -34911,12 +34798,6 @@ neubot.mlab.mlab4v6.lga1t         IN  AAAA	2001:1900:2100:1::58
 1.michigan.mlab3.lju01            IN  A   	91.239.96.110
 1.michigan.lju01                  IN  A   	91.239.96.123
 1.michigan.mlab4.lju01            IN  A   	91.239.96.123
-1.michigan.los01                  IN  A   	196.216.149.84
-1.michigan.mlab1.los01            IN  A   	196.216.149.84
-1.michigan.los01                  IN  A   	196.216.149.97
-1.michigan.mlab2.los01            IN  A   	196.216.149.97
-1.michigan.los01                  IN  A   	196.216.149.110
-1.michigan.mlab3.los01            IN  A   	196.216.149.110
 1.michigan.mad02                  IN  A   	213.242.96.148
 1.michigan.mlab1.mad02            IN  A   	213.242.96.148
 1.michigan.mad02                  IN  A   	213.242.96.161
@@ -35969,12 +35850,6 @@ neubot.mlab.mlab4v6.lga1t         IN  AAAA	2001:1900:2100:1::58
 1.michigan.mlab3v4.lju01          IN  A   	91.239.96.110
 1.michiganv4.lju01                IN  A   	91.239.96.123
 1.michigan.mlab4v4.lju01          IN  A   	91.239.96.123
-1.michiganv4.los01                IN  A   	196.216.149.84
-1.michigan.mlab1v4.los01          IN  A   	196.216.149.84
-1.michiganv4.los01                IN  A   	196.216.149.97
-1.michigan.mlab2v4.los01          IN  A   	196.216.149.97
-1.michiganv4.los01                IN  A   	196.216.149.110
-1.michigan.mlab3v4.los01          IN  A   	196.216.149.110
 1.michiganv4.mad02                IN  A   	213.242.96.148
 1.michigan.mlab1v4.mad02          IN  A   	213.242.96.148
 1.michiganv4.mad02                IN  A   	213.242.96.161
@@ -39075,12 +38950,6 @@ utility.mlab.lju01                IN  A   	91.239.96.111
 utility.mlab.mlab3.lju01          IN  A   	91.239.96.111
 utility.mlab.lju01                IN  A   	91.239.96.124
 utility.mlab.mlab4.lju01          IN  A   	91.239.96.124
-utility.mlab.los01                IN  A   	196.216.149.85
-utility.mlab.mlab1.los01          IN  A   	196.216.149.85
-utility.mlab.los01                IN  A   	196.216.149.98
-utility.mlab.mlab2.los01          IN  A   	196.216.149.98
-utility.mlab.los01                IN  A   	196.216.149.111
-utility.mlab.mlab3.los01          IN  A   	196.216.149.111
 utility.mlab.mad02                IN  A   	213.242.96.149
 utility.mlab.mlab1.mad02          IN  A   	213.242.96.149
 utility.mlab.mad02                IN  A   	213.242.96.162
@@ -40133,12 +40002,6 @@ utility.mlabv4.lju01              IN  A   	91.239.96.111
 utility.mlab.mlab3v4.lju01        IN  A   	91.239.96.111
 utility.mlabv4.lju01              IN  A   	91.239.96.124
 utility.mlab.mlab4v4.lju01        IN  A   	91.239.96.124
-utility.mlabv4.los01              IN  A   	196.216.149.85
-utility.mlab.mlab1v4.los01        IN  A   	196.216.149.85
-utility.mlabv4.los01              IN  A   	196.216.149.98
-utility.mlab.mlab2v4.los01        IN  A   	196.216.149.98
-utility.mlabv4.los01              IN  A   	196.216.149.111
-utility.mlab.mlab3v4.los01        IN  A   	196.216.149.111
 utility.mlabv4.mad02              IN  A   	213.242.96.149
 utility.mlab.mlab1v4.mad02        IN  A   	213.242.96.149
 utility.mlabv4.mad02              IN  A   	213.242.96.162

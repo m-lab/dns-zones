@@ -3,7 +3,7 @@ $ORIGIN measurementlab.net.
 $TTL 120
 
 @    IN    SOA    sns-pb.isc.org.  support.measurementlab.net.    (
-    2019021500 ;Serial Number
+    2019050600 ;Serial Number
     1h  ;refresh
     900 ;retry
     1w  ;expire

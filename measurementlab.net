@@ -9,6 +9,7 @@ $TTL 120
     1w  ;expire
     1h ) ;minimum)
 
+
 @        IN    NS    sns-pb.isc.org.
 @        IN    NS    ns-mlab.greenhost.net.
 @        IN    TXT   "v=spf1 include:_spf.google.com ip4:165.117.251.93 ~all"
@@ -65,6 +66,9 @@ mirror-test  IN    CNAME    c.storage.googleapis.com.
 viz          IN    CNAME    ghs.googlehosted.com.
 data-api     IN    CNAME    ghs.googlehosted.com.
 support      IN    A    35.208.161.188
+
+; locate is an AppEngine "Custom Domain" for the mlab-ns default service.
+locate       IN    CNAME    ghs.googlehosted.com.
 
 ;
 ; mlc services

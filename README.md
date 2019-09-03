@@ -1,11 +1,10 @@
 # DNS Management for M-Lab
 
 ## Summary
-There are three primary zones for M-Lab:
+There are two primary zones for M-Lab:
 
 Static
 * measurementlab.net: website and web services, monitoring and non-platform.
-* measurementlab.org: currently unused for the most part.
 
 Dynamic
 * measurement-lab.org: all servers part of the M-Lab platform.

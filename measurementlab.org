@@ -1,0 +1,29 @@
+$ORIGIN measurementlab.org.
+$TTL 120
+
+@    IN    SOA    sns-pb.isc.org.  support.measurementlab.net.    (
+    2019090400 ;Serial Number
+    1h  ;refresh
+    900 ;retry
+    1w  ;expire
+    1h ) ;minimum)
+
+;
+; NS records
+;
+@            IN    NS    sns-pb.isc.org.
+@            IN    NS    ns-mlab.greenhost.net.
+
+;
+; A records
+;
+@            IN    A        151.101.1.195
+@            IN    A        151.101.65.195
+www          IN    A        151.101.1.195
+www          IN    A        151.101.65.195
+
+;
+; TXT records
+;
+; Google Site Verification
+@ IN TXT "google-site-verification=LL4-FFXMjW8cbM_BNAcYlSEayT4wVIEBBRpbmtslCz0"

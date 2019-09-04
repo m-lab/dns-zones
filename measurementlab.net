@@ -2,7 +2,7 @@ $ORIGIN measurementlab.net.
 $TTL 120
 
 @    IN    SOA    sns-pb.isc.org.  support.measurementlab.net.    (
-    2019090300 ;Serial Number
+    2019090400 ;Serial Number
     1h  ;refresh
     900 ;retry
     1w  ;expire
@@ -38,6 +38,7 @@ eb           IN    TXT   "v=spf1 a -all"
 ;
 ; A records
 ;
+; The 151.101.* addresses are Google Firebase.
 @            IN    A        151.101.1.195
 @            IN    A        151.101.65.195
 dns          IN    A        104.196.50.66

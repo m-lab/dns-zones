@@ -17,6 +17,7 @@ $TTL 120
 ;
 ; A records
 ;
+; These records point to Google Firebase.
 @            IN    A        151.101.1.195
 @            IN    A        151.101.65.195
 www          IN    A        151.101.1.195
@@ -26,4 +27,4 @@ www          IN    A        151.101.65.195
 ; TXT records
 ;
 ; Google Site Verification
-@ IN TXT "google-site-verification=LL4-FFXMjW8cbM_BNAcYlSEayT4wVIEBBRpbmtslCz0"
+@            IN    TXT      "google-site-verification=LL4-FFXMjW8cbM_BNAcYlSEayT4wVIEBBRpbmtslCz0"

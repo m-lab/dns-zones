@@ -1,86 +1,30 @@
-; cPanel (update_time):1357142342 first:11.34.0.9 Cpanel::ZoneFile::VERSION:1.3 hostname:host.stevenmansour.com latest:11.34.0.11
 $ORIGIN measurementlab.org.
-$TTL 600
+$TTL 120
 
-@	IN	SOA	ns.chambana.net.  support.measurementlab.net.	(
-	2017012302 ;Serial Number
-	1h  ;refresh
-	900 ;retry
-	1w  ;expire
-	1h ) ;minimum)
+@    IN    SOA    sns-pb.isc.org.  support.measurementlab.net.    (
+    2019090400 ;Serial Number
+    1h  ;refresh
+    900 ;retry
+    1w  ;expire
+    1h ) ;minimum)
 
-@		IN      NS      sns-pb.isc.org.
-@		IN      NS      ns-mlab.greenhost.net.
-;@		IN	A	72.249.86.184
-@		IN	A	64.9.225.88
-;@        IN     A   216.239.32.21
-;@        IN     A   216.239.34.21
-;@        IN     A   216.239.36.21
-;@        IN     A   216.239.38.21
-@		IN	TXT	"v=spf1 include:_spf.google.com ~all"
-; @		IN	TXT	"google-site-verification=lN4HHWmCV4gTtKslbFKZNrMNkYx4NhwsjSmmjsPr_Vg"
-@       IN  TXT "google-site-verification=M6Qh7M95eRsgJJZ7hsRU5vcOLmCn-LwOx6u2iz23jQI"
-@		IN	MX	1	aspmx.l.google.com.
-@		IN	MX	5	alt1.aspmx.l.google.com.
-@		IN	MX	5	alt2.aspmx.l.google.com.
-@		IN	MX	10	aspmx2.googlemail.com.
-@		IN	MX	10	aspmx3.googlemail.com.
-
-www		IN	CNAME	ghs.googlehosted.com.
-www-1		IN	A	72.249.86.184
-www-2		IN	A	72.249.86.184
-www-3		IN	A	72.249.86.184
-www-4		IN	A	72.249.86.184
-
-mail		IN	A	72.249.86.184
-ftp		    IN	A	72.249.86.184
-cpanel		IN	A	72.249.86.184
-whm		    IN	A	72.249.86.184
-webmail		IN	A	72.249.86.184
-webdisk		IN	A	72.249.86.184
-donar		IN	A	72.249.86.184
-www.donar	IN	A	72.249.86.184
-ks			IN	A	23.228.128.99
-ks 			IN  AAAA 2604:ca00:f000:5::99
-eb  		IN  A   45.56.98.222
-eb  		IN 	AAAA 2600:3c03::f03c:91ff:fe33:819
-nagios		IN	CNAME	ks.measurementlab.net.
-nem	    	IN	CNAME	ks.measurementlab.net.
-rt	    	IN	CNAME	ks.measurementlab.net.
-smokeping	IN	CNAME	ks.measurementlab.net.
-dist		IN	CNAME	ks.measurementlab.net.
-groups		IN	CNAME	ghs.googlehosted.com.
-test  		IN	CNAME	ghs.googlehosted.com.
-ns    		IN	CNAME	ghs.googlehosted.com.
-x		    IN	A	72.249.86.184
-www.x		IN	A	72.249.86.184
 ;
-; mlc services
+; NS records
 ;
-mlc1d		IN	A	23.228.128.68
-mlc1		IN	A	23.228.128.73
-vpn-test	IN	A	23.228.128.74
-zabbix-test	IN	A	23.228.128.75
-boot		IN	A	23.228.128.76
-dracadmin	IN	A	23.228.128.77
-config		IN	A	23.228.128.78
-boot-test	IN	A	23.228.128.79
+@            IN    NS    sns-pb.isc.org.
+@            IN    NS    ns-mlab.greenhost.net.
 
-mlc2d		IN	A	23.228.128.69
-mlc2		IN	A	23.228.128.86
+;
+; A records
+;
+; These records point to Google Firebase.
+@            IN    A        151.101.1.195
+@            IN    A        151.101.65.195
+www          IN    A        151.101.1.195
+www          IN    A        151.101.65.195
 
-boot-test3	IN	A	23.228.128.87
-boot-test2	IN	A	23.228.128.87
-mirror		IN	A	23.228.128.88
-wiki 		IN	A	165.117.251.86
-monitor 	IN	A	23.228.128.89
-vpn 		IN	A	23.228.128.90
-dns 		IN	A	23.228.128.91
-
-ks1d		IN	A	23.228.128.70
-ks 		IN	TXT	"v=spf1 a -all"
-ks._domainkey.ks	IN	TXT	"v=DKIM1\; k=rsa\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDqYy+nKUsFbI+7mw/eUandVL36luBfHTNdrH85QdKC7QpDV2syX+2Xe7TgnbJZA5NrveKeBzX47T0eM3agjBMDtEy8K4+SAyaMH69JxW9cJUC8tMUhvOCizWl2ySs+Kn3D63kyATXgSaZ2CK+cU4FbkxqEQpWz3tkpyAl1hextjwIDAQAB"
-ticket		IN	MX	10	ks.measurementlab.net.
-
-; for compatibility with measurementlab.net web host
-localhost	IN	A	127.0.0.1
+;
+; TXT records
+;
+; Google Site Verification
+@            IN    TXT      "google-site-verification=LL4-FFXMjW8cbM_BNAcYlSEayT4wVIEBBRpbmtslCz0"

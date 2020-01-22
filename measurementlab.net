@@ -2,7 +2,7 @@ $ORIGIN measurementlab.net.
 $TTL 120
 
 @    IN    SOA    sns-pb.isc.org.  support.measurementlab.net.    (
-    2019090400 ;Serial Number
+    2020012200 ;Serial Number
     1h  ;refresh
     900 ;retry
     1w  ;expire
@@ -44,6 +44,7 @@ eb           IN    TXT   "v=spf1 a -all"
 dns          IN    A        104.196.50.66
 eb           IN    A        45.56.98.222
 mirror       IN    A        35.196.187.127
+ns           IN    A        35.196.158.118
 speed        IN    A        151.101.1.195
 speed        IN    A        151.101.65.195
 www          IN    A        151.101.1.195

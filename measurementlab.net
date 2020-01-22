@@ -1,8 +1,8 @@
 $ORIGIN measurementlab.net.
 $TTL 120
 
-@    IN    SOA    sns-pb.isc.org.  support.measurementlab.net.    (
-    2020012200 ;Serial Number
+@    IN    SOA    ns support.measurementlab.net.    (
+    2020012201 ;Serial Number
     1h  ;refresh
     900 ;retry
     1w  ;expire
@@ -13,6 +13,7 @@ $TTL 120
 ;
 @            IN    NS    sns-pb.isc.org.
 @            IN    NS    ns-mlab.greenhost.net.
+@            IN    NS    ns
 
 ;
 ; MX records

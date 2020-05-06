@@ -72,6 +72,11 @@ mlab-sandbox    21600    IN    NS    ns-cloud-e1.googledomains.com.
                 21600    IN    NS    ns-cloud-e3.googledomains.com.
                 21600    IN    NS    ns-cloud-e4.googledomains.com.
 
+openbalena      21600    IN    NS    ns-cloud-b1.googledomains.com.
+                21600    IN    NS    ns-cloud-b2.googledomains.com.
+                21600    IN    NS    ns-cloud-b3.googledomains.com.
+                21600    IN    NS    ns-cloud-b4.googledomains.com.
+
 ; Delegated to mlab-staging GCP project
 mlab-staging    21600    IN    NS    ns-cloud-e1.googledomains.com.
                 21600    IN    NS    ns-cloud-e2.googledomains.com.

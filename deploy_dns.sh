@@ -1,18 +1,19 @@
 #!/bin/bash
+#
+# A simple shell script to deploy a zone to Google Cloud DNS.
 
 set -eux
 
 _=${PROJECT:?Please provide PROJECT name in environment}
 _=${DOMAIN:?Please provide DOMAIN name in environment}
 
-# The maximum amount of time in seconds to wait for the zone file import
-# operation to complete before exiting with an error.
-MAX_IMPORT_WAIT="300"
-
 ZONE_FILE="/workspace/${DOMAIN}"
 
 # Remove the SOA record and any NS records.
-sed -i -e '/IN[[:space:]]\+SOA/,+5 d' \
+# TODO(kinkade): Once the measurementlab.net zone has been migrated to Cloud
+# DNS publicly, we can remove the SOA and NS records from the zone file and
+# remove this sed command.
+sed -i -e '/IN[[:space:]]\+SOA/,/^$/ d' \
        -e '/IN[[:space:]]\+NS/ d' \
        $ZONE_FILE
 

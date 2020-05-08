@@ -34,6 +34,7 @@ eb           IN    TXT   "v=spf1 a -all"
 @            IN    TXT   "google-site-verification=QzNQqgKdrElH34L_mzcEdeVoq1JP-WhiuMUB-Cm8oZg"
 @            IN    TXT   "google-site-verification=C901sQ7Uym2ZSuXbKSBsfncEXQ5tEzR4fAcAMoJnaX0"
 @            IN    TXT   "google-site-verification=JlPXKcX1J6YZfBv8xrQPE4LLWVwEm8BKu7Hv2OCW-Lw"
+@            IN    TXT   "google-site-verification=zsAqWtfnH8IFhjNmV94zQ0zxTMHXB580CYS0X1x8Yms"
 
 ;
 ; A records

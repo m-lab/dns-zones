@@ -1,0 +1,170 @@
+[
+    {
+        "type": "A",
+        "name": "@",
+        "ttl": "300",
+        "data": [
+            "151.101.1.195",
+            "151.101.65.195"
+        ]
+    },
+    {
+        "type": "A",
+        "name": "dns",
+        "ttl": "300",
+        "data": [
+            "104.196.50.66"
+        ]
+    },
+    {
+        "type": "A",
+        "name": "eb",
+        "ttl": "300",
+        "data": [
+            "45.56.98.222"
+        ]
+    },
+    {
+        "type": "A",
+        "name": "ns",
+        "ttl": "300",
+        "data": [
+            "35.196.158.118"
+        ]
+    },
+    {
+        "type": "A",
+        "name": "speed",
+        "ttl": "300",
+        "data": [
+            "151.101.1.195",
+            "151.101.65.195"
+        ]
+    },
+    {
+        "type": "A",
+        "name": "www",
+        "ttl": "300",
+        "data": [
+            "151.101.1.195",
+            "151.101.65.195"
+        ]
+    },
+    {
+        "type": "AAAA",
+        "name": "eb",
+        "ttl": "300",
+        "data": [
+            "2600:3c03::f03c:91ff:fe33:819"
+        ]
+    },
+    {
+        "type": "CNAME",
+        "name": "data-api",
+        "ttl": "300",
+        "data": [
+            "ghs.googlehosted.com."
+        ]
+    },
+    {
+        "type": "CNAME",
+        "name": "locate",
+        "ttl": "300",
+        "data": [
+            "ghs.googlehosted.com."
+        ]
+    },
+    {
+        "type": "CNAME",
+        "name": "viz",
+        "ttl": "300",
+        "data": [
+            "ghs.googlehosted.com."
+        ]
+    },
+    {
+        "type": "MX",
+        "name": "@",
+        "ttl": "300",
+        "data": [
+            "1 aspmx.l.google.com.",
+            "5 alt1.aspmx.l.google.com.",
+            "5 alt2.aspmx.l.google.com.",
+            "10 aspmx2.googlemail.com.",
+            "10 aspmx3.googlemail.com."
+        ]
+    },
+    {
+        "type": "NS",
+        "name": "mlab-sandbox",
+        "ttl": "21600",
+        "data": [
+            "ns-cloud-e1.googledomains.com.",
+            "ns-cloud-e2.googledomains.com.",
+            "ns-cloud-e3.googledomains.com.",
+            "ns-cloud-e4.googledomains.com."
+        ]
+    },
+    {
+        "type": "NS",
+        "name": "mlab-staging",
+        "ttl": "21600",
+        "data": [
+            "ns-cloud-e1.googledomains.com.",
+            "ns-cloud-e2.googledomains.com.",
+            "ns-cloud-e3.googledomains.com.",
+            "ns-cloud-e4.googledomains.com."
+        ]
+    },
+    {
+        "type": "NS",
+        "name": "mlab-oti",
+        "ttl": "21600",
+        "data": [
+            "ns-cloud-d1.googledomains.com.",
+            "ns-cloud-d2.googledomains.com.",
+            "ns-cloud-d3.googledomains.com.",
+            "ns-cloud-d4.googledomains.com."
+        ]
+    },
+    {
+        "type": "NS",
+        "name": "openbalena",
+        "ttl": "21600",
+        "data": [
+            "ns-cloud-b1.googledomains.com.",
+            "ns-cloud-b2.googledomains.com.",
+            "ns-cloud-b3.googledomains.com.",
+            "ns-cloud-b4.googledomains.com."
+        ]
+    },
+    {
+        "type": "TXT",
+        "name": "@",
+        "ttl": "300",
+        "data": [
+            "v=spf1 include:_spf.google.com ~all",
+            "google-site-verification=lN4HHWmCV4gTtKslbFKZNrMNkYx4NhwsjSmmjsPr_Vg",
+            "google-site-verification=QzNQqgKdrElH34L_mzcEdeVoq1JP-WhiuMUB-Cm8oZg",
+            "google-site-verification=C901sQ7Uym2ZSuXbKSBsfncEXQ5tEzR4fAcAMoJnaX0",
+            "google-site-verification=JlPXKcX1J6YZfBv8xrQPE4LLWVwEm8BKu7Hv2OCW-Lw",
+            "google-site-verification=zsAqWtfnH8IFhjNmV94zQ0zxTMHXB580CYS0X1x8Yms"
+        ]
+    },
+    {
+        "type": "TXT",
+        "name": "eb",
+        "ttl": "300",
+        "data": [
+            "v=spf1 a -all"
+        ]
+    },
+    {
+        "type": "TXT",
+        "name": "kinkade",
+        "ttl": "300",
+        "data": [
+            "lol"
+        ]
+    }
+]

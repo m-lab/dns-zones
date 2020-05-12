@@ -1,0 +1,28 @@
+[
+    {
+        "type": "A",
+        "name": "@",
+        "ttl": "300",
+        "data": [
+            "151.101.1.195",
+            "151.101.65.195"
+        ]
+    },
+    {
+        "type": "A",
+        "name": "www",
+        "ttl": "300",
+        "data": [
+            "151.101.1.195",
+            "151.101.65.195"
+        ]
+    },
+    {
+        "type": "TXT",
+        "name": "@",
+        "ttl": "300",
+        "data": [
+            "google-site-verification=LL4-FFXMjW8cbM_BNAcYlSEayT4wVIEBBRpbmtslCz0"
+        ]
+    }
+]

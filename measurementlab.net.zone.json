@@ -158,13 +158,5 @@
         "data": [
             "v=spf1 a -all"
         ]
-    },
-    {
-        "type": "TXT",
-        "name": "kinkade",
-        "ttl": "300",
-        "data": [
-            "lol"
-        ]
     }
 ]

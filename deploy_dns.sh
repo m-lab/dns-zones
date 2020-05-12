@@ -11,6 +11,10 @@ ZONE="${DOMAIN/./-}"
 ZONE_DATA="./${DOMAIN}.zone.json"
 ZONE_FILE="./${DOMAIN}.zone.yaml"
 
+# The YAML input format supported by gcloud is _very_ close to the format that
+# "gcloud dns record-sets tranascation add" creates, but not quite the same.
+# This template will be evaluated for every record in the JSON file and
+# appended to a file that will later be imported by gcloud.
 IFS= read -r -d '' RR_TEMPLATE <<EOF || true
 ---
 kind: dns#resourceRecordSet

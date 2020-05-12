@@ -1,0 +1,21 @@
+steps:
+
+# Deploy the measurementlab.net zone to Cloud DNS.
+- name: gcr.io/cloud-builders/gcloud
+  entrypoint: '/bin/bash'
+  args: [
+    './deploy_zone.sh'
+  ]
+  env:
+  - 'PROJECT=${PROJECT_ID}'
+  - 'DOMAIN=measurementlab.net'
+
+# Deploy the measurementlab.org zone to Cloud DNS.
+- name: gcr.io/cloud-builders/gcloud
+  entrypoint: '/bin/bash'
+  args: [
+    './deploy_zone.sh'
+  ]
+  env:
+  - 'PROJECT=${PROJECT_ID}'
+  - 'DOMAIN=measurementlab.org'

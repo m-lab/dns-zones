@@ -20,3 +20,9 @@ changes live, go to your clone of the *mlabops* repository and do:
 # cd mlabops/ansible/dns
 # ansible-playbook deploy_zone.yaml
 ```
+
+## measurementlab.org zone
+This zone is not used for anything, and the only records that exist in the zone
+are for the purposes of redirecting requests to the domain (and www host) to
+the measurementlab.net domain.
+

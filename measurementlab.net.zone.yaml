@@ -1,0 +1,159 @@
+---
+kind: dns#resourceRecordSet
+name: measurementlab.net.
+rrdatas:
+- 151.101.1.195
+- 151.101.65.195
+ttl: 300
+type: A
+
+---
+kind: dns#resourceRecordSet
+name: dns.measurementlab.net.
+rrdatas:
+- 104.196.50.66
+ttl: 300
+type: A
+
+---
+kind: dns#resourceRecordSet
+name: eb.measurementlab.net.
+rrdatas:
+- 45.56.98.222
+ttl: 300
+type: A
+
+---
+kind: dns#resourceRecordSet
+name: ns.measurementlab.net.
+rrdatas:
+- 35.196.158.118
+ttl: 300
+type: A
+
+---
+kind: dns#resourceRecordSet
+name: speed.measurementlab.net.
+rrdatas:
+- 151.101.1.195
+- 151.101.65.195
+ttl: 300
+type: A
+
+---
+kind: dns#resourceRecordSet
+name: www.measurementlab.net.
+rrdatas:
+- 151.101.1.195
+- 151.101.65.195
+ttl: 300
+type: A
+
+---
+kind: dns#resourceRecordSet
+name: eb.measurementlab.net.
+rrdatas:
+- 2600:3c03::f03c:91ff:fe33:819
+ttl: 300
+type: AAAA
+
+---
+kind: dns#resourceRecordSet
+name: data-api.measurementlab.net.
+rrdatas:
+- ghs.googlehosted.com.
+ttl: 300
+type: CNAME
+
+---
+kind: dns#resourceRecordSet
+name: locate.measurementlab.net.
+rrdatas:
+- ghs.googlehosted.com.
+ttl: 300
+type: CNAME
+
+---
+kind: dns#resourceRecordSet
+name: viz.measurementlab.net.
+rrdatas:
+- ghs.googlehosted.com.
+ttl: 300
+type: CNAME
+
+---
+kind: dns#resourceRecordSet
+name: measurementlab.net.
+rrdatas:
+- 1 aspmx.l.google.com.
+- 5 alt1.aspmx.l.google.com.
+- 5 alt2.aspmx.l.google.com.
+- 10 aspmx2.googlemail.com.
+- 10 aspmx3.googlemail.com.
+ttl: 300
+type: MX
+
+---
+kind: dns#resourceRecordSet
+name: mlab-sandbox.measurementlab.net.
+rrdatas:
+- ns-cloud-e1.googledomains.com.
+- ns-cloud-e2.googledomains.com.
+- ns-cloud-e3.googledomains.com.
+- ns-cloud-e4.googledomains.com.
+ttl: 21600
+type: NS
+
+---
+kind: dns#resourceRecordSet
+name: mlab-staging.measurementlab.net.
+rrdatas:
+- ns-cloud-e1.googledomains.com.
+- ns-cloud-e2.googledomains.com.
+- ns-cloud-e3.googledomains.com.
+- ns-cloud-e4.googledomains.com.
+ttl: 21600
+type: NS
+
+---
+kind: dns#resourceRecordSet
+name: mlab-oti.measurementlab.net.
+rrdatas:
+- ns-cloud-d1.googledomains.com.
+- ns-cloud-d2.googledomains.com.
+- ns-cloud-d3.googledomains.com.
+- ns-cloud-d4.googledomains.com.
+ttl: 21600
+type: NS
+
+---
+kind: dns#resourceRecordSet
+name: openbalena.measurementlab.net.
+rrdatas:
+- ns-cloud-b1.googledomains.com.
+- ns-cloud-b2.googledomains.com.
+- ns-cloud-b3.googledomains.com.
+- ns-cloud-b4.googledomains.com.
+ttl: 21600
+type: NS
+
+---
+kind: dns#resourceRecordSet
+name: measurementlab.net.
+rrdatas:
+- '"v=spf1 include:_spf.google.com ~all"'
+- '"google-site-verification=lN4HHWmCV4gTtKslbFKZNrMNkYx4NhwsjSmmjsPr_Vg"'
+- '"google-site-verification=QzNQqgKdrElH34L_mzcEdeVoq1JP-WhiuMUB-Cm8oZg"'
+- '"google-site-verification=C901sQ7Uym2ZSuXbKSBsfncEXQ5tEzR4fAcAMoJnaX0"'
+- '"google-site-verification=JlPXKcX1J6YZfBv8xrQPE4LLWVwEm8BKu7Hv2OCW-Lw"'
+- '"google-site-verification=zsAqWtfnH8IFhjNmV94zQ0zxTMHXB580CYS0X1x8Yms"'
+ttl: 300
+type: TXT
+
+---
+kind: dns#resourceRecordSet
+name: eb.measurementlab.net.
+rrdatas:
+- '"v=spf1 a -all"'
+ttl: 300
+type: TXT

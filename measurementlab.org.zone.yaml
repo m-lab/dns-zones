@@ -1,0 +1,26 @@
+---
+kind: dns#resourceRecordSet
+name: measurementlab.org.
+rrdatas:
+- 151.101.1.195
+- 151.101.65.195
+ttl: 300
+type: A
+
+---
+kind: dns#resourceRecordSet
+name: www.measurementlab.org.
+rrdatas:
+- 151.101.1.195
+- 151.101.65.195
+ttl: 300
+type: A
+
+---
+kind: dns#resourceRecordSet
+name: measurementlab.org.
+rrdatas:
+- '"v=spf1 a -all"'
+- '"google-site-verification=LL4-FFXMjW8cbM_BNAcYlSEayT4wVIEBBRpbmtslCz0"'
+ttl: 300
+type: TXT

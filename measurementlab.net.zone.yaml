@@ -51,6 +51,14 @@ type: A
 
 ---
 kind: dns#resourceRecordSet
+name: support.measurementlab.net.
+rrdatas:
+- 35.226.105.213
+ttl: 300
+type: A
+
+---
+kind: dns#resourceRecordSet
 name: eb.measurementlab.net.
 rrdatas:
 - 2600:3c03::f03c:91ff:fe33:819

@@ -136,17 +136,6 @@ type: NS
 
 ---
 kind: dns#resourceRecordSet
-name: openbalena.measurementlab.net.
-rrdatas:
-- ns-cloud-b1.googledomains.com.
-- ns-cloud-b2.googledomains.com.
-- ns-cloud-b3.googledomains.com.
-- ns-cloud-b4.googledomains.com.
-ttl: 21600
-type: NS
-
----
-kind: dns#resourceRecordSet
 name: measurementlab.net.
 rrdatas:
 - '"v=spf1 include:_spf.google.com ~all"'
@@ -165,3 +154,11 @@ rrdatas:
 - '"v=spf1 a -all"'
 ttl: 300
 type: TXT
+
+---
+kind: dns#resourceRecordSet
+name: piecewise.measurementlab.net.
+rrdatas:
+- 35.225.42.183
+ttl: 300
+type: A

@@ -33,6 +33,14 @@ type: A
 
 ---
 kind: dns#resourceRecordSet
+name: piecewise.measurementlab.net.
+rrdatas:
+- 35.225.42.183
+ttl: 300
+type: A
+
+---
+kind: dns#resourceRecordSet
 name: speed.measurementlab.net.
 rrdatas:
 - 151.101.1.195
@@ -155,10 +163,3 @@ rrdatas:
 ttl: 300
 type: TXT
 
----
-kind: dns#resourceRecordSet
-name: piecewise.measurementlab.net.
-rrdatas:
-- 35.225.42.183
-ttl: 300
-type: A

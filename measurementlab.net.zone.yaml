@@ -51,7 +51,7 @@ type: A
 
 ---
 kind: dns#resourceRecordSet
-name: zammad.measurementlab.net.
+name: support.measurementlab.net.
 rrdatas:
 - 35.226.105.213
 ttl: 300

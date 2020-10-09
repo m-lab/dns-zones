@@ -93,7 +93,7 @@ type: CNAME
 kind: dns#resourceRecordSet
 name: viz.measurementlab.net.
 rrdatas:
-- ghs.googlehosted.com.
+- measurementlab.net/visualizations
 ttl: 300
 type: CNAME
 
